@@ -89,11 +89,17 @@
     <Compile Include="MantenedorHabitaciones.Designer.cs">
       <DependentUpon>MantenedorHabitaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenedorOrdenReserva.cs">
+    <Compile Include="OrdenConserjeria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MantenedorOrdenReserva.Designer.cs">
-      <DependentUpon>MantenedorOrdenReserva.cs</DependentUpon>
+    <Compile Include="OrdenConserjeria.Designer.cs">
+      <DependentUpon>OrdenConserjeria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenReserva.Designer.cs">
+      <DependentUpon>OrdenReserva.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,8 +121,11 @@
     <EmbeddedResource Include="MantenedorHabitaciones.resx">
       <DependentUpon>MantenedorHabitaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MantenedorOrdenReserva.resx">
-      <DependentUpon>MantenedorOrdenReserva.cs</DependentUpon>
+    <EmbeddedResource Include="OrdenConserjeria.resx">
+      <DependentUpon>OrdenConserjeria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenReserva.resx">
+      <DependentUpon>OrdenReserva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

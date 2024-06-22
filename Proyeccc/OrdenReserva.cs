@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace Proyeccc
 {
-    public partial class MantenedorOrdenReserva : Form
+    public partial class OrdenReserva : Form
     {
-        public MantenedorOrdenReserva()
+        public OrdenReserva()
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+                    }
     }
 }
