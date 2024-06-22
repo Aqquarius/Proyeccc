@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyeccc
 {
-    public partial class MantenedorOrdenReserva : Form
+    public partial class OrdenConserjeria : Form
     {
-        public MantenedorOrdenReserva()
+        public OrdenConserjeria()
         {
             InitializeComponent();
         }
