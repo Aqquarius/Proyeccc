@@ -28,26 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnAgregarEMP = new System.Windows.Forms.Button();
+            this.btnCancelarEMP = new System.Windows.Forms.Button();
+            this.btnModificarEMP = new System.Windows.Forms.Button();
+            this.btnNuevoEMP = new System.Windows.Forms.Button();
+            this.btnInhabilitarEMP = new System.Windows.Forms.Button();
+            this.btnEditarEMP = new System.Windows.Forms.Button();
+            this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
+            this.Fech = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.es = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esemp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnModificarEMP);
+            this.groupBox1.Controls.Add(this.btnCancelarEMP);
+            this.groupBox1.Controls.Add(this.btnAgregarEMP);
+            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox3);
@@ -57,145 +77,284 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(65, 51);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(555, 197);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Empleado";
             // 
-            // dataGridView1
+            // numericUpDown1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 226);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(554, 212);
-            this.dataGridView1.TabIndex = 1;
+            this.numericUpDown1.Location = new System.Drawing.Point(393, 159);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
+            this.numericUpDown1.TabIndex = 10;
             // 
-            // label1
+            // label5
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID Empleado";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(390, 139);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(139, 17);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Cantidad de personas";
             // 
-            // label2
+            // checkBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombres";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(235, 159);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(152, 21);
+            this.checkBox1.TabIndex = 8;
+            this.checkBox1.Text = "Estado del Empleado";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // textBox4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 111);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Apellidos";
+            this.textBox4.Location = new System.Drawing.Point(129, 157);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 22);
+            this.textBox4.TabIndex = 7;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(129, 108);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.TabIndex = 6;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(129, 63);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 5;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(129, 27);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 160);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 13);
+            this.label4.Size = new System.Drawing.Size(124, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "Corrreo Electronico";
             // 
-            // textBox1
+            // label3
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(41, 111);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Apellidos";
             // 
-            // textBox2
+            // label2
             // 
-            this.textBox2.Location = new System.Drawing.Point(109, 63);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(41, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Nombres";
             // 
-            // textBox3
+            // label1
             // 
-            this.textBox3.Location = new System.Drawing.Point(109, 104);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID Empleado";
             // 
-            // textBox4
+            // btnAgregarEMP
             // 
-            this.textBox4.Location = new System.Drawing.Point(109, 157);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 7;
+            this.btnAgregarEMP.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnAgregarEMP.FlatAppearance.BorderSize = 0;
+            this.btnAgregarEMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarEMP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarEMP.Location = new System.Drawing.Point(274, 30);
+            this.btnAgregarEMP.Name = "btnAgregarEMP";
+            this.btnAgregarEMP.Size = new System.Drawing.Size(96, 37);
+            this.btnAgregarEMP.TabIndex = 45;
+            this.btnAgregarEMP.Text = "AGREGAR";
+            this.btnAgregarEMP.UseVisualStyleBackColor = false;
             // 
-            // checkBox1
+            // btnCancelarEMP
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(335, 45);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(126, 17);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "Estado del Empleado";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.btnCancelarEMP.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnCancelarEMP.FlatAppearance.BorderSize = 0;
+            this.btnCancelarEMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarEMP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarEMP.Location = new System.Drawing.Point(376, 30);
+            this.btnCancelarEMP.Name = "btnCancelarEMP";
+            this.btnCancelarEMP.Size = new System.Drawing.Size(97, 37);
+            this.btnCancelarEMP.TabIndex = 46;
+            this.btnCancelarEMP.Text = "CANCELAR";
+            this.btnCancelarEMP.UseVisualStyleBackColor = false;
             // 
-            // btnAgregar
+            // btnModificarEMP
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(603, 32);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 2;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnModificarEMP.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnModificarEMP.FlatAppearance.BorderSize = 0;
+            this.btnModificarEMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarEMP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarEMP.Location = new System.Drawing.Point(273, 73);
+            this.btnModificarEMP.Name = "btnModificarEMP";
+            this.btnModificarEMP.Size = new System.Drawing.Size(200, 37);
+            this.btnModificarEMP.TabIndex = 47;
+            this.btnModificarEMP.Text = "MODIFICAR";
+            this.btnModificarEMP.UseVisualStyleBackColor = false;
             // 
-            // btnModificar
+            // btnNuevoEMP
             // 
-            this.btnModificar.Location = new System.Drawing.Point(603, 78);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
-            this.btnModificar.TabIndex = 3;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnNuevoEMP.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnNuevoEMP.FlatAppearance.BorderSize = 0;
+            this.btnNuevoEMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoEMP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoEMP.Location = new System.Drawing.Point(637, 190);
+            this.btnNuevoEMP.Name = "btnNuevoEMP";
+            this.btnNuevoEMP.Size = new System.Drawing.Size(137, 45);
+            this.btnNuevoEMP.TabIndex = 47;
+            this.btnNuevoEMP.Text = "NUEVO";
+            this.btnNuevoEMP.UseVisualStyleBackColor = false;
             // 
-            // btnCancelar
+            // btnInhabilitarEMP
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(603, 135);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 4;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnInhabilitarEMP.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnInhabilitarEMP.FlatAppearance.BorderSize = 0;
+            this.btnInhabilitarEMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInhabilitarEMP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInhabilitarEMP.Location = new System.Drawing.Point(637, 256);
+            this.btnInhabilitarEMP.Name = "btnInhabilitarEMP";
+            this.btnInhabilitarEMP.Size = new System.Drawing.Size(137, 44);
+            this.btnInhabilitarEMP.TabIndex = 48;
+            this.btnInhabilitarEMP.Text = "INHABILITAR";
+            this.btnInhabilitarEMP.UseVisualStyleBackColor = false;
+            // 
+            // btnEditarEMP
+            // 
+            this.btnEditarEMP.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnEditarEMP.FlatAppearance.BorderSize = 0;
+            this.btnEditarEMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarEMP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarEMP.Location = new System.Drawing.Point(637, 324);
+            this.btnEditarEMP.Name = "btnEditarEMP";
+            this.btnEditarEMP.Size = new System.Drawing.Size(137, 44);
+            this.btnEditarEMP.TabIndex = 49;
+            this.btnEditarEMP.Text = "EDITAR";
+            this.btnEditarEMP.UseVisualStyleBackColor = false;
+            // 
+            // dtgvConserjeria
+            // 
+            this.dtgvConserjeria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvConserjeria.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtgvConserjeria.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dtgvConserjeria.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvConserjeria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvConserjeria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvConserjeria.ColumnHeadersHeight = 40;
+            this.dtgvConserjeria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvConserjeria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Fech,
+            this.dni,
+            this.nomb,
+            this.es,
+            this.esemp,
+            this.cap});
+            this.dtgvConserjeria.EnableHeadersVisualStyles = false;
+            this.dtgvConserjeria.GridColor = System.Drawing.Color.DarkOrange;
+            this.dtgvConserjeria.Location = new System.Drawing.Point(65, 265);
+            this.dtgvConserjeria.Name = "dtgvConserjeria";
+            this.dtgvConserjeria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvConserjeria.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.NavajoWhite;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgvConserjeria.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgvConserjeria.Size = new System.Drawing.Size(546, 225);
+            this.dtgvConserjeria.TabIndex = 50;
+            // 
+            // Fech
+            // 
+            this.Fech.HeaderText = "ID Empleado";
+            this.Fech.Name = "Fech";
+            // 
+            // dni
+            // 
+            this.dni.HeaderText = "Nombres";
+            this.dni.Name = "dni";
+            // 
+            // nomb
+            // 
+            this.nomb.HeaderText = "Apellidos";
+            this.nomb.Name = "nomb";
+            // 
+            // es
+            // 
+            this.es.HeaderText = "Correo Eléctronico";
+            this.es.Name = "es";
+            // 
+            // esemp
+            // 
+            this.esemp.HeaderText = "Estado Empleado";
+            this.esemp.Name = "esemp";
+            // 
+            // cap
+            // 
+            this.cap.HeaderText = "Cantidad de personas";
+            this.cap.Name = "cap";
             // 
             // MantenedorEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.dataGridView1);
+            this.BackColor = System.Drawing.Color.NavajoWhite;
+            this.ClientSize = new System.Drawing.Size(800, 578);
+            this.Controls.Add(this.dtgvConserjeria);
+            this.Controls.Add(this.btnEditarEMP);
+            this.Controls.Add(this.btnInhabilitarEMP);
+            this.Controls.Add(this.btnNuevoEMP);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MantenedorEmpleado";
             this.Text = "MantenedorEmpleado";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
@@ -205,8 +364,18 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnModificarEMP;
+        private System.Windows.Forms.Button btnCancelarEMP;
+        private System.Windows.Forms.Button btnAgregarEMP;
+        private System.Windows.Forms.Button btnNuevoEMP;
+        private System.Windows.Forms.Button btnInhabilitarEMP;
+        private System.Windows.Forms.Button btnEditarEMP;
+        private System.Windows.Forms.DataGridView dtgvConserjeria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fech;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dni;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn es;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esemp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cap;
     }
 }

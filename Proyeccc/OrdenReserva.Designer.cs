@@ -31,22 +31,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
-            this.IDORDEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumHab = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fech = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnConfimarRESER = new System.Windows.Forms.Button();
+            this.btnAnularRESER = new System.Windows.Forms.Button();
+            this.btnCancelarRESER = new System.Windows.Forms.Button();
+            this.btnNuevoRESER = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnConfirmarR = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnAnular = new System.Windows.Forms.Button();
-            this.btnAgregarReserva = new System.Windows.Forms.Button();
+            this.btnMostrarRESER = new System.Windows.Forms.Button();
+            this.btnConfirmarRESER = new System.Windows.Forms.Button();
+            this.btnBuscarClienteRESER = new System.Windows.Forms.Button();
+            this.btnAnularReservaRESER = new System.Windows.Forms.Button();
+            this.btnAgregarRESER = new System.Windows.Forms.Button();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -68,139 +62,80 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
+            this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
+            this.IR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Habitación = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CPER = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
             this.SuspendLayout();
             // 
-            // button6
+            // btnConfimarRESER
             // 
-            this.button6.BackColor = System.Drawing.Color.LightSalmon;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(574, 521);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(164, 37);
-            this.button6.TabIndex = 37;
-            this.button6.Text = "CONFIRMAR";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnConfimarRESER.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnConfimarRESER.FlatAppearance.BorderSize = 0;
+            this.btnConfimarRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfimarRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfimarRESER.Location = new System.Drawing.Point(574, 521);
+            this.btnConfimarRESER.Name = "btnConfimarRESER";
+            this.btnConfimarRESER.Size = new System.Drawing.Size(164, 37);
+            this.btnConfimarRESER.TabIndex = 37;
+            this.btnConfimarRESER.Text = "CONFIRMAR";
+            this.btnConfimarRESER.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnAnularRESER
             // 
-            this.button5.BackColor = System.Drawing.Color.LightSalmon;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(398, 521);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(164, 37);
-            this.button5.TabIndex = 36;
-            this.button5.Text = "ANULAR";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnAnularRESER.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnAnularRESER.FlatAppearance.BorderSize = 0;
+            this.btnAnularRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnularRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnularRESER.Location = new System.Drawing.Point(398, 521);
+            this.btnAnularRESER.Name = "btnAnularRESER";
+            this.btnAnularRESER.Size = new System.Drawing.Size(164, 37);
+            this.btnAnularRESER.TabIndex = 36;
+            this.btnAnularRESER.Text = "ANULAR";
+            this.btnAnularRESER.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnCancelarRESER
             // 
-            this.button4.BackColor = System.Drawing.Color.LightSalmon;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(222, 521);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(164, 37);
-            this.button4.TabIndex = 35;
-            this.button4.Text = "CANCELAR";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnCancelarRESER.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnCancelarRESER.FlatAppearance.BorderSize = 0;
+            this.btnCancelarRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarRESER.Location = new System.Drawing.Point(222, 521);
+            this.btnCancelarRESER.Name = "btnCancelarRESER";
+            this.btnCancelarRESER.Size = new System.Drawing.Size(164, 37);
+            this.btnCancelarRESER.TabIndex = 35;
+            this.btnCancelarRESER.Text = "CANCELAR";
+            this.btnCancelarRESER.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnNuevoRESER
             // 
-            this.button3.BackColor = System.Drawing.Color.LightSalmon;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(46, 521);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(164, 37);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "NUEVO";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // dtgvConserjeria
-            // 
-            this.dtgvConserjeria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvConserjeria.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dtgvConserjeria.BackgroundColor = System.Drawing.Color.NavajoWhite;
-            this.dtgvConserjeria.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvConserjeria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvConserjeria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvConserjeria.ColumnHeadersHeight = 40;
-            this.dtgvConserjeria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgvConserjeria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDORDEN,
-            this.NumHab,
-            this.Fech,
-            this.dni,
-            this.nomb});
-            this.dtgvConserjeria.EnableHeadersVisualStyles = false;
-            this.dtgvConserjeria.GridColor = System.Drawing.Color.DarkOrange;
-            this.dtgvConserjeria.Location = new System.Drawing.Point(23, 301);
-            this.dtgvConserjeria.Name = "dtgvConserjeria";
-            this.dtgvConserjeria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvConserjeria.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.NavajoWhite;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            this.dtgvConserjeria.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvConserjeria.Size = new System.Drawing.Size(728, 210);
-            this.dtgvConserjeria.TabIndex = 33;
-            // 
-            // IDORDEN
-            // 
-            this.IDORDEN.HeaderText = "ID Orden";
-            this.IDORDEN.Name = "IDORDEN";
-            // 
-            // NumHab
-            // 
-            this.NumHab.HeaderText = "Número de Habitación";
-            this.NumHab.Name = "NumHab";
-            // 
-            // Fech
-            // 
-            this.Fech.HeaderText = "Fecha de Orden";
-            this.Fech.Name = "Fech";
-            // 
-            // dni
-            // 
-            this.dni.HeaderText = "DNI del cliente";
-            this.dni.Name = "dni";
-            // 
-            // nomb
-            // 
-            this.nomb.HeaderText = "Nombre del Cliente";
-            this.nomb.Name = "nomb";
+            this.btnNuevoRESER.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnNuevoRESER.FlatAppearance.BorderSize = 0;
+            this.btnNuevoRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoRESER.Location = new System.Drawing.Point(46, 521);
+            this.btnNuevoRESER.Name = "btnNuevoRESER";
+            this.btnNuevoRESER.Size = new System.Drawing.Size(164, 37);
+            this.btnNuevoRESER.TabIndex = 34;
+            this.btnNuevoRESER.Text = "NUEVO";
+            this.btnNuevoRESER.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.btnConfirmarR);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.btnAnular);
-            this.groupBox1.Controls.Add(this.btnAgregarReserva);
+            this.groupBox1.Controls.Add(this.btnMostrarRESER);
+            this.groupBox1.Controls.Add(this.btnConfirmarRESER);
+            this.groupBox1.Controls.Add(this.btnBuscarClienteRESER);
+            this.groupBox1.Controls.Add(this.btnAnularReservaRESER);
+            this.groupBox1.Controls.Add(this.btnAgregarRESER);
             this.groupBox1.Controls.Add(this.dateTimePicker3);
             this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -230,70 +165,70 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Orden de Reserva";
             // 
-            // button2
+            // btnMostrarRESER
             // 
-            this.button2.BackColor = System.Drawing.Color.SandyBrown;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(639, 238);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 37);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "Mostrar Costo";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnMostrarRESER.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnMostrarRESER.FlatAppearance.BorderSize = 0;
+            this.btnMostrarRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrarRESER.Location = new System.Drawing.Point(639, 238);
+            this.btnMostrarRESER.Name = "btnMostrarRESER";
+            this.btnMostrarRESER.Size = new System.Drawing.Size(123, 37);
+            this.btnMostrarRESER.TabIndex = 27;
+            this.btnMostrarRESER.Text = "Mostrar Costo";
+            this.btnMostrarRESER.UseVisualStyleBackColor = false;
             // 
-            // btnConfirmarR
+            // btnConfirmarRESER
             // 
-            this.btnConfirmarR.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnConfirmarR.FlatAppearance.BorderSize = 0;
-            this.btnConfirmarR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirmarR.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmarR.Location = new System.Drawing.Point(639, 64);
-            this.btnConfirmarR.Name = "btnConfirmarR";
-            this.btnConfirmarR.Size = new System.Drawing.Size(123, 51);
-            this.btnConfirmarR.TabIndex = 15;
-            this.btnConfirmarR.Text = "Confirmar Reserva";
-            this.btnConfirmarR.UseVisualStyleBackColor = false;
+            this.btnConfirmarRESER.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnConfirmarRESER.FlatAppearance.BorderSize = 0;
+            this.btnConfirmarRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmarRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmarRESER.Location = new System.Drawing.Point(639, 64);
+            this.btnConfirmarRESER.Name = "btnConfirmarRESER";
+            this.btnConfirmarRESER.Size = new System.Drawing.Size(123, 51);
+            this.btnConfirmarRESER.TabIndex = 15;
+            this.btnConfirmarRESER.Text = "Confirmar Reserva";
+            this.btnConfirmarRESER.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnBuscarClienteRESER
             // 
-            this.button1.BackColor = System.Drawing.Color.SandyBrown;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(639, 181);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 51);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Buscar Cliente";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBuscarClienteRESER.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnBuscarClienteRESER.FlatAppearance.BorderSize = 0;
+            this.btnBuscarClienteRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarClienteRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarClienteRESER.Location = new System.Drawing.Point(639, 181);
+            this.btnBuscarClienteRESER.Name = "btnBuscarClienteRESER";
+            this.btnBuscarClienteRESER.Size = new System.Drawing.Size(123, 51);
+            this.btnBuscarClienteRESER.TabIndex = 26;
+            this.btnBuscarClienteRESER.Text = "Buscar Cliente";
+            this.btnBuscarClienteRESER.UseVisualStyleBackColor = false;
             // 
-            // btnAnular
+            // btnAnularReservaRESER
             // 
-            this.btnAnular.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnAnular.FlatAppearance.BorderSize = 0;
-            this.btnAnular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnular.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnular.Location = new System.Drawing.Point(639, 21);
-            this.btnAnular.Name = "btnAnular";
-            this.btnAnular.Size = new System.Drawing.Size(123, 37);
-            this.btnAnular.TabIndex = 14;
-            this.btnAnular.Text = "Anular Reserva";
-            this.btnAnular.UseVisualStyleBackColor = false;
+            this.btnAnularReservaRESER.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnAnularReservaRESER.FlatAppearance.BorderSize = 0;
+            this.btnAnularReservaRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnularReservaRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnularReservaRESER.Location = new System.Drawing.Point(639, 21);
+            this.btnAnularReservaRESER.Name = "btnAnularReservaRESER";
+            this.btnAnularReservaRESER.Size = new System.Drawing.Size(123, 37);
+            this.btnAnularReservaRESER.TabIndex = 14;
+            this.btnAnularReservaRESER.Text = "Anular Reserva";
+            this.btnAnularReservaRESER.UseVisualStyleBackColor = false;
             // 
-            // btnAgregarReserva
+            // btnAgregarRESER
             // 
-            this.btnAgregarReserva.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnAgregarReserva.FlatAppearance.BorderSize = 0;
-            this.btnAgregarReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarReserva.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarReserva.Location = new System.Drawing.Point(639, 121);
-            this.btnAgregarReserva.Name = "btnAgregarReserva";
-            this.btnAgregarReserva.Size = new System.Drawing.Size(123, 51);
-            this.btnAgregarReserva.TabIndex = 16;
-            this.btnAgregarReserva.Text = "Agregar Reserva";
-            this.btnAgregarReserva.UseVisualStyleBackColor = false;
+            this.btnAgregarRESER.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnAgregarRESER.FlatAppearance.BorderSize = 0;
+            this.btnAgregarRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarRESER.Location = new System.Drawing.Point(639, 121);
+            this.btnAgregarRESER.Name = "btnAgregarRESER";
+            this.btnAgregarRESER.Size = new System.Drawing.Size(123, 51);
+            this.btnAgregarRESER.TabIndex = 16;
+            this.btnAgregarRESER.Text = "Agregar Reserva";
+            this.btnAgregarRESER.UseVisualStyleBackColor = false;
             // 
             // dateTimePicker3
             // 
@@ -464,46 +399,140 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Reserva";
             // 
+            // dtgvConserjeria
+            // 
+            this.dtgvConserjeria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvConserjeria.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtgvConserjeria.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dtgvConserjeria.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvConserjeria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvConserjeria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvConserjeria.ColumnHeadersHeight = 55;
+            this.dtgvConserjeria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvConserjeria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IR,
+            this.FR,
+            this.FE,
+            this.FS,
+            this.DC,
+            this.Habitación,
+            this.MP,
+            this.PrecioR,
+            this.CR,
+            this.CPER});
+            this.dtgvConserjeria.EnableHeadersVisualStyles = false;
+            this.dtgvConserjeria.GridColor = System.Drawing.Color.DarkOrange;
+            this.dtgvConserjeria.Location = new System.Drawing.Point(14, 305);
+            this.dtgvConserjeria.Name = "dtgvConserjeria";
+            this.dtgvConserjeria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvConserjeria.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.NavajoWhite;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgvConserjeria.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgvConserjeria.Size = new System.Drawing.Size(765, 210);
+            this.dtgvConserjeria.TabIndex = 38;
+            // 
+            // IR
+            // 
+            this.IR.HeaderText = "ID Reserva";
+            this.IR.Name = "IR";
+            // 
+            // FR
+            // 
+            this.FR.HeaderText = "Fecha de Registro";
+            this.FR.Name = "FR";
+            // 
+            // FE
+            // 
+            this.FE.HeaderText = "Fecha de entrada";
+            this.FE.Name = "FE";
+            // 
+            // FS
+            // 
+            this.FS.HeaderText = "Fecha de Salida";
+            this.FS.Name = "FS";
+            // 
+            // DC
+            // 
+            this.DC.HeaderText = "Datos Cliente";
+            this.DC.Name = "DC";
+            // 
+            // Habitación
+            // 
+            this.Habitación.HeaderText = "Habitación";
+            this.Habitación.Name = "Habitación";
+            // 
+            // MP
+            // 
+            this.MP.HeaderText = "Método de Pago";
+            this.MP.Name = "MP";
+            // 
+            // PrecioR
+            // 
+            this.PrecioR.HeaderText = "Precio Reserva";
+            this.PrecioR.Name = "PrecioR";
+            // 
+            // CR
+            // 
+            this.CR.HeaderText = "Confirmar Reserva";
+            this.CR.Name = "CR";
+            // 
+            // CPER
+            // 
+            this.CPER.HeaderText = "Cantidad de personas";
+            this.CPER.Name = "CPER";
+            // 
             // OrdenReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(800, 578);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.dtgvConserjeria);
+            this.Controls.Add(this.btnConfimarRESER);
+            this.Controls.Add(this.btnAnularRESER);
+            this.Controls.Add(this.btnCancelarRESER);
+            this.Controls.Add(this.btnNuevoRESER);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OrdenReserva";
             this.Text = "OrdenReserva";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dtgvConserjeria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDORDEN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumHab;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fech;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dni;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomb;
+        private System.Windows.Forms.Button btnConfimarRESER;
+        private System.Windows.Forms.Button btnAnularRESER;
+        private System.Windows.Forms.Button btnCancelarRESER;
+        private System.Windows.Forms.Button btnNuevoRESER;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnConfirmarR;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnAnular;
-        private System.Windows.Forms.Button btnAgregarReserva;
+        private System.Windows.Forms.Button btnMostrarRESER;
+        private System.Windows.Forms.Button btnConfirmarRESER;
+        private System.Windows.Forms.Button btnBuscarClienteRESER;
+        private System.Windows.Forms.Button btnAnularReservaRESER;
+        private System.Windows.Forms.Button btnAgregarRESER;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -525,5 +554,16 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dtgvConserjeria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Habitación;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CPER;
     }
 }

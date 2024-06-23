@@ -31,19 +31,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrdenConserjeria));
-            this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
-            this.IDORDEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumHab = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fech = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnFinalizarOrden = new System.Windows.Forms.Button();
-            this.btnAgregarOrdenConserjeria = new System.Windows.Forms.Button();
-            this.btnBuscarCliente = new System.Windows.Forms.Button();
-            this.btnAnularOrden = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnCancelarCONSER = new System.Windows.Forms.Button();
+            this.btnFinalizarOrdenCONSER = new System.Windows.Forms.Button();
+            this.btnAgregarOrdenConCONSER = new System.Windows.Forms.Button();
+            this.btnBuscarClienteCONSER = new System.Windows.Forms.Button();
+            this.btnAnularOrdenCONSER = new System.Windows.Forms.Button();
+            this.btnNuevoCONSER = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -60,168 +53,96 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnRestaurar = new System.Windows.Forms.PictureBox();
-            this.btnMaximizar = new System.Windows.Forms.PictureBox();
-            this.btnSalir = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
+            this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
+            this.IDORDEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fech = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NumHab = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtgvConserjeria
+            // btnCancelarCONSER
             // 
-            this.dtgvConserjeria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvConserjeria.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dtgvConserjeria.BackgroundColor = System.Drawing.Color.NavajoWhite;
-            this.dtgvConserjeria.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvConserjeria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvConserjeria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvConserjeria.ColumnHeadersHeight = 40;
-            this.dtgvConserjeria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgvConserjeria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDORDEN,
-            this.NumHab,
-            this.Fech,
-            this.dni,
-            this.nomb});
-            this.dtgvConserjeria.EnableHeadersVisualStyles = false;
-            this.dtgvConserjeria.GridColor = System.Drawing.Color.DarkOrange;
-            this.dtgvConserjeria.Location = new System.Drawing.Point(32, 322);
-            this.dtgvConserjeria.Name = "dtgvConserjeria";
-            this.dtgvConserjeria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvConserjeria.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.NavajoWhite;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            this.dtgvConserjeria.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvConserjeria.Size = new System.Drawing.Size(728, 227);
-            this.dtgvConserjeria.TabIndex = 23;
+            this.btnCancelarCONSER.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnCancelarCONSER.FlatAppearance.BorderSize = 0;
+            this.btnCancelarCONSER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarCONSER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarCONSER.Location = new System.Drawing.Point(569, 209);
+            this.btnCancelarCONSER.Name = "btnCancelarCONSER";
+            this.btnCancelarCONSER.Size = new System.Drawing.Size(191, 37);
+            this.btnCancelarCONSER.TabIndex = 22;
+            this.btnCancelarCONSER.Text = "CANCELAR";
+            this.btnCancelarCONSER.UseVisualStyleBackColor = false;
             // 
-            // IDORDEN
+            // btnFinalizarOrdenCONSER
             // 
-            this.IDORDEN.HeaderText = "ID Orden";
-            this.IDORDEN.Name = "IDORDEN";
+            this.btnFinalizarOrdenCONSER.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnFinalizarOrdenCONSER.FlatAppearance.BorderSize = 0;
+            this.btnFinalizarOrdenCONSER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinalizarOrdenCONSER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinalizarOrdenCONSER.Location = new System.Drawing.Point(399, 252);
+            this.btnFinalizarOrdenCONSER.Name = "btnFinalizarOrdenCONSER";
+            this.btnFinalizarOrdenCONSER.Size = new System.Drawing.Size(361, 37);
+            this.btnFinalizarOrdenCONSER.TabIndex = 21;
+            this.btnFinalizarOrdenCONSER.Text = "FINALIZAR ORDEN";
+            this.btnFinalizarOrdenCONSER.UseVisualStyleBackColor = false;
             // 
-            // NumHab
+            // btnAgregarOrdenConCONSER
             // 
-            this.NumHab.HeaderText = "Número de Habitación";
-            this.NumHab.Name = "NumHab";
+            this.btnAgregarOrdenConCONSER.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnAgregarOrdenConCONSER.FlatAppearance.BorderSize = 0;
+            this.btnAgregarOrdenConCONSER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarOrdenConCONSER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarOrdenConCONSER.Location = new System.Drawing.Point(32, 252);
+            this.btnAgregarOrdenConCONSER.Name = "btnAgregarOrdenConCONSER";
+            this.btnAgregarOrdenConCONSER.Size = new System.Drawing.Size(361, 37);
+            this.btnAgregarOrdenConCONSER.TabIndex = 20;
+            this.btnAgregarOrdenConCONSER.Text = "AGREGAR ORDEN DE CONSERJERIA";
+            this.btnAgregarOrdenConCONSER.UseVisualStyleBackColor = false;
             // 
-            // Fech
+            // btnBuscarClienteCONSER
             // 
-            this.Fech.HeaderText = "Fecha de Orden";
-            this.Fech.Name = "Fech";
+            this.btnBuscarClienteCONSER.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnBuscarClienteCONSER.FlatAppearance.BorderSize = 0;
+            this.btnBuscarClienteCONSER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarClienteCONSER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarClienteCONSER.Location = new System.Drawing.Point(399, 209);
+            this.btnBuscarClienteCONSER.Name = "btnBuscarClienteCONSER";
+            this.btnBuscarClienteCONSER.Size = new System.Drawing.Size(164, 37);
+            this.btnBuscarClienteCONSER.TabIndex = 19;
+            this.btnBuscarClienteCONSER.Text = "BUSCAR CLIENTE";
+            this.btnBuscarClienteCONSER.UseVisualStyleBackColor = false;
             // 
-            // dni
+            // btnAnularOrdenCONSER
             // 
-            this.dni.HeaderText = "DNI del cliente";
-            this.dni.Name = "dni";
+            this.btnAnularOrdenCONSER.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnAnularOrdenCONSER.FlatAppearance.BorderSize = 0;
+            this.btnAnularOrdenCONSER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnularOrdenCONSER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnularOrdenCONSER.Location = new System.Drawing.Point(212, 209);
+            this.btnAnularOrdenCONSER.Name = "btnAnularOrdenCONSER";
+            this.btnAnularOrdenCONSER.Size = new System.Drawing.Size(181, 37);
+            this.btnAnularOrdenCONSER.TabIndex = 18;
+            this.btnAnularOrdenCONSER.Text = "ANULAR ORDEN ";
+            this.btnAnularOrdenCONSER.UseVisualStyleBackColor = false;
             // 
-            // nomb
+            // btnNuevoCONSER
             // 
-            this.nomb.HeaderText = "Nombre del Cliente";
-            this.nomb.Name = "nomb";
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnCancelar.FlatAppearance.BorderSize = 0;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(569, 219);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(191, 37);
-            this.btnCancelar.TabIndex = 22;
-            this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            // 
-            // btnFinalizarOrden
-            // 
-            this.btnFinalizarOrden.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnFinalizarOrden.FlatAppearance.BorderSize = 0;
-            this.btnFinalizarOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinalizarOrden.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinalizarOrden.Location = new System.Drawing.Point(399, 262);
-            this.btnFinalizarOrden.Name = "btnFinalizarOrden";
-            this.btnFinalizarOrden.Size = new System.Drawing.Size(361, 37);
-            this.btnFinalizarOrden.TabIndex = 21;
-            this.btnFinalizarOrden.Text = "FINALIZAR ORDEN";
-            this.btnFinalizarOrden.UseVisualStyleBackColor = false;
-            // 
-            // btnAgregarOrdenConserjeria
-            // 
-            this.btnAgregarOrdenConserjeria.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnAgregarOrdenConserjeria.FlatAppearance.BorderSize = 0;
-            this.btnAgregarOrdenConserjeria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarOrdenConserjeria.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarOrdenConserjeria.Location = new System.Drawing.Point(32, 262);
-            this.btnAgregarOrdenConserjeria.Name = "btnAgregarOrdenConserjeria";
-            this.btnAgregarOrdenConserjeria.Size = new System.Drawing.Size(361, 37);
-            this.btnAgregarOrdenConserjeria.TabIndex = 20;
-            this.btnAgregarOrdenConserjeria.Text = "AGREGAR ORDEN DE CONSERJERIA";
-            this.btnAgregarOrdenConserjeria.UseVisualStyleBackColor = false;
-            // 
-            // btnBuscarCliente
-            // 
-            this.btnBuscarCliente.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnBuscarCliente.FlatAppearance.BorderSize = 0;
-            this.btnBuscarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarCliente.Location = new System.Drawing.Point(399, 219);
-            this.btnBuscarCliente.Name = "btnBuscarCliente";
-            this.btnBuscarCliente.Size = new System.Drawing.Size(164, 37);
-            this.btnBuscarCliente.TabIndex = 19;
-            this.btnBuscarCliente.Text = "BUSCAR CLIENTE";
-            this.btnBuscarCliente.UseVisualStyleBackColor = false;
-            // 
-            // btnAnularOrden
-            // 
-            this.btnAnularOrden.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnAnularOrden.FlatAppearance.BorderSize = 0;
-            this.btnAnularOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnularOrden.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnularOrden.Location = new System.Drawing.Point(212, 219);
-            this.btnAnularOrden.Name = "btnAnularOrden";
-            this.btnAnularOrden.Size = new System.Drawing.Size(181, 37);
-            this.btnAnularOrden.TabIndex = 18;
-            this.btnAnularOrden.Text = "ANULAR ORDEN ";
-            this.btnAnularOrden.UseVisualStyleBackColor = false;
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnNuevo.FlatAppearance.BorderSize = 0;
-            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(32, 219);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(174, 37);
-            this.btnNuevo.TabIndex = 17;
-            this.btnNuevo.Text = "NUEVO";
-            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevoCONSER.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnNuevoCONSER.FlatAppearance.BorderSize = 0;
+            this.btnNuevoCONSER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoCONSER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoCONSER.Location = new System.Drawing.Point(32, 209);
+            this.btnNuevoCONSER.Name = "btnNuevoCONSER";
+            this.btnNuevoCONSER.Size = new System.Drawing.Size(174, 37);
+            this.btnNuevoCONSER.TabIndex = 17;
+            this.btnNuevoCONSER.Text = "NUEVO";
+            this.btnNuevoCONSER.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
@@ -232,7 +153,7 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(399, 48);
+            this.groupBox2.Location = new System.Drawing.Point(399, 38);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(361, 165);
             this.groupBox2.TabIndex = 16;
@@ -300,7 +221,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(32, 48);
+            this.groupBox1.Location = new System.Drawing.Point(32, 38);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(361, 165);
             this.groupBox1.TabIndex = 15;
@@ -372,63 +293,87 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "ID Orden";
             // 
-            // panel1
+            // dtgvConserjeria
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel1.Controls.Add(this.btnMinimizar);
-            this.panel1.Controls.Add(this.btnRestaurar);
-            this.panel1.Controls.Add(this.btnMaximizar);
-            this.panel1.Controls.Add(this.btnSalir);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 35);
-            this.panel1.TabIndex = 24;
+            this.dtgvConserjeria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvConserjeria.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtgvConserjeria.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dtgvConserjeria.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvConserjeria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvConserjeria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvConserjeria.ColumnHeadersHeight = 40;
+            this.dtgvConserjeria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvConserjeria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDORDEN,
+            this.Fech,
+            this.dni,
+            this.NumHab,
+            this.TO,
+            this.EA,
+            this.EO});
+            this.dtgvConserjeria.EnableHeadersVisualStyles = false;
+            this.dtgvConserjeria.GridColor = System.Drawing.Color.DarkOrange;
+            this.dtgvConserjeria.Location = new System.Drawing.Point(32, 306);
+            this.dtgvConserjeria.Name = "dtgvConserjeria";
+            this.dtgvConserjeria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvConserjeria.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.NavajoWhite;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgvConserjeria.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgvConserjeria.Size = new System.Drawing.Size(728, 227);
+            this.dtgvConserjeria.TabIndex = 24;
             // 
-            // btnMinimizar
+            // IDORDEN
             // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(698, 6);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 3;
-            this.btnMinimizar.TabStop = false;
+            this.IDORDEN.HeaderText = "ID Orden";
+            this.IDORDEN.Name = "IDORDEN";
             // 
-            // btnRestaurar
+            // Fech
             // 
-            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(729, 6);
-            this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
-            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRestaurar.TabIndex = 2;
-            this.btnRestaurar.TabStop = false;
+            this.Fech.HeaderText = "Fecha de Orden";
+            this.Fech.Name = "Fech";
             // 
-            // btnMaximizar
+            // dni
             // 
-            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(729, 6);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
-            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizar.TabIndex = 1;
-            this.btnMaximizar.TabStop = false;
-            this.btnMaximizar.Visible = false;
+            this.dni.HeaderText = "Datos del Cliente";
+            this.dni.Name = "dni";
             // 
-            // btnSalir
+            // NumHab
             // 
-            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.Location = new System.Drawing.Point(763, 6);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(25, 25);
-            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSalir.TabIndex = 0;
-            this.btnSalir.TabStop = false;
+            this.NumHab.HeaderText = "Número de Habitación";
+            this.NumHab.Name = "NumHab";
+            // 
+            // TO
+            // 
+            this.TO.HeaderText = "Tipo de Orden";
+            this.TO.Name = "TO";
+            // 
+            // EA
+            // 
+            this.EA.HeaderText = "Equipo Asignado";
+            this.EA.Name = "EA";
+            // 
+            // EO
+            // 
+            this.EO.HeaderText = "Estado de Orden";
+            this.EO.Name = "EO";
             // 
             // OrdenConserjeria
             // 
@@ -436,47 +381,34 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(800, 578);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtgvConserjeria);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnFinalizarOrden);
-            this.Controls.Add(this.btnAgregarOrdenConserjeria);
-            this.Controls.Add(this.btnBuscarCliente);
-            this.Controls.Add(this.btnAnularOrden);
-            this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.btnCancelarCONSER);
+            this.Controls.Add(this.btnFinalizarOrdenCONSER);
+            this.Controls.Add(this.btnAgregarOrdenConCONSER);
+            this.Controls.Add(this.btnBuscarClienteCONSER);
+            this.Controls.Add(this.btnAnularOrdenCONSER);
+            this.Controls.Add(this.btnNuevoCONSER);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OrdenConserjeria";
             this.Text = "OrdenConserjeria";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dtgvConserjeria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDORDEN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumHab;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fech;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dni;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomb;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnFinalizarOrden;
-        private System.Windows.Forms.Button btnAgregarOrdenConserjeria;
-        private System.Windows.Forms.Button btnBuscarCliente;
-        private System.Windows.Forms.Button btnAnularOrden;
-        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnCancelarCONSER;
+        private System.Windows.Forms.Button btnFinalizarOrdenCONSER;
+        private System.Windows.Forms.Button btnAgregarOrdenConCONSER;
+        private System.Windows.Forms.Button btnBuscarClienteCONSER;
+        private System.Windows.Forms.Button btnAnularOrdenCONSER;
+        private System.Windows.Forms.Button btnNuevoCONSER;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ComboBox comboBox3;
@@ -493,10 +425,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnRestaurar;
-        private System.Windows.Forms.PictureBox btnMaximizar;
-        private System.Windows.Forms.PictureBox btnSalir;
+        private System.Windows.Forms.DataGridView dtgvConserjeria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDORDEN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fech;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dni;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumHab;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EO;
     }
 }
