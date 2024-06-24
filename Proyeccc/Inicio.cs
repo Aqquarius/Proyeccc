@@ -16,5 +16,11 @@ namespace Proyeccc
         {
             InitializeComponent();
         }
+
+        private void menuClientes_Click(object sender, EventArgs e)
+        {
+            MantenedorCliente mCliente = new MantenedorCliente();
+            mCliente.Show();
+        }
     }
 }

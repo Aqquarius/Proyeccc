@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
+using CapaLogica;
 
 namespace Proyeccc
 {
@@ -15,6 +17,11 @@ namespace Proyeccc
         public MantenedorCliente()
         {
             InitializeComponent();
+            listarUsuario();
+        }
+        public void listarUsuario()
+        {
+            dgvCliente.DataSource = logUsuario.Instancia.listarUsuario();
         }
     }
 }

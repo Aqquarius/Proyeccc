@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuFormasdePago = new FontAwesome.Sharp.IconMenuItem();
+            this.menuOrdendeReserva = new FontAwesome.Sharp.IconMenuItem();
+            this.menuEmpleados = new FontAwesome.Sharp.IconMenuItem();
+            this.menuClientes = new FontAwesome.Sharp.IconMenuItem();
+            this.menuHabitaciones = new FontAwesome.Sharp.IconMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuHabitaciones = new FontAwesome.Sharp.IconMenuItem();
-            this.menuClientes = new FontAwesome.Sharp.IconMenuItem();
-            this.menuEmpleados = new FontAwesome.Sharp.IconMenuItem();
-            this.menuOrdendeReserva = new FontAwesome.Sharp.IconMenuItem();
-            this.menuFormasdePago = new FontAwesome.Sharp.IconMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,67 @@
             this.menuStrip1.Size = new System.Drawing.Size(642, 83);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuFormasdePago
+            // 
+            this.menuFormasdePago.IconChar = FontAwesome.Sharp.IconChar.Paypal;
+            this.menuFormasdePago.IconColor = System.Drawing.Color.Black;
+            this.menuFormasdePago.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuFormasdePago.IconSize = 60;
+            this.menuFormasdePago.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuFormasdePago.Name = "menuFormasdePago";
+            this.menuFormasdePago.Size = new System.Drawing.Size(104, 79);
+            this.menuFormasdePago.Text = "Formas de Pago";
+            this.menuFormasdePago.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // menuOrdendeReserva
+            // 
+            this.menuOrdendeReserva.IconChar = FontAwesome.Sharp.IconChar.FolderMinus;
+            this.menuOrdendeReserva.IconColor = System.Drawing.Color.Black;
+            this.menuOrdendeReserva.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuOrdendeReserva.IconSize = 60;
+            this.menuOrdendeReserva.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuOrdendeReserva.Name = "menuOrdendeReserva";
+            this.menuOrdendeReserva.Size = new System.Drawing.Size(111, 79);
+            this.menuOrdendeReserva.Text = "Orden de Reserva";
+            this.menuOrdendeReserva.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // menuEmpleados
+            // 
+            this.menuEmpleados.IconChar = FontAwesome.Sharp.IconChar.Elevator;
+            this.menuEmpleados.IconColor = System.Drawing.Color.Black;
+            this.menuEmpleados.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuEmpleados.IconSize = 60;
+            this.menuEmpleados.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuEmpleados.Name = "menuEmpleados";
+            this.menuEmpleados.Size = new System.Drawing.Size(77, 79);
+            this.menuEmpleados.Text = "Empleados";
+            this.menuEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // menuClientes
+            // 
+            this.menuClientes.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
+            this.menuClientes.IconColor = System.Drawing.Color.Black;
+            this.menuClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuClientes.IconSize = 60;
+            this.menuClientes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuClientes.Name = "menuClientes";
+            this.menuClientes.Size = new System.Drawing.Size(72, 79);
+            this.menuClientes.Text = "Clientes";
+            this.menuClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuClientes.Click += new System.EventHandler(this.menuClientes_Click);
+            // 
+            // menuHabitaciones
+            // 
+            this.menuHabitaciones.IconChar = FontAwesome.Sharp.IconChar.Bed;
+            this.menuHabitaciones.IconColor = System.Drawing.Color.Black;
+            this.menuHabitaciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuHabitaciones.IconSize = 60;
+            this.menuHabitaciones.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuHabitaciones.Name = "menuHabitaciones";
+            this.menuHabitaciones.Size = new System.Drawing.Size(88, 79);
+            this.menuHabitaciones.Text = "Habitaciones";
+            this.menuHabitaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // menuStrip2
             // 
@@ -74,66 +135,6 @@
             this.label1.Size = new System.Drawing.Size(143, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "SISTEMA HOTELERO";
-            // 
-            // menuHabitaciones
-            // 
-            this.menuHabitaciones.IconChar = FontAwesome.Sharp.IconChar.Bed;
-            this.menuHabitaciones.IconColor = System.Drawing.Color.Black;
-            this.menuHabitaciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuHabitaciones.IconSize = 60;
-            this.menuHabitaciones.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuHabitaciones.Name = "menuHabitaciones";
-            this.menuHabitaciones.Size = new System.Drawing.Size(88, 79);
-            this.menuHabitaciones.Text = "Habitaciones";
-            this.menuHabitaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // menuClientes
-            // 
-            this.menuClientes.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
-            this.menuClientes.IconColor = System.Drawing.Color.Black;
-            this.menuClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuClientes.IconSize = 60;
-            this.menuClientes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuClientes.Name = "menuClientes";
-            this.menuClientes.Size = new System.Drawing.Size(72, 79);
-            this.menuClientes.Text = "Clientes";
-            this.menuClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // menuEmpleados
-            // 
-            this.menuEmpleados.IconChar = FontAwesome.Sharp.IconChar.Elevator;
-            this.menuEmpleados.IconColor = System.Drawing.Color.Black;
-            this.menuEmpleados.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuEmpleados.IconSize = 60;
-            this.menuEmpleados.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuEmpleados.Name = "menuEmpleados";
-            this.menuEmpleados.Size = new System.Drawing.Size(77, 79);
-            this.menuEmpleados.Text = "Empleados";
-            this.menuEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // menuOrdendeReserva
-            // 
-            this.menuOrdendeReserva.IconChar = FontAwesome.Sharp.IconChar.FolderMinus;
-            this.menuOrdendeReserva.IconColor = System.Drawing.Color.Black;
-            this.menuOrdendeReserva.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuOrdendeReserva.IconSize = 60;
-            this.menuOrdendeReserva.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuOrdendeReserva.Name = "menuOrdendeReserva";
-            this.menuOrdendeReserva.Size = new System.Drawing.Size(111, 79);
-            this.menuOrdendeReserva.Text = "Orden de Reserva";
-            this.menuOrdendeReserva.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // menuFormasdePago
-            // 
-            this.menuFormasdePago.IconChar = FontAwesome.Sharp.IconChar.Paypal;
-            this.menuFormasdePago.IconColor = System.Drawing.Color.Black;
-            this.menuFormasdePago.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuFormasdePago.IconSize = 60;
-            this.menuFormasdePago.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuFormasdePago.Name = "menuFormasdePago";
-            this.menuFormasdePago.Size = new System.Drawing.Size(104, 79);
-            this.menuFormasdePago.Text = "Formas de Pago";
-            this.menuFormasdePago.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // Inicio
             // 
