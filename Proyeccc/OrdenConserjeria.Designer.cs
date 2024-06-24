@@ -72,7 +72,7 @@
             this.btnCancelarCONSER.FlatAppearance.BorderSize = 0;
             this.btnCancelarCONSER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarCONSER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarCONSER.Location = new System.Drawing.Point(569, 209);
+            this.btnCancelarCONSER.Location = new System.Drawing.Point(573, 233);
             this.btnCancelarCONSER.Name = "btnCancelarCONSER";
             this.btnCancelarCONSER.Size = new System.Drawing.Size(191, 37);
             this.btnCancelarCONSER.TabIndex = 22;
@@ -85,7 +85,7 @@
             this.btnFinalizarOrdenCONSER.FlatAppearance.BorderSize = 0;
             this.btnFinalizarOrdenCONSER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinalizarOrdenCONSER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinalizarOrdenCONSER.Location = new System.Drawing.Point(399, 252);
+            this.btnFinalizarOrdenCONSER.Location = new System.Drawing.Point(403, 276);
             this.btnFinalizarOrdenCONSER.Name = "btnFinalizarOrdenCONSER";
             this.btnFinalizarOrdenCONSER.Size = new System.Drawing.Size(361, 37);
             this.btnFinalizarOrdenCONSER.TabIndex = 21;
@@ -98,7 +98,7 @@
             this.btnAgregarOrdenConCONSER.FlatAppearance.BorderSize = 0;
             this.btnAgregarOrdenConCONSER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarOrdenConCONSER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarOrdenConCONSER.Location = new System.Drawing.Point(32, 252);
+            this.btnAgregarOrdenConCONSER.Location = new System.Drawing.Point(36, 276);
             this.btnAgregarOrdenConCONSER.Name = "btnAgregarOrdenConCONSER";
             this.btnAgregarOrdenConCONSER.Size = new System.Drawing.Size(361, 37);
             this.btnAgregarOrdenConCONSER.TabIndex = 20;
@@ -111,7 +111,7 @@
             this.btnBuscarClienteCONSER.FlatAppearance.BorderSize = 0;
             this.btnBuscarClienteCONSER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarClienteCONSER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarClienteCONSER.Location = new System.Drawing.Point(399, 209);
+            this.btnBuscarClienteCONSER.Location = new System.Drawing.Point(403, 233);
             this.btnBuscarClienteCONSER.Name = "btnBuscarClienteCONSER";
             this.btnBuscarClienteCONSER.Size = new System.Drawing.Size(164, 37);
             this.btnBuscarClienteCONSER.TabIndex = 19;
@@ -124,7 +124,7 @@
             this.btnAnularOrdenCONSER.FlatAppearance.BorderSize = 0;
             this.btnAnularOrdenCONSER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnularOrdenCONSER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnularOrdenCONSER.Location = new System.Drawing.Point(212, 209);
+            this.btnAnularOrdenCONSER.Location = new System.Drawing.Point(216, 233);
             this.btnAnularOrdenCONSER.Name = "btnAnularOrdenCONSER";
             this.btnAnularOrdenCONSER.Size = new System.Drawing.Size(181, 37);
             this.btnAnularOrdenCONSER.TabIndex = 18;
@@ -137,7 +137,7 @@
             this.btnNuevoCONSER.FlatAppearance.BorderSize = 0;
             this.btnNuevoCONSER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoCONSER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoCONSER.Location = new System.Drawing.Point(32, 209);
+            this.btnNuevoCONSER.Location = new System.Drawing.Point(36, 233);
             this.btnNuevoCONSER.Name = "btnNuevoCONSER";
             this.btnNuevoCONSER.Size = new System.Drawing.Size(174, 37);
             this.btnNuevoCONSER.TabIndex = 17;
@@ -153,7 +153,7 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(399, 38);
+            this.groupBox2.Location = new System.Drawing.Point(403, 62);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(361, 165);
             this.groupBox2.TabIndex = 16;
@@ -221,7 +221,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(32, 38);
+            this.groupBox1.Location = new System.Drawing.Point(36, 62);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(361, 165);
             this.groupBox1.TabIndex = 15;
@@ -320,7 +320,7 @@
             this.EO});
             this.dtgvConserjeria.EnableHeadersVisualStyles = false;
             this.dtgvConserjeria.GridColor = System.Drawing.Color.DarkOrange;
-            this.dtgvConserjeria.Location = new System.Drawing.Point(32, 306);
+            this.dtgvConserjeria.Location = new System.Drawing.Point(36, 330);
             this.dtgvConserjeria.Name = "dtgvConserjeria";
             this.dtgvConserjeria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -380,7 +380,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
-            this.ClientSize = new System.Drawing.Size(800, 578);
+            this.ClientSize = new System.Drawing.Size(804, 647);
             this.Controls.Add(this.dtgvConserjeria);
             this.Controls.Add(this.btnCancelarCONSER);
             this.Controls.Add(this.btnFinalizarOrdenCONSER);

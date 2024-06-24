@@ -32,7 +32,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnSalirMPAGO = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnGuardarMPAGO = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,16 +43,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnGuardarMPAGO = new System.Windows.Forms.Button();
-            this.btnSalirMPAGO = new System.Windows.Forms.Button();
-            this.btnAgregarMPAGO = new System.Windows.Forms.Button();
-            this.btnModificarMPAGO = new System.Windows.Forms.Button();
-            this.btnEliminarMPAGO = new System.Windows.Forms.Button();
             this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
             this.Fech = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.es = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEliminarMPAGO = new System.Windows.Forms.Button();
+            this.btnModificarMPAGO = new System.Windows.Forms.Button();
+            this.btnAgregarMPAGO = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
@@ -76,12 +76,38 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "METODO PAGO";
             // 
+            // btnSalirMPAGO
+            // 
+            this.btnSalirMPAGO.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnSalirMPAGO.FlatAppearance.BorderSize = 0;
+            this.btnSalirMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalirMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalirMPAGO.Location = new System.Drawing.Point(383, 147);
+            this.btnSalirMPAGO.Name = "btnSalirMPAGO";
+            this.btnSalirMPAGO.Size = new System.Drawing.Size(109, 24);
+            this.btnSalirMPAGO.TabIndex = 45;
+            this.btnSalirMPAGO.Text = "SALIR";
+            this.btnSalirMPAGO.UseVisualStyleBackColor = false;
+            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(563, 52);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(121, 22);
             this.textBox2.TabIndex = 12;
+            // 
+            // btnGuardarMPAGO
+            // 
+            this.btnGuardarMPAGO.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnGuardarMPAGO.FlatAppearance.BorderSize = 0;
+            this.btnGuardarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarMPAGO.Location = new System.Drawing.Point(227, 147);
+            this.btnGuardarMPAGO.Name = "btnGuardarMPAGO";
+            this.btnGuardarMPAGO.Size = new System.Drawing.Size(109, 24);
+            this.btnGuardarMPAGO.TabIndex = 44;
+            this.btnGuardarMPAGO.Text = "GUARDAR";
+            this.btnGuardarMPAGO.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -158,71 +184,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "INFORMACION";
             // 
-            // btnGuardarMPAGO
-            // 
-            this.btnGuardarMPAGO.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnGuardarMPAGO.FlatAppearance.BorderSize = 0;
-            this.btnGuardarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarMPAGO.Location = new System.Drawing.Point(227, 147);
-            this.btnGuardarMPAGO.Name = "btnGuardarMPAGO";
-            this.btnGuardarMPAGO.Size = new System.Drawing.Size(109, 24);
-            this.btnGuardarMPAGO.TabIndex = 44;
-            this.btnGuardarMPAGO.Text = "GUARDAR";
-            this.btnGuardarMPAGO.UseVisualStyleBackColor = false;
-            // 
-            // btnSalirMPAGO
-            // 
-            this.btnSalirMPAGO.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnSalirMPAGO.FlatAppearance.BorderSize = 0;
-            this.btnSalirMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalirMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalirMPAGO.Location = new System.Drawing.Point(383, 147);
-            this.btnSalirMPAGO.Name = "btnSalirMPAGO";
-            this.btnSalirMPAGO.Size = new System.Drawing.Size(109, 24);
-            this.btnSalirMPAGO.TabIndex = 45;
-            this.btnSalirMPAGO.Text = "SALIR";
-            this.btnSalirMPAGO.UseVisualStyleBackColor = false;
-            // 
-            // btnAgregarMPAGO
-            // 
-            this.btnAgregarMPAGO.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnAgregarMPAGO.FlatAppearance.BorderSize = 0;
-            this.btnAgregarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarMPAGO.Location = new System.Drawing.Point(583, 63);
-            this.btnAgregarMPAGO.Name = "btnAgregarMPAGO";
-            this.btnAgregarMPAGO.Size = new System.Drawing.Size(137, 36);
-            this.btnAgregarMPAGO.TabIndex = 46;
-            this.btnAgregarMPAGO.Text = "AGREGAR";
-            this.btnAgregarMPAGO.UseVisualStyleBackColor = false;
-            // 
-            // btnModificarMPAGO
-            // 
-            this.btnModificarMPAGO.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnModificarMPAGO.FlatAppearance.BorderSize = 0;
-            this.btnModificarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarMPAGO.Location = new System.Drawing.Point(583, 113);
-            this.btnModificarMPAGO.Name = "btnModificarMPAGO";
-            this.btnModificarMPAGO.Size = new System.Drawing.Size(137, 36);
-            this.btnModificarMPAGO.TabIndex = 47;
-            this.btnModificarMPAGO.Text = "MODIFICAR";
-            this.btnModificarMPAGO.UseVisualStyleBackColor = false;
-            // 
-            // btnEliminarMPAGO
-            // 
-            this.btnEliminarMPAGO.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnEliminarMPAGO.FlatAppearance.BorderSize = 0;
-            this.btnEliminarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarMPAGO.Location = new System.Drawing.Point(583, 165);
-            this.btnEliminarMPAGO.Name = "btnEliminarMPAGO";
-            this.btnEliminarMPAGO.Size = new System.Drawing.Size(137, 36);
-            this.btnEliminarMPAGO.TabIndex = 48;
-            this.btnEliminarMPAGO.Text = "ELIMINAR";
-            this.btnEliminarMPAGO.UseVisualStyleBackColor = false;
-            // 
             // dtgvConserjeria
             // 
             this.dtgvConserjeria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -287,12 +248,51 @@
             this.es.HeaderText = "Estado";
             this.es.Name = "es";
             // 
+            // btnEliminarMPAGO
+            // 
+            this.btnEliminarMPAGO.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnEliminarMPAGO.FlatAppearance.BorderSize = 0;
+            this.btnEliminarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarMPAGO.Location = new System.Drawing.Point(583, 165);
+            this.btnEliminarMPAGO.Name = "btnEliminarMPAGO";
+            this.btnEliminarMPAGO.Size = new System.Drawing.Size(137, 36);
+            this.btnEliminarMPAGO.TabIndex = 48;
+            this.btnEliminarMPAGO.Text = "ELIMINAR";
+            this.btnEliminarMPAGO.UseVisualStyleBackColor = false;
+            // 
+            // btnModificarMPAGO
+            // 
+            this.btnModificarMPAGO.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnModificarMPAGO.FlatAppearance.BorderSize = 0;
+            this.btnModificarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarMPAGO.Location = new System.Drawing.Point(583, 113);
+            this.btnModificarMPAGO.Name = "btnModificarMPAGO";
+            this.btnModificarMPAGO.Size = new System.Drawing.Size(137, 36);
+            this.btnModificarMPAGO.TabIndex = 47;
+            this.btnModificarMPAGO.Text = "MODIFICAR";
+            this.btnModificarMPAGO.UseVisualStyleBackColor = false;
+            // 
+            // btnAgregarMPAGO
+            // 
+            this.btnAgregarMPAGO.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnAgregarMPAGO.FlatAppearance.BorderSize = 0;
+            this.btnAgregarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarMPAGO.Location = new System.Drawing.Point(583, 63);
+            this.btnAgregarMPAGO.Name = "btnAgregarMPAGO";
+            this.btnAgregarMPAGO.Size = new System.Drawing.Size(137, 36);
+            this.btnAgregarMPAGO.TabIndex = 46;
+            this.btnAgregarMPAGO.Text = "AGREGAR";
+            this.btnAgregarMPAGO.UseVisualStyleBackColor = false;
+            // 
             // MantenedorFormasdePago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
-            this.ClientSize = new System.Drawing.Size(800, 578);
+            this.ClientSize = new System.Drawing.Size(804, 647);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

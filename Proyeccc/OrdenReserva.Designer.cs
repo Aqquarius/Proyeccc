@@ -83,7 +83,7 @@
             this.btnConfimarRESER.FlatAppearance.BorderSize = 0;
             this.btnConfimarRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfimarRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfimarRESER.Location = new System.Drawing.Point(574, 521);
+            this.btnConfimarRESER.Location = new System.Drawing.Point(578, 580);
             this.btnConfimarRESER.Name = "btnConfimarRESER";
             this.btnConfimarRESER.Size = new System.Drawing.Size(164, 37);
             this.btnConfimarRESER.TabIndex = 37;
@@ -96,7 +96,7 @@
             this.btnAnularRESER.FlatAppearance.BorderSize = 0;
             this.btnAnularRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnularRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnularRESER.Location = new System.Drawing.Point(398, 521);
+            this.btnAnularRESER.Location = new System.Drawing.Point(402, 580);
             this.btnAnularRESER.Name = "btnAnularRESER";
             this.btnAnularRESER.Size = new System.Drawing.Size(164, 37);
             this.btnAnularRESER.TabIndex = 36;
@@ -109,7 +109,7 @@
             this.btnCancelarRESER.FlatAppearance.BorderSize = 0;
             this.btnCancelarRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarRESER.Location = new System.Drawing.Point(222, 521);
+            this.btnCancelarRESER.Location = new System.Drawing.Point(226, 580);
             this.btnCancelarRESER.Name = "btnCancelarRESER";
             this.btnCancelarRESER.Size = new System.Drawing.Size(164, 37);
             this.btnCancelarRESER.TabIndex = 35;
@@ -122,7 +122,7 @@
             this.btnNuevoRESER.FlatAppearance.BorderSize = 0;
             this.btnNuevoRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoRESER.Location = new System.Drawing.Point(46, 521);
+            this.btnNuevoRESER.Location = new System.Drawing.Point(50, 580);
             this.btnNuevoRESER.Name = "btnNuevoRESER";
             this.btnNuevoRESER.Size = new System.Drawing.Size(164, 37);
             this.btnNuevoRESER.TabIndex = 34;
@@ -504,7 +504,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
-            this.ClientSize = new System.Drawing.Size(800, 578);
+            this.ClientSize = new System.Drawing.Size(804, 647);
             this.Controls.Add(this.dtgvConserjeria);
             this.Controls.Add(this.btnConfimarRESER);
             this.Controls.Add(this.btnAnularRESER);

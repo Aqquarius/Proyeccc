@@ -95,6 +95,12 @@
     <Compile Include="OrdenConserjeria.Designer.cs">
       <DependentUpon>OrdenConserjeria.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrdenHospedaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenHospedaje.Designer.cs">
+      <DependentUpon>OrdenHospedaje.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrdenReserva.cs">
       <SubType>Form</SubType>
     </Compile>

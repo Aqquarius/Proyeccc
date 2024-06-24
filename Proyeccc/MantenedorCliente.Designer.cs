@@ -87,7 +87,7 @@
             this.te});
             this.dtgvConserjeria.EnableHeadersVisualStyles = false;
             this.dtgvConserjeria.GridColor = System.Drawing.Color.DarkOrange;
-            this.dtgvConserjeria.Location = new System.Drawing.Point(35, 251);
+            this.dtgvConserjeria.Location = new System.Drawing.Point(36, 276);
             this.dtgvConserjeria.Name = "dtgvConserjeria";
             this.dtgvConserjeria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -143,9 +143,9 @@
             this.btnEliminarCL.FlatAppearance.BorderSize = 0;
             this.btnEliminarCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarCL.Location = new System.Drawing.Point(661, 421);
+            this.btnEliminarCL.Location = new System.Drawing.Point(663, 468);
             this.btnEliminarCL.Name = "btnEliminarCL";
-            this.btnEliminarCL.Size = new System.Drawing.Size(117, 37);
+            this.btnEliminarCL.Size = new System.Drawing.Size(118, 41);
             this.btnEliminarCL.TabIndex = 51;
             this.btnEliminarCL.Text = "ELIMINAR";
             this.btnEliminarCL.UseVisualStyleBackColor = false;
@@ -156,9 +156,9 @@
             this.btnNuevoCL.FlatAppearance.BorderSize = 0;
             this.btnNuevoCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoCL.Location = new System.Drawing.Point(661, 309);
+            this.btnNuevoCL.Location = new System.Drawing.Point(663, 356);
             this.btnNuevoCL.Name = "btnNuevoCL";
-            this.btnNuevoCL.Size = new System.Drawing.Size(117, 37);
+            this.btnNuevoCL.Size = new System.Drawing.Size(118, 41);
             this.btnNuevoCL.TabIndex = 50;
             this.btnNuevoCL.Text = "NUEVO";
             this.btnNuevoCL.UseVisualStyleBackColor = false;
@@ -169,9 +169,9 @@
             this.btnModificarCL.FlatAppearance.BorderSize = 0;
             this.btnModificarCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarCL.Location = new System.Drawing.Point(661, 362);
+            this.btnModificarCL.Location = new System.Drawing.Point(663, 409);
             this.btnModificarCL.Name = "btnModificarCL";
-            this.btnModificarCL.Size = new System.Drawing.Size(117, 37);
+            this.btnModificarCL.Size = new System.Drawing.Size(118, 41);
             this.btnModificarCL.TabIndex = 49;
             this.btnModificarCL.Text = "MODIFICAR";
             this.btnModificarCL.UseVisualStyleBackColor = false;
@@ -194,7 +194,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(35, 25);
+            this.groupBox1.Location = new System.Drawing.Point(36, 50);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(698, 220);
             this.groupBox1.TabIndex = 48;
@@ -341,7 +341,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
-            this.ClientSize = new System.Drawing.Size(800, 578);
+            this.ClientSize = new System.Drawing.Size(804, 647);
             this.Controls.Add(this.dtgvConserjeria);
             this.Controls.Add(this.btnEliminarCL);
             this.Controls.Add(this.btnNuevoCL);

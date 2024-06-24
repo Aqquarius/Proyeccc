@@ -32,7 +32,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCancelarHAB = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnAgregarHAB = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -52,8 +54,6 @@
             this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.es = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAgregarHAB = new System.Windows.Forms.Button();
-            this.btnCancelarHAB = new System.Windows.Forms.Button();
             this.btnNuevoHAB = new System.Windows.Forms.Button();
             this.btnModificarHAB = new System.Windows.Forms.Button();
             this.btnGuardModHAB = new System.Windows.Forms.Button();
@@ -82,10 +82,23 @@
             this.panel1.Controls.Add(this.comboBox2);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(24, 44);
+            this.panel1.Location = new System.Drawing.Point(32, 71);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(148, 427);
             this.panel1.TabIndex = 34;
+            // 
+            // btnCancelarHAB
+            // 
+            this.btnCancelarHAB.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnCancelarHAB.FlatAppearance.BorderSize = 0;
+            this.btnCancelarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarHAB.Location = new System.Drawing.Point(16, 374);
+            this.btnCancelarHAB.Name = "btnCancelarHAB";
+            this.btnCancelarHAB.Size = new System.Drawing.Size(109, 24);
+            this.btnCancelarHAB.TabIndex = 44;
+            this.btnCancelarHAB.Text = "CANCELAR";
+            this.btnCancelarHAB.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -95,6 +108,19 @@
             this.label2.Size = new System.Drawing.Size(43, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Datos";
+            // 
+            // btnAgregarHAB
+            // 
+            this.btnAgregarHAB.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnAgregarHAB.FlatAppearance.BorderSize = 0;
+            this.btnAgregarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarHAB.Location = new System.Drawing.Point(16, 343);
+            this.btnAgregarHAB.Name = "btnAgregarHAB";
+            this.btnAgregarHAB.Size = new System.Drawing.Size(109, 24);
+            this.btnAgregarHAB.TabIndex = 43;
+            this.btnAgregarHAB.Text = "AGREGAR";
+            this.btnAgregarHAB.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -221,7 +247,7 @@
             this.es});
             this.dtgvConserjeria.EnableHeadersVisualStyles = false;
             this.dtgvConserjeria.GridColor = System.Drawing.Color.DarkOrange;
-            this.dtgvConserjeria.Location = new System.Drawing.Point(193, 44);
+            this.dtgvConserjeria.Location = new System.Drawing.Point(201, 71);
             this.dtgvConserjeria.Name = "dtgvConserjeria";
             this.dtgvConserjeria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -271,39 +297,13 @@
             this.es.HeaderText = "Estado";
             this.es.Name = "es";
             // 
-            // btnAgregarHAB
-            // 
-            this.btnAgregarHAB.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnAgregarHAB.FlatAppearance.BorderSize = 0;
-            this.btnAgregarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarHAB.Location = new System.Drawing.Point(16, 343);
-            this.btnAgregarHAB.Name = "btnAgregarHAB";
-            this.btnAgregarHAB.Size = new System.Drawing.Size(109, 24);
-            this.btnAgregarHAB.TabIndex = 43;
-            this.btnAgregarHAB.Text = "AGREGAR";
-            this.btnAgregarHAB.UseVisualStyleBackColor = false;
-            // 
-            // btnCancelarHAB
-            // 
-            this.btnCancelarHAB.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnCancelarHAB.FlatAppearance.BorderSize = 0;
-            this.btnCancelarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarHAB.Location = new System.Drawing.Point(16, 374);
-            this.btnCancelarHAB.Name = "btnCancelarHAB";
-            this.btnCancelarHAB.Size = new System.Drawing.Size(109, 24);
-            this.btnCancelarHAB.TabIndex = 44;
-            this.btnCancelarHAB.Text = "CANCELAR";
-            this.btnCancelarHAB.UseVisualStyleBackColor = false;
-            // 
             // btnNuevoHAB
             // 
             this.btnNuevoHAB.BackColor = System.Drawing.Color.LightSalmon;
             this.btnNuevoHAB.FlatAppearance.BorderSize = 0;
             this.btnNuevoHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoHAB.Location = new System.Drawing.Point(210, 372);
+            this.btnNuevoHAB.Location = new System.Drawing.Point(218, 399);
             this.btnNuevoHAB.Name = "btnNuevoHAB";
             this.btnNuevoHAB.Size = new System.Drawing.Size(164, 44);
             this.btnNuevoHAB.TabIndex = 43;
@@ -316,7 +316,7 @@
             this.btnModificarHAB.FlatAppearance.BorderSize = 0;
             this.btnModificarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarHAB.Location = new System.Drawing.Point(380, 372);
+            this.btnModificarHAB.Location = new System.Drawing.Point(388, 399);
             this.btnModificarHAB.Name = "btnModificarHAB";
             this.btnModificarHAB.Size = new System.Drawing.Size(164, 44);
             this.btnModificarHAB.TabIndex = 44;
@@ -329,7 +329,7 @@
             this.btnGuardModHAB.FlatAppearance.BorderSize = 0;
             this.btnGuardModHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardModHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardModHAB.Location = new System.Drawing.Point(550, 372);
+            this.btnGuardModHAB.Location = new System.Drawing.Point(558, 399);
             this.btnGuardModHAB.Name = "btnGuardModHAB";
             this.btnGuardModHAB.Size = new System.Drawing.Size(167, 44);
             this.btnGuardModHAB.TabIndex = 45;
@@ -342,7 +342,7 @@
             this.btnCambiarModHAB.FlatAppearance.BorderSize = 0;
             this.btnCambiarModHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCambiarModHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCambiarModHAB.Location = new System.Drawing.Point(458, 422);
+            this.btnCambiarModHAB.Location = new System.Drawing.Point(466, 449);
             this.btnCambiarModHAB.Name = "btnCambiarModHAB";
             this.btnCambiarModHAB.Size = new System.Drawing.Size(259, 37);
             this.btnCambiarModHAB.TabIndex = 46;
@@ -355,7 +355,7 @@
             this.btnEliminarHAB.FlatAppearance.BorderSize = 0;
             this.btnEliminarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarHAB.Location = new System.Drawing.Point(210, 422);
+            this.btnEliminarHAB.Location = new System.Drawing.Point(218, 449);
             this.btnEliminarHAB.Name = "btnEliminarHAB";
             this.btnEliminarHAB.Size = new System.Drawing.Size(242, 37);
             this.btnEliminarHAB.TabIndex = 47;
@@ -367,7 +367,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
-            this.ClientSize = new System.Drawing.Size(800, 578);
+            this.ClientSize = new System.Drawing.Size(804, 647);
             this.Controls.Add(this.btnEliminarHAB);
             this.Controls.Add(this.btnCambiarModHAB);
             this.Controls.Add(this.btnGuardModHAB);
