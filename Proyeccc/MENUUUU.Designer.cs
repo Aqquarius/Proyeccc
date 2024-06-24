@@ -1,6 +1,6 @@
 ﻿namespace Proyeccc
 {
-    partial class Inicio
+    partial class MENUUUU
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MENUUUU));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.lblfecha = new System.Windows.Forms.Label();
-            this.lblhora = new System.Windows.Forms.Label();
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnOrdenConserjeria = new System.Windows.Forms.Button();
@@ -55,6 +54,9 @@
             this.btnRegistroPagos = new System.Windows.Forms.Button();
             this.btnRegistroCliente = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.lblfecha = new System.Windows.Forms.Label();
+            this.lblhora = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -63,11 +65,13 @@
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.btnRestaurar);
             this.panel1.Controls.Add(this.btnMinimizar);
             this.panel1.Controls.Add(this.btnMaximizar);
@@ -75,79 +79,68 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(922, 35);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(1009, 35);
+            this.panel1.TabIndex = 3;
+            // 
+            // panel9
+            // 
+            this.panel9.Location = new System.Drawing.Point(600, 118);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(322, 505);
+            this.panel9.TabIndex = 8;
             // 
             // btnRestaurar
             // 
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(849, 4);
+            this.btnRestaurar.Location = new System.Drawing.Point(936, 3);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnRestaurar.TabIndex = 3;
             this.btnRestaurar.TabStop = false;
             this.btnRestaurar.Visible = false;
+            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
             // 
             // btnMinimizar
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(813, 4);
+            this.btnMinimizar.Location = new System.Drawing.Point(900, 4);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 2;
             this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnMaximizar
             // 
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(849, 4);
+            this.btnMaximizar.Location = new System.Drawing.Point(936, 4);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximizar.TabIndex = 1;
             this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(885, 4);
+            this.btnCerrar.Location = new System.Drawing.Point(972, 4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(25, 25);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.TabStop = false;
-            // 
-            // lblfecha
-            // 
-            this.lblfecha.AutoSize = true;
-            this.lblfecha.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfecha.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblfecha.Location = new System.Drawing.Point(295, 344);
-            this.lblfecha.Name = "lblfecha";
-            this.lblfecha.Size = new System.Drawing.Size(142, 49);
-            this.lblfecha.TabIndex = 3;
-            this.lblfecha.Text = "label2";
-            // 
-            // lblhora
-            // 
-            this.lblhora.AutoSize = true;
-            this.lblhora.Font = new System.Drawing.Font("Century Gothic", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblhora.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.lblhora.Location = new System.Drawing.Point(367, 234);
-            this.lblhora.Name = "lblhora";
-            this.lblhora.Size = new System.Drawing.Size(280, 96);
-            this.lblhora.TabIndex = 2;
-            this.lblhora.Text = "label1";
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // MenuVertical
             // 
@@ -171,8 +164,8 @@
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 35);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(208, 612);
-            this.MenuVertical.TabIndex = 4;
+            this.MenuVertical.Size = new System.Drawing.Size(208, 636);
+            this.MenuVertical.TabIndex = 6;
             // 
             // panel8
             // 
@@ -187,7 +180,7 @@
             this.btnOrdenConserjeria.BackColor = System.Drawing.Color.White;
             this.btnOrdenConserjeria.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnOrdenConserjeria.FlatAppearance.BorderSize = 0;
-            this.btnOrdenConserjeria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnOrdenConserjeria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SandyBrown;
             this.btnOrdenConserjeria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrdenConserjeria.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrdenConserjeria.ForeColor = System.Drawing.Color.Black;
@@ -200,12 +193,13 @@
             this.btnOrdenConserjeria.Text = "Orden Conserjería";
             this.btnOrdenConserjeria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOrdenConserjeria.UseVisualStyleBackColor = false;
+            this.btnOrdenConserjeria.Click += new System.EventHandler(this.btnOrdenConserjeria_Click);
             // 
             // btnOrdenHospedaje
             // 
             this.btnOrdenHospedaje.BackColor = System.Drawing.Color.White;
             this.btnOrdenHospedaje.FlatAppearance.BorderSize = 0;
-            this.btnOrdenHospedaje.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnOrdenHospedaje.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SandyBrown;
             this.btnOrdenHospedaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrdenHospedaje.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrdenHospedaje.ForeColor = System.Drawing.Color.Black;
@@ -218,6 +212,7 @@
             this.btnOrdenHospedaje.Text = "Orden Hospedaje";
             this.btnOrdenHospedaje.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOrdenHospedaje.UseVisualStyleBackColor = false;
+            this.btnOrdenHospedaje.Click += new System.EventHandler(this.btnOrdenHospedaje_Click);
             // 
             // panel5
             // 
@@ -247,7 +242,7 @@
             // 
             this.btnOrdenReserva.BackColor = System.Drawing.Color.White;
             this.btnOrdenReserva.FlatAppearance.BorderSize = 0;
-            this.btnOrdenReserva.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnOrdenReserva.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SandyBrown;
             this.btnOrdenReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrdenReserva.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrdenReserva.ForeColor = System.Drawing.Color.Black;
@@ -260,12 +255,13 @@
             this.btnOrdenReserva.Text = "Orden Reserva";
             this.btnOrdenReserva.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOrdenReserva.UseVisualStyleBackColor = false;
+            this.btnOrdenReserva.Click += new System.EventHandler(this.btnOrdenReserva_Click);
             // 
             // btnTipodeHabitaciones
             // 
             this.btnTipodeHabitaciones.BackColor = System.Drawing.Color.White;
             this.btnTipodeHabitaciones.FlatAppearance.BorderSize = 0;
-            this.btnTipodeHabitaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnTipodeHabitaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SandyBrown;
             this.btnTipodeHabitaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTipodeHabitaciones.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTipodeHabitaciones.ForeColor = System.Drawing.Color.Black;
@@ -278,13 +274,14 @@
             this.btnTipodeHabitaciones.Text = "Tipo de Habitaciones";
             this.btnTipodeHabitaciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTipodeHabitaciones.UseVisualStyleBackColor = false;
+            this.btnTipodeHabitaciones.Click += new System.EventHandler(this.btnTipodeHabitaciones_Click);
             // 
             // btnRegistroEmpleados
             // 
             this.btnRegistroEmpleados.BackColor = System.Drawing.Color.White;
             this.btnRegistroEmpleados.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnRegistroEmpleados.FlatAppearance.BorderSize = 0;
-            this.btnRegistroEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnRegistroEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SandyBrown;
             this.btnRegistroEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistroEmpleados.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistroEmpleados.ForeColor = System.Drawing.Color.Black;
@@ -297,6 +294,7 @@
             this.btnRegistroEmpleados.Text = "Registro de Empleados";
             this.btnRegistroEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegistroEmpleados.UseVisualStyleBackColor = false;
+            this.btnRegistroEmpleados.Click += new System.EventHandler(this.btnRegistroEmpleados_Click);
             // 
             // panel3
             // 
@@ -309,9 +307,9 @@
             // btnSalir
             // 
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.Location = new System.Drawing.Point(-1, 567);
+            this.btnSalir.Location = new System.Drawing.Point(6, 583);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(50, 42);
+            this.btnSalir.Size = new System.Drawing.Size(36, 28);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSalir.TabIndex = 0;
             this.btnSalir.TabStop = false;
@@ -346,7 +344,7 @@
             // 
             this.btnRegistroPagos.BackColor = System.Drawing.Color.White;
             this.btnRegistroPagos.FlatAppearance.BorderSize = 0;
-            this.btnRegistroPagos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnRegistroPagos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SandyBrown;
             this.btnRegistroPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistroPagos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistroPagos.ForeColor = System.Drawing.Color.Black;
@@ -359,12 +357,13 @@
             this.btnRegistroPagos.Text = "Metodos de Pago";
             this.btnRegistroPagos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegistroPagos.UseVisualStyleBackColor = false;
+            this.btnRegistroPagos.Click += new System.EventHandler(this.btnRegistroPagos_Click);
             // 
             // btnRegistroCliente
             // 
             this.btnRegistroCliente.BackColor = System.Drawing.Color.White;
             this.btnRegistroCliente.FlatAppearance.BorderSize = 0;
-            this.btnRegistroCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnRegistroCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SandyBrown;
             this.btnRegistroCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistroCliente.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistroCliente.ForeColor = System.Drawing.Color.Black;
@@ -377,25 +376,57 @@
             this.btnRegistroCliente.Text = "Registro de Clientes";
             this.btnRegistroCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegistroCliente.UseVisualStyleBackColor = false;
+            this.btnRegistroCliente.Click += new System.EventHandler(this.btnRegistroCliente_Click);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Inicio
+            // panelContenedor
+            // 
+            this.panelContenedor.BackColor = System.Drawing.Color.NavajoWhite;
+            this.panelContenedor.Controls.Add(this.lblfecha);
+            this.panelContenedor.Controls.Add(this.lblhora);
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(208, 35);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(801, 636);
+            this.panelContenedor.TabIndex = 8;
+            // 
+            // lblfecha
+            // 
+            this.lblfecha.AutoSize = true;
+            this.lblfecha.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfecha.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblfecha.Location = new System.Drawing.Point(155, 313);
+            this.lblfecha.Name = "lblfecha";
+            this.lblfecha.Size = new System.Drawing.Size(142, 49);
+            this.lblfecha.TabIndex = 1;
+            this.lblfecha.Text = "label2";
+            // 
+            // lblhora
+            // 
+            this.lblhora.AutoSize = true;
+            this.lblhora.Font = new System.Drawing.Font("Century Gothic", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblhora.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.lblhora.Location = new System.Drawing.Point(202, 214);
+            this.lblhora.Name = "lblhora";
+            this.lblhora.Size = new System.Drawing.Size(280, 96);
+            this.lblhora.TabIndex = 0;
+            this.lblhora.Text = "label1";
+            // 
+            // MENUUUU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.NavajoWhite;
-            this.ClientSize = new System.Drawing.Size(922, 647);
+            this.ClientSize = new System.Drawing.Size(1009, 671);
+            this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.MenuVertical);
-            this.Controls.Add(this.lblfecha);
-            this.Controls.Add(this.lblhora);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Inicio";
-            this.Text = "Inicio";
+            this.Name = "MENUUUU";
+            this.Text = "MENUUUU";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
@@ -404,21 +435,29 @@
             this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelContenedor.ResumeLayout(false);
+            this.panelContenedor.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox btnRestaurar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.Label lblfecha;
-        private System.Windows.Forms.Label lblhora;
         private System.Windows.Forms.Panel MenuVertical;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button btnOrdenConserjeria;
+        private System.Windows.Forms.Button btnOrdenHospedaje;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btnOrdenReserva;
+        private System.Windows.Forms.Button btnTipodeHabitaciones;
         private System.Windows.Forms.Button btnRegistroEmpleados;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox btnSalir;
@@ -427,14 +466,9 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnRegistroPagos;
         private System.Windows.Forms.Button btnRegistroCliente;
-        private System.Windows.Forms.Button btnOrdenConserjeria;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button btnOrdenReserva;
-        private System.Windows.Forms.Button btnTipodeHabitaciones;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button btnOrdenHospedaje;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panelContenedor;
+        private System.Windows.Forms.Label lblfecha;
+        private System.Windows.Forms.Label lblhora;
     }
 }
