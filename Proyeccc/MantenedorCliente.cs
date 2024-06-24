@@ -21,7 +21,7 @@ namespace Proyeccc
         }
         public void listarUsuario()
         {
-            dgvCliente.DataSource = logUsuario.Instancia.listarUsuario();
+            dgvCliente.DataSource = CapaLogica.entUsuario.Instancia.listarUsuario();
         }
     }
 }
