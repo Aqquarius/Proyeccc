@@ -16,5 +16,11 @@ namespace Proyeccc
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblhora.Text = DateTime.Now.ToString("HH:mm:ss");
+            lblfecha.Text = DateTime.Now.ToLongDateString();
+        }
     }
 }

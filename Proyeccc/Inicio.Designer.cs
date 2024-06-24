@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
@@ -37,22 +38,23 @@
             this.lblfecha = new System.Windows.Forms.Label();
             this.lblhora = new System.Windows.Forms.Label();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.btnPresionSistolicaDiastolica = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btnOrdenConserjeria = new System.Windows.Forms.Button();
+            this.btnOrdenHospedaje = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnOrdenReserva = new System.Windows.Forms.Button();
+            this.btnTipodeHabitaciones = new System.Windows.Forms.Button();
+            this.btnRegistroEmpleados = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnDietas = new System.Windows.Forms.Button();
-            this.btnRegistroPaciente = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnRegistroPagos = new System.Windows.Forms.Button();
+            this.btnRegistroCliente = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -151,45 +153,150 @@
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.White;
             this.MenuVertical.Controls.Add(this.panel8);
-            this.MenuVertical.Controls.Add(this.button1);
-            this.MenuVertical.Controls.Add(this.button4);
+            this.MenuVertical.Controls.Add(this.btnOrdenConserjeria);
+            this.MenuVertical.Controls.Add(this.btnOrdenHospedaje);
             this.MenuVertical.Controls.Add(this.panel5);
             this.MenuVertical.Controls.Add(this.panel6);
             this.MenuVertical.Controls.Add(this.panel7);
-            this.MenuVertical.Controls.Add(this.button2);
-            this.MenuVertical.Controls.Add(this.button3);
-            this.MenuVertical.Controls.Add(this.btnPresionSistolicaDiastolica);
+            this.MenuVertical.Controls.Add(this.btnOrdenReserva);
+            this.MenuVertical.Controls.Add(this.btnTipodeHabitaciones);
+            this.MenuVertical.Controls.Add(this.btnRegistroEmpleados);
             this.MenuVertical.Controls.Add(this.panel3);
             this.MenuVertical.Controls.Add(this.btnSalir);
             this.MenuVertical.Controls.Add(this.panel2);
             this.MenuVertical.Controls.Add(this.pictureBox1);
             this.MenuVertical.Controls.Add(this.panel4);
-            this.MenuVertical.Controls.Add(this.btnDietas);
-            this.MenuVertical.Controls.Add(this.btnRegistroPaciente);
+            this.MenuVertical.Controls.Add(this.btnRegistroPagos);
+            this.MenuVertical.Controls.Add(this.btnRegistroCliente);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 35);
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(208, 612);
             this.MenuVertical.TabIndex = 4;
             // 
-            // btnPresionSistolicaDiastolica
+            // panel8
             // 
-            this.btnPresionSistolicaDiastolica.BackColor = System.Drawing.Color.White;
-            this.btnPresionSistolicaDiastolica.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnPresionSistolicaDiastolica.FlatAppearance.BorderSize = 0;
-            this.btnPresionSistolicaDiastolica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnPresionSistolicaDiastolica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPresionSistolicaDiastolica.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPresionSistolicaDiastolica.ForeColor = System.Drawing.Color.Black;
-            this.btnPresionSistolicaDiastolica.Image = ((System.Drawing.Image)(resources.GetObject("btnPresionSistolicaDiastolica.Image")));
-            this.btnPresionSistolicaDiastolica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPresionSistolicaDiastolica.Location = new System.Drawing.Point(8, 199);
-            this.btnPresionSistolicaDiastolica.Name = "btnPresionSistolicaDiastolica";
-            this.btnPresionSistolicaDiastolica.Size = new System.Drawing.Size(197, 52);
-            this.btnPresionSistolicaDiastolica.TabIndex = 8;
-            this.btnPresionSistolicaDiastolica.Text = "Registro de Empleados";
-            this.btnPresionSistolicaDiastolica.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPresionSistolicaDiastolica.UseVisualStyleBackColor = false;
+            this.panel8.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel8.Location = new System.Drawing.Point(0, 498);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(7, 52);
+            this.panel8.TabIndex = 14;
+            // 
+            // btnOrdenConserjeria
+            // 
+            this.btnOrdenConserjeria.BackColor = System.Drawing.Color.White;
+            this.btnOrdenConserjeria.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnOrdenConserjeria.FlatAppearance.BorderSize = 0;
+            this.btnOrdenConserjeria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnOrdenConserjeria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdenConserjeria.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdenConserjeria.ForeColor = System.Drawing.Color.Black;
+            this.btnOrdenConserjeria.Image = ((System.Drawing.Image)(resources.GetObject("btnOrdenConserjeria.Image")));
+            this.btnOrdenConserjeria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdenConserjeria.Location = new System.Drawing.Point(6, 377);
+            this.btnOrdenConserjeria.Name = "btnOrdenConserjeria";
+            this.btnOrdenConserjeria.Size = new System.Drawing.Size(198, 52);
+            this.btnOrdenConserjeria.TabIndex = 14;
+            this.btnOrdenConserjeria.Text = "Orden Conserjería";
+            this.btnOrdenConserjeria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOrdenConserjeria.UseVisualStyleBackColor = false;
+            // 
+            // btnOrdenHospedaje
+            // 
+            this.btnOrdenHospedaje.BackColor = System.Drawing.Color.White;
+            this.btnOrdenHospedaje.FlatAppearance.BorderSize = 0;
+            this.btnOrdenHospedaje.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnOrdenHospedaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdenHospedaje.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdenHospedaje.ForeColor = System.Drawing.Color.Black;
+            this.btnOrdenHospedaje.Image = ((System.Drawing.Image)(resources.GetObject("btnOrdenHospedaje.Image")));
+            this.btnOrdenHospedaje.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdenHospedaje.Location = new System.Drawing.Point(4, 494);
+            this.btnOrdenHospedaje.Name = "btnOrdenHospedaje";
+            this.btnOrdenHospedaje.Size = new System.Drawing.Size(201, 52);
+            this.btnOrdenHospedaje.TabIndex = 13;
+            this.btnOrdenHospedaje.Text = "Orden Hospedaje";
+            this.btnOrdenHospedaje.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOrdenHospedaje.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel5.Location = new System.Drawing.Point(0, 377);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(7, 52);
+            this.panel5.TabIndex = 13;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel6.Location = new System.Drawing.Point(0, 319);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(7, 52);
+            this.panel6.TabIndex = 11;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel7.Location = new System.Drawing.Point(-1, 438);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(7, 52);
+            this.panel7.TabIndex = 12;
+            // 
+            // btnOrdenReserva
+            // 
+            this.btnOrdenReserva.BackColor = System.Drawing.Color.White;
+            this.btnOrdenReserva.FlatAppearance.BorderSize = 0;
+            this.btnOrdenReserva.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnOrdenReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdenReserva.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdenReserva.ForeColor = System.Drawing.Color.Black;
+            this.btnOrdenReserva.Image = ((System.Drawing.Image)(resources.GetObject("btnOrdenReserva.Image")));
+            this.btnOrdenReserva.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdenReserva.Location = new System.Drawing.Point(3, 433);
+            this.btnOrdenReserva.Name = "btnOrdenReserva";
+            this.btnOrdenReserva.Size = new System.Drawing.Size(201, 52);
+            this.btnOrdenReserva.TabIndex = 9;
+            this.btnOrdenReserva.Text = "Orden Reserva";
+            this.btnOrdenReserva.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOrdenReserva.UseVisualStyleBackColor = false;
+            // 
+            // btnTipodeHabitaciones
+            // 
+            this.btnTipodeHabitaciones.BackColor = System.Drawing.Color.White;
+            this.btnTipodeHabitaciones.FlatAppearance.BorderSize = 0;
+            this.btnTipodeHabitaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnTipodeHabitaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTipodeHabitaciones.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTipodeHabitaciones.ForeColor = System.Drawing.Color.Black;
+            this.btnTipodeHabitaciones.Image = ((System.Drawing.Image)(resources.GetObject("btnTipodeHabitaciones.Image")));
+            this.btnTipodeHabitaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTipodeHabitaciones.Location = new System.Drawing.Point(2, 319);
+            this.btnTipodeHabitaciones.Name = "btnTipodeHabitaciones";
+            this.btnTipodeHabitaciones.Size = new System.Drawing.Size(203, 52);
+            this.btnTipodeHabitaciones.TabIndex = 10;
+            this.btnTipodeHabitaciones.Text = "Tipo de Habitaciones";
+            this.btnTipodeHabitaciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTipodeHabitaciones.UseVisualStyleBackColor = false;
+            // 
+            // btnRegistroEmpleados
+            // 
+            this.btnRegistroEmpleados.BackColor = System.Drawing.Color.White;
+            this.btnRegistroEmpleados.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnRegistroEmpleados.FlatAppearance.BorderSize = 0;
+            this.btnRegistroEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnRegistroEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistroEmpleados.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroEmpleados.ForeColor = System.Drawing.Color.Black;
+            this.btnRegistroEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroEmpleados.Image")));
+            this.btnRegistroEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistroEmpleados.Location = new System.Drawing.Point(8, 199);
+            this.btnRegistroEmpleados.Name = "btnRegistroEmpleados";
+            this.btnRegistroEmpleados.Size = new System.Drawing.Size(197, 52);
+            this.btnRegistroEmpleados.TabIndex = 8;
+            this.btnRegistroEmpleados.Text = "Registro de Empleados";
+            this.btnRegistroEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegistroEmpleados.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -235,146 +342,46 @@
             this.panel4.Size = new System.Drawing.Size(7, 52);
             this.panel4.TabIndex = 5;
             // 
-            // btnDietas
+            // btnRegistroPagos
             // 
-            this.btnDietas.BackColor = System.Drawing.Color.White;
-            this.btnDietas.FlatAppearance.BorderSize = 0;
-            this.btnDietas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnDietas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDietas.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDietas.ForeColor = System.Drawing.Color.Black;
-            this.btnDietas.Image = ((System.Drawing.Image)(resources.GetObject("btnDietas.Image")));
-            this.btnDietas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDietas.Location = new System.Drawing.Point(4, 262);
-            this.btnDietas.Name = "btnDietas";
-            this.btnDietas.Size = new System.Drawing.Size(201, 51);
-            this.btnDietas.TabIndex = 4;
-            this.btnDietas.Text = "Metodos de Pago";
-            this.btnDietas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDietas.UseVisualStyleBackColor = false;
+            this.btnRegistroPagos.BackColor = System.Drawing.Color.White;
+            this.btnRegistroPagos.FlatAppearance.BorderSize = 0;
+            this.btnRegistroPagos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnRegistroPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistroPagos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroPagos.ForeColor = System.Drawing.Color.Black;
+            this.btnRegistroPagos.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroPagos.Image")));
+            this.btnRegistroPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistroPagos.Location = new System.Drawing.Point(4, 262);
+            this.btnRegistroPagos.Name = "btnRegistroPagos";
+            this.btnRegistroPagos.Size = new System.Drawing.Size(201, 51);
+            this.btnRegistroPagos.TabIndex = 4;
+            this.btnRegistroPagos.Text = "Metodos de Pago";
+            this.btnRegistroPagos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegistroPagos.UseVisualStyleBackColor = false;
             // 
-            // btnRegistroPaciente
+            // btnRegistroCliente
             // 
-            this.btnRegistroPaciente.BackColor = System.Drawing.Color.White;
-            this.btnRegistroPaciente.FlatAppearance.BorderSize = 0;
-            this.btnRegistroPaciente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnRegistroPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistroPaciente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistroPaciente.ForeColor = System.Drawing.Color.Black;
-            this.btnRegistroPaciente.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroPaciente.Image")));
-            this.btnRegistroPaciente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistroPaciente.Location = new System.Drawing.Point(2, 141);
-            this.btnRegistroPaciente.Name = "btnRegistroPaciente";
-            this.btnRegistroPaciente.Size = new System.Drawing.Size(203, 52);
-            this.btnRegistroPaciente.TabIndex = 4;
-            this.btnRegistroPaciente.Text = "Registro de Clientes";
-            this.btnRegistroPaciente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRegistroPaciente.UseVisualStyleBackColor = false;
+            this.btnRegistroCliente.BackColor = System.Drawing.Color.White;
+            this.btnRegistroCliente.FlatAppearance.BorderSize = 0;
+            this.btnRegistroCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnRegistroCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistroCliente.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroCliente.ForeColor = System.Drawing.Color.Black;
+            this.btnRegistroCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroCliente.Image")));
+            this.btnRegistroCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistroCliente.Location = new System.Drawing.Point(2, 141);
+            this.btnRegistroCliente.Name = "btnRegistroCliente";
+            this.btnRegistroCliente.Size = new System.Drawing.Size(203, 52);
+            this.btnRegistroCliente.TabIndex = 4;
+            this.btnRegistroCliente.Text = "Registro de Clientes";
+            this.btnRegistroCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegistroCliente.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // timer1
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(9, 377);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 52);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Orden Conserjería";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel5.Location = new System.Drawing.Point(0, 377);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(7, 52);
-            this.panel5.TabIndex = 13;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel6.Location = new System.Drawing.Point(0, 319);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(7, 52);
-            this.panel6.TabIndex = 11;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel7.Location = new System.Drawing.Point(-1, 438);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(7, 52);
-            this.panel7.TabIndex = 12;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 433);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(201, 52);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Orden Reserva";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(1, 319);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(203, 52);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Habitaciones";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel8.Location = new System.Drawing.Point(0, 498);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(7, 52);
-            this.panel8.TabIndex = 14;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(4, 494);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(201, 52);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Orden Hospedaje";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Inicio
             // 
@@ -412,21 +419,22 @@
         private System.Windows.Forms.Label lblfecha;
         private System.Windows.Forms.Label lblhora;
         private System.Windows.Forms.Panel MenuVertical;
-        private System.Windows.Forms.Button btnPresionSistolicaDiastolica;
+        private System.Windows.Forms.Button btnRegistroEmpleados;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox btnSalir;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnDietas;
-        private System.Windows.Forms.Button btnRegistroPaciente;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRegistroPagos;
+        private System.Windows.Forms.Button btnRegistroCliente;
+        private System.Windows.Forms.Button btnOrdenConserjeria;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnOrdenReserva;
+        private System.Windows.Forms.Button btnTipodeHabitaciones;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnOrdenHospedaje;
+        private System.Windows.Forms.Timer timer1;
     }
 }
