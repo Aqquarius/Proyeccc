@@ -28,233 +28,391 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCancelarHAB = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnAgregarHAB = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.txtCodigodeHabitacion = new System.Windows.Forms.TextBox();
-            this.txtTipodeHabitacion = new System.Windows.Forms.TextBox();
-            this.txtPisodeHabitacion = new System.Windows.Forms.TextBox();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnDeshabilitar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
+            this.IDORDEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NumHab = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fech = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.es = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnNuevoHAB = new System.Windows.Forms.Button();
+            this.btnModificarHAB = new System.Windows.Forms.Button();
+            this.btnGuardModHAB = new System.Windows.Forms.Button();
+            this.btnCambiarModHAB = new System.Windows.Forms.Button();
+            this.btnEliminarHAB = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // panel1
             // 
-            this.groupBox1.Controls.Add(this.btnCancelar);
-            this.groupBox1.Controls.Add(this.btnModificar);
-            this.groupBox1.Controls.Add(this.btnAgregar);
-            this.groupBox1.Controls.Add(this.txtPrecio);
-            this.groupBox1.Controls.Add(this.txtPisodeHabitacion);
-            this.groupBox1.Controls.Add(this.txtTipodeHabitacion);
-            this.groupBox1.Controls.Add(this.txtCodigodeHabitacion);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(667, 223);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Habitaciones";
+            this.panel1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.panel1.Controls.Add(this.btnCancelarHAB);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.btnAgregarHAB);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(32, 71);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(148, 427);
+            this.panel1.TabIndex = 34;
             // 
-            // dataGridView1
+            // btnCancelarHAB
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 247);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(577, 187);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Codigo de Habitacion";
+            this.btnCancelarHAB.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnCancelarHAB.FlatAppearance.BorderSize = 0;
+            this.btnCancelarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarHAB.Location = new System.Drawing.Point(16, 374);
+            this.btnCancelarHAB.Name = "btnCancelarHAB";
+            this.btnCancelarHAB.Size = new System.Drawing.Size(109, 24);
+            this.btnCancelarHAB.TabIndex = 44;
+            this.btnCancelarHAB.Text = "CANCELAR";
+            this.btnCancelarHAB.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 103);
+            this.label2.Location = new System.Drawing.Point(10, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tipo de Habitacion";
+            this.label2.Size = new System.Drawing.Size(43, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Datos";
+            // 
+            // btnAgregarHAB
+            // 
+            this.btnAgregarHAB.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnAgregarHAB.FlatAppearance.BorderSize = 0;
+            this.btnAgregarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarHAB.Location = new System.Drawing.Point(16, 343);
+            this.btnAgregarHAB.Name = "btnAgregarHAB";
+            this.btnAgregarHAB.Size = new System.Drawing.Size(109, 24);
+            this.btnAgregarHAB.TabIndex = 43;
+            this.btnAgregarHAB.Text = "AGREGAR";
+            this.btnAgregarHAB.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 153);
+            this.label3.Location = new System.Drawing.Point(10, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Piso de Habitacion";
+            this.label3.Size = new System.Drawing.Size(89, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "ID Habitacion";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(13, 56);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(121, 22);
+            this.textBox2.TabIndex = 6;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(13, 190);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 25);
+            this.comboBox1.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(288, 52);
+            this.label4.Location = new System.Drawing.Point(10, 170);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Precio";
+            this.label4.Size = new System.Drawing.Size(31, 17);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Piso";
             // 
-            // checkBox1
+            // label5
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(291, 103);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(128, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Estado de Habitacion";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(10, 81);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(86, 17);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "# Habitacion";
             // 
-            // txtCodigodeHabitacion
+            // comboBox3
             // 
-            this.txtCodigodeHabitacion.Location = new System.Drawing.Point(121, 45);
-            this.txtCodigodeHabitacion.Name = "txtCodigodeHabitacion";
-            this.txtCodigodeHabitacion.Size = new System.Drawing.Size(131, 20);
-            this.txtCodigodeHabitacion.TabIndex = 5;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(13, 289);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 25);
+            this.comboBox3.TabIndex = 16;
             // 
-            // txtTipodeHabitacion
+            // textBox3
             // 
-            this.txtTipodeHabitacion.Location = new System.Drawing.Point(113, 96);
-            this.txtTipodeHabitacion.Name = "txtTipodeHabitacion";
-            this.txtTipodeHabitacion.Size = new System.Drawing.Size(131, 20);
-            this.txtTipodeHabitacion.TabIndex = 6;
+            this.textBox3.Location = new System.Drawing.Point(13, 98);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(121, 22);
+            this.textBox3.TabIndex = 10;
             // 
-            // txtPisodeHabitacion
+            // label8
             // 
-            this.txtPisodeHabitacion.Location = new System.Drawing.Point(113, 150);
-            this.txtPisodeHabitacion.Name = "txtPisodeHabitacion";
-            this.txtPisodeHabitacion.Size = new System.Drawing.Size(131, 20);
-            this.txtPisodeHabitacion.TabIndex = 7;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(13, 267);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 17);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Estado";
             // 
-            // txtPrecio
+            // label6
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(331, 52);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(131, 20);
-            this.txtPrecio.TabIndex = 8;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(13, 125);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 17);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Tipo Habitacion";
             // 
-            // btnNuevo
+            // textBox4
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(665, 272);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
-            this.btnNuevo.TabIndex = 2;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.textBox4.Location = new System.Drawing.Point(13, 241);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(121, 22);
+            this.textBox4.TabIndex = 14;
             // 
-            // btnEditar
+            // comboBox2
             // 
-            this.btnEditar.Location = new System.Drawing.Point(665, 316);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 23);
-            this.btnEditar.TabIndex = 3;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(13, 145);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 25);
+            this.comboBox2.TabIndex = 12;
             // 
-            // btnDeshabilitar
+            // label7
             // 
-            this.btnDeshabilitar.Location = new System.Drawing.Point(665, 357);
-            this.btnDeshabilitar.Name = "btnDeshabilitar";
-            this.btnDeshabilitar.Size = new System.Drawing.Size(75, 23);
-            this.btnDeshabilitar.TabIndex = 4;
-            this.btnDeshabilitar.Text = "Deshabilitar";
-            this.btnDeshabilitar.UseVisualStyleBackColor = true;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 218);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 17);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Precio";
             // 
-            // btnSalir
+            // dtgvConserjeria
             // 
-            this.btnSalir.Location = new System.Drawing.Point(665, 397);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 5;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.dtgvConserjeria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvConserjeria.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtgvConserjeria.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dtgvConserjeria.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvConserjeria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvConserjeria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvConserjeria.ColumnHeadersHeight = 40;
+            this.dtgvConserjeria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvConserjeria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDORDEN,
+            this.NumHab,
+            this.Fech,
+            this.dni,
+            this.nomb,
+            this.es});
+            this.dtgvConserjeria.EnableHeadersVisualStyles = false;
+            this.dtgvConserjeria.GridColor = System.Drawing.Color.DarkOrange;
+            this.dtgvConserjeria.Location = new System.Drawing.Point(201, 71);
+            this.dtgvConserjeria.Name = "dtgvConserjeria";
+            this.dtgvConserjeria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvConserjeria.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.NavajoWhite;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgvConserjeria.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgvConserjeria.Size = new System.Drawing.Size(580, 225);
+            this.dtgvConserjeria.TabIndex = 42;
             // 
-            // btnAgregar
+            // IDORDEN
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(524, 47);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 9;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.IDORDEN.HeaderText = "ID Habitación";
+            this.IDORDEN.Name = "IDORDEN";
             // 
-            // btnModificar
+            // NumHab
             // 
-            this.btnModificar.Location = new System.Drawing.Point(524, 96);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(79, 31);
-            this.btnModificar.TabIndex = 10;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
+            this.NumHab.HeaderText = "Número de Habitación";
+            this.NumHab.Name = "NumHab";
             // 
-            // btnCancelar
+            // Fech
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(528, 153);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 11;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.Fech.HeaderText = "Tipo de Habitación";
+            this.Fech.Name = "Fech";
+            // 
+            // dni
+            // 
+            this.dni.HeaderText = "Piso";
+            this.dni.Name = "dni";
+            // 
+            // nomb
+            // 
+            this.nomb.HeaderText = "Precio";
+            this.nomb.Name = "nomb";
+            // 
+            // es
+            // 
+            this.es.HeaderText = "Estado";
+            this.es.Name = "es";
+            // 
+            // btnNuevoHAB
+            // 
+            this.btnNuevoHAB.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnNuevoHAB.FlatAppearance.BorderSize = 0;
+            this.btnNuevoHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoHAB.Location = new System.Drawing.Point(218, 399);
+            this.btnNuevoHAB.Name = "btnNuevoHAB";
+            this.btnNuevoHAB.Size = new System.Drawing.Size(164, 44);
+            this.btnNuevoHAB.TabIndex = 43;
+            this.btnNuevoHAB.Text = "NUEVO";
+            this.btnNuevoHAB.UseVisualStyleBackColor = false;
+            // 
+            // btnModificarHAB
+            // 
+            this.btnModificarHAB.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnModificarHAB.FlatAppearance.BorderSize = 0;
+            this.btnModificarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarHAB.Location = new System.Drawing.Point(388, 399);
+            this.btnModificarHAB.Name = "btnModificarHAB";
+            this.btnModificarHAB.Size = new System.Drawing.Size(164, 44);
+            this.btnModificarHAB.TabIndex = 44;
+            this.btnModificarHAB.Text = "MODIFICAR";
+            this.btnModificarHAB.UseVisualStyleBackColor = false;
+            // 
+            // btnGuardModHAB
+            // 
+            this.btnGuardModHAB.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnGuardModHAB.FlatAppearance.BorderSize = 0;
+            this.btnGuardModHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardModHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardModHAB.Location = new System.Drawing.Point(558, 399);
+            this.btnGuardModHAB.Name = "btnGuardModHAB";
+            this.btnGuardModHAB.Size = new System.Drawing.Size(167, 44);
+            this.btnGuardModHAB.TabIndex = 45;
+            this.btnGuardModHAB.Text = "GUARDAR MODIFICACIÓN";
+            this.btnGuardModHAB.UseVisualStyleBackColor = false;
+            // 
+            // btnCambiarModHAB
+            // 
+            this.btnCambiarModHAB.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnCambiarModHAB.FlatAppearance.BorderSize = 0;
+            this.btnCambiarModHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCambiarModHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCambiarModHAB.Location = new System.Drawing.Point(466, 449);
+            this.btnCambiarModHAB.Name = "btnCambiarModHAB";
+            this.btnCambiarModHAB.Size = new System.Drawing.Size(259, 37);
+            this.btnCambiarModHAB.TabIndex = 46;
+            this.btnCambiarModHAB.Text = "CAMBIAR MODIFICACIÓN";
+            this.btnCambiarModHAB.UseVisualStyleBackColor = false;
+            // 
+            // btnEliminarHAB
+            // 
+            this.btnEliminarHAB.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnEliminarHAB.FlatAppearance.BorderSize = 0;
+            this.btnEliminarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarHAB.Location = new System.Drawing.Point(218, 449);
+            this.btnEliminarHAB.Name = "btnEliminarHAB";
+            this.btnEliminarHAB.Size = new System.Drawing.Size(242, 37);
+            this.btnEliminarHAB.TabIndex = 47;
+            this.btnEliminarHAB.Text = "ELIMINAR";
+            this.btnEliminarHAB.UseVisualStyleBackColor = false;
             // 
             // MantenedorHabitaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.btnDeshabilitar);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.groupBox1);
+            this.BackColor = System.Drawing.Color.NavajoWhite;
+            this.ClientSize = new System.Drawing.Size(804, 647);
+            this.Controls.Add(this.btnEliminarHAB);
+            this.Controls.Add(this.btnCambiarModHAB);
+            this.Controls.Add(this.btnGuardModHAB);
+            this.Controls.Add(this.btnModificarHAB);
+            this.Controls.Add(this.btnNuevoHAB);
+            this.Controls.Add(this.dtgvConserjeria);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MantenedorHabitaciones";
             this.Text = "MantenedorHabitaciones";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.TextBox txtPisodeHabitacion;
-        private System.Windows.Forms.TextBox txtTipodeHabitacion;
-        private System.Windows.Forms.TextBox txtCodigodeHabitacion;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnDeshabilitar;
-        private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dtgvConserjeria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDORDEN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumHab;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fech;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dni;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn es;
+        private System.Windows.Forms.Button btnCancelarHAB;
+        private System.Windows.Forms.Button btnAgregarHAB;
+        private System.Windows.Forms.Button btnNuevoHAB;
+        private System.Windows.Forms.Button btnModificarHAB;
+        private System.Windows.Forms.Button btnGuardModHAB;
+        private System.Windows.Forms.Button btnCambiarModHAB;
+        private System.Windows.Forms.Button btnEliminarHAB;
     }
 }

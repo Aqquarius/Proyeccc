@@ -30,7 +30,7 @@ namespace Proyeccc
                     password = File.ReadAllText(url);
                     if (contra.Equals(password))
                     {
-                        Inicio mostrarI = new Inicio();
+                        MENUUUU mostrarI = new MENUUUU();
                         mostrarI.Show();
                     }
                     else

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyeccc
 {
-    public partial class Inicio : Form
+    public partial class OrdenHospedaje : Form
     {
-        public Inicio()
+        public OrdenHospedaje()
         {
             InitializeComponent();
         }
