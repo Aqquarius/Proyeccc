@@ -15,5 +15,6 @@ namespace CapaEntidad
         public DateTime fecha_registro { get; set; }
         public string correo { get; set; }
         public string telefono { get; set; }
+        public Boolean estado { get; set; }
     }
 }

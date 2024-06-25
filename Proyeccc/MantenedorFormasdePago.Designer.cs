@@ -48,7 +48,7 @@
             this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.es = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEliminarMPAGO = new System.Windows.Forms.Button();
+            this.btnDeshabilitarMPAGO = new System.Windows.Forms.Button();
             this.btnModificarMPAGO = new System.Windows.Forms.Button();
             this.btnAgregarMPAGO = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
@@ -174,7 +174,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dtgvConserjeria);
-            this.groupBox1.Controls.Add(this.btnEliminarMPAGO);
+            this.groupBox1.Controls.Add(this.btnDeshabilitarMPAGO);
             this.groupBox1.Controls.Add(this.btnModificarMPAGO);
             this.groupBox1.Controls.Add(this.btnAgregarMPAGO);
             this.groupBox1.Location = new System.Drawing.Point(28, 251);
@@ -248,18 +248,18 @@
             this.es.HeaderText = "Estado";
             this.es.Name = "es";
             // 
-            // btnEliminarMPAGO
+            // btnDeshabilitarMPAGO
             // 
-            this.btnEliminarMPAGO.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnEliminarMPAGO.FlatAppearance.BorderSize = 0;
-            this.btnEliminarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarMPAGO.Location = new System.Drawing.Point(583, 165);
-            this.btnEliminarMPAGO.Name = "btnEliminarMPAGO";
-            this.btnEliminarMPAGO.Size = new System.Drawing.Size(137, 36);
-            this.btnEliminarMPAGO.TabIndex = 48;
-            this.btnEliminarMPAGO.Text = "ELIMINAR";
-            this.btnEliminarMPAGO.UseVisualStyleBackColor = false;
+            this.btnDeshabilitarMPAGO.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnDeshabilitarMPAGO.FlatAppearance.BorderSize = 0;
+            this.btnDeshabilitarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeshabilitarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeshabilitarMPAGO.Location = new System.Drawing.Point(583, 165);
+            this.btnDeshabilitarMPAGO.Name = "btnDeshabilitarMPAGO";
+            this.btnDeshabilitarMPAGO.Size = new System.Drawing.Size(137, 36);
+            this.btnDeshabilitarMPAGO.TabIndex = 48;
+            this.btnDeshabilitarMPAGO.Text = "DESHABILITAR";
+            this.btnDeshabilitarMPAGO.UseVisualStyleBackColor = false;
             // 
             // btnModificarMPAGO
             // 
@@ -320,7 +320,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnSalirMPAGO;
         private System.Windows.Forms.Button btnGuardarMPAGO;
-        private System.Windows.Forms.Button btnEliminarMPAGO;
+        private System.Windows.Forms.Button btnDeshabilitarMPAGO;
         private System.Windows.Forms.Button btnModificarMPAGO;
         private System.Windows.Forms.Button btnAgregarMPAGO;
         private System.Windows.Forms.DataGridView dtgvConserjeria;

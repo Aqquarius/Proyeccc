@@ -40,9 +40,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -58,7 +56,8 @@
             this.btnModificarHAB = new System.Windows.Forms.Button();
             this.btnGuardModHAB = new System.Windows.Forms.Button();
             this.btnCambiarModHAB = new System.Windows.Forms.Button();
-            this.btnEliminarHAB = new System.Windows.Forms.Button();
+            this.btnDeshabilitarHAB = new System.Windows.Forms.Button();
+            this.btnEstado = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
             this.SuspendLayout();
@@ -66,6 +65,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.panel1.Controls.Add(this.btnEstado);
             this.panel1.Controls.Add(this.btnCancelarHAB);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnAgregarHAB);
@@ -74,9 +74,7 @@
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.comboBox3);
             this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.comboBox2);
@@ -84,7 +82,7 @@
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(32, 71);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(148, 427);
+            this.panel1.Size = new System.Drawing.Size(148, 405);
             this.panel1.TabIndex = 34;
             // 
             // btnCancelarHAB
@@ -93,7 +91,7 @@
             this.btnCancelarHAB.FlatAppearance.BorderSize = 0;
             this.btnCancelarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarHAB.Location = new System.Drawing.Point(16, 374);
+            this.btnCancelarHAB.Location = new System.Drawing.Point(18, 361);
             this.btnCancelarHAB.Name = "btnCancelarHAB";
             this.btnCancelarHAB.Size = new System.Drawing.Size(109, 24);
             this.btnCancelarHAB.TabIndex = 44;
@@ -115,7 +113,7 @@
             this.btnAgregarHAB.FlatAppearance.BorderSize = 0;
             this.btnAgregarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarHAB.Location = new System.Drawing.Point(16, 343);
+            this.btnAgregarHAB.Location = new System.Drawing.Point(18, 330);
             this.btnAgregarHAB.Name = "btnAgregarHAB";
             this.btnAgregarHAB.Size = new System.Drawing.Size(109, 24);
             this.btnAgregarHAB.TabIndex = 43;
@@ -164,29 +162,12 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "# Habitacion";
             // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(13, 289);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 25);
-            this.comboBox3.TabIndex = 16;
-            // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(13, 98);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(121, 22);
             this.textBox3.TabIndex = 10;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 267);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 17);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Estado";
             // 
             // label6
             // 
@@ -303,7 +284,7 @@
             this.btnNuevoHAB.FlatAppearance.BorderSize = 0;
             this.btnNuevoHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoHAB.Location = new System.Drawing.Point(218, 399);
+            this.btnNuevoHAB.Location = new System.Drawing.Point(240, 389);
             this.btnNuevoHAB.Name = "btnNuevoHAB";
             this.btnNuevoHAB.Size = new System.Drawing.Size(164, 44);
             this.btnNuevoHAB.TabIndex = 43;
@@ -316,7 +297,7 @@
             this.btnModificarHAB.FlatAppearance.BorderSize = 0;
             this.btnModificarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarHAB.Location = new System.Drawing.Point(388, 399);
+            this.btnModificarHAB.Location = new System.Drawing.Point(410, 389);
             this.btnModificarHAB.Name = "btnModificarHAB";
             this.btnModificarHAB.Size = new System.Drawing.Size(164, 44);
             this.btnModificarHAB.TabIndex = 44;
@@ -329,7 +310,7 @@
             this.btnGuardModHAB.FlatAppearance.BorderSize = 0;
             this.btnGuardModHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardModHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardModHAB.Location = new System.Drawing.Point(558, 399);
+            this.btnGuardModHAB.Location = new System.Drawing.Point(580, 389);
             this.btnGuardModHAB.Name = "btnGuardModHAB";
             this.btnGuardModHAB.Size = new System.Drawing.Size(167, 44);
             this.btnGuardModHAB.TabIndex = 45;
@@ -342,25 +323,35 @@
             this.btnCambiarModHAB.FlatAppearance.BorderSize = 0;
             this.btnCambiarModHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCambiarModHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCambiarModHAB.Location = new System.Drawing.Point(466, 449);
+            this.btnCambiarModHAB.Location = new System.Drawing.Point(488, 439);
             this.btnCambiarModHAB.Name = "btnCambiarModHAB";
             this.btnCambiarModHAB.Size = new System.Drawing.Size(259, 37);
             this.btnCambiarModHAB.TabIndex = 46;
             this.btnCambiarModHAB.Text = "CAMBIAR MODIFICACIÓN";
             this.btnCambiarModHAB.UseVisualStyleBackColor = false;
             // 
-            // btnEliminarHAB
+            // btnDeshabilitarHAB
             // 
-            this.btnEliminarHAB.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnEliminarHAB.FlatAppearance.BorderSize = 0;
-            this.btnEliminarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarHAB.Location = new System.Drawing.Point(218, 449);
-            this.btnEliminarHAB.Name = "btnEliminarHAB";
-            this.btnEliminarHAB.Size = new System.Drawing.Size(242, 37);
-            this.btnEliminarHAB.TabIndex = 47;
-            this.btnEliminarHAB.Text = "ELIMINAR";
-            this.btnEliminarHAB.UseVisualStyleBackColor = false;
+            this.btnDeshabilitarHAB.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnDeshabilitarHAB.FlatAppearance.BorderSize = 0;
+            this.btnDeshabilitarHAB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeshabilitarHAB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeshabilitarHAB.Location = new System.Drawing.Point(240, 439);
+            this.btnDeshabilitarHAB.Name = "btnDeshabilitarHAB";
+            this.btnDeshabilitarHAB.Size = new System.Drawing.Size(242, 37);
+            this.btnDeshabilitarHAB.TabIndex = 47;
+            this.btnDeshabilitarHAB.Text = "DESHABILITAR";
+            this.btnDeshabilitarHAB.UseVisualStyleBackColor = false;
+            // 
+            // btnEstado
+            // 
+            this.btnEstado.AutoSize = true;
+            this.btnEstado.Location = new System.Drawing.Point(34, 283);
+            this.btnEstado.Name = "btnEstado";
+            this.btnEstado.Size = new System.Drawing.Size(67, 21);
+            this.btnEstado.TabIndex = 45;
+            this.btnEstado.Text = "Estado";
+            this.btnEstado.UseVisualStyleBackColor = true;
             // 
             // MantenedorHabitaciones
             // 
@@ -368,7 +359,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(804, 647);
-            this.Controls.Add(this.btnEliminarHAB);
+            this.Controls.Add(this.btnDeshabilitarHAB);
             this.Controls.Add(this.btnCambiarModHAB);
             this.Controls.Add(this.btnGuardModHAB);
             this.Controls.Add(this.btnModificarHAB);
@@ -393,9 +384,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox comboBox2;
@@ -413,6 +402,7 @@
         private System.Windows.Forms.Button btnModificarHAB;
         private System.Windows.Forms.Button btnGuardModHAB;
         private System.Windows.Forms.Button btnCambiarModHAB;
-        private System.Windows.Forms.Button btnEliminarHAB;
+        private System.Windows.Forms.Button btnDeshabilitarHAB;
+        private System.Windows.Forms.CheckBox btnEstado;
     }
 }

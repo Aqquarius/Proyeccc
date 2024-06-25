@@ -9,15 +9,15 @@ using CapaDatos;
 
 namespace CapaLogica
 {
-    public class entUsuario
+    public class logUsuario
     {
         #region sigleton
-        private static readonly entUsuario _instancia = new entUsuario();
-        public static entUsuario Instancia
+        private static readonly logUsuario _instancia = new logUsuario();
+        public static logUsuario Instancia
         {
             get
             {
-                return entUsuario._instancia;
+                return logUsuario._instancia;
             }
         }
         #endregion singleton
@@ -27,6 +27,16 @@ namespace CapaLogica
         {
             return datUsuario.Instancia.listarUsuario();
         }
+        public void insertaCliente(entUsuario Cli)
+        {
+            datUsuario.Instancia.insertaCliente(Cli);
+        }
+        public void deshabilitarCliente(entUsuario Cli)
+        {
+            datUsuario.Instancia.deshabilitarCliente(Cli);
+        }
         #endregion metodos
+
+
     }
 }
