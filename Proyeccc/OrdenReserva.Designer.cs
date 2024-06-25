@@ -36,24 +36,21 @@
             this.btnCancelarRESER = new System.Windows.Forms.Button();
             this.btnNuevoRESER = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbMPRes = new System.Windows.Forms.ComboBox();
             this.btnMostrarRESER = new System.Windows.Forms.Button();
             this.btnConfirmarRESER = new System.Windows.Forms.Button();
             this.btnBuscarClienteRESER = new System.Windows.Forms.Button();
             this.btnAnularReservaRESER = new System.Windows.Forms.Button();
             this.btnAgregarRESER = new System.Windows.Forms.Button();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.dtpSalidaRes = new System.Windows.Forms.DateTimePicker();
+            this.dtpEntradaRes = new System.Windows.Forms.DateTimePicker();
+            this.dtpRegistroRes = new System.Windows.Forms.DateTimePicker();
+            this.cmbCanPersRes = new System.Windows.Forms.ComboBox();
+            this.cmbHabitacionRes = new System.Windows.Forms.ComboBox();
+            this.txtDNIClienteRes = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtPrecioReserva = new System.Windows.Forms.TextBox();
-            this.txtFormasdePago = new System.Windows.Forms.TextBox();
             this.txtIDReserva = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -62,19 +59,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
-            this.IR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Habitación = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CPER = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgvReserva = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvReserva)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConfimarRESER
@@ -83,7 +70,7 @@
             this.btnConfimarRESER.FlatAppearance.BorderSize = 0;
             this.btnConfimarRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfimarRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfimarRESER.Location = new System.Drawing.Point(578, 580);
+            this.btnConfimarRESER.Location = new System.Drawing.Point(578, 585);
             this.btnConfimarRESER.Name = "btnConfimarRESER";
             this.btnConfimarRESER.Size = new System.Drawing.Size(164, 37);
             this.btnConfimarRESER.TabIndex = 37;
@@ -96,7 +83,7 @@
             this.btnAnularRESER.FlatAppearance.BorderSize = 0;
             this.btnAnularRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnularRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnularRESER.Location = new System.Drawing.Point(402, 580);
+            this.btnAnularRESER.Location = new System.Drawing.Point(402, 585);
             this.btnAnularRESER.Name = "btnAnularRESER";
             this.btnAnularRESER.Size = new System.Drawing.Size(164, 37);
             this.btnAnularRESER.TabIndex = 36;
@@ -109,7 +96,7 @@
             this.btnCancelarRESER.FlatAppearance.BorderSize = 0;
             this.btnCancelarRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarRESER.Location = new System.Drawing.Point(226, 580);
+            this.btnCancelarRESER.Location = new System.Drawing.Point(226, 585);
             this.btnCancelarRESER.Name = "btnCancelarRESER";
             this.btnCancelarRESER.Size = new System.Drawing.Size(164, 37);
             this.btnCancelarRESER.TabIndex = 35;
@@ -122,7 +109,7 @@
             this.btnNuevoRESER.FlatAppearance.BorderSize = 0;
             this.btnNuevoRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoRESER.Location = new System.Drawing.Point(50, 580);
+            this.btnNuevoRESER.Location = new System.Drawing.Point(50, 585);
             this.btnNuevoRESER.Name = "btnNuevoRESER";
             this.btnNuevoRESER.Size = new System.Drawing.Size(164, 37);
             this.btnNuevoRESER.TabIndex = 34;
@@ -131,24 +118,21 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbMPRes);
             this.groupBox1.Controls.Add(this.btnMostrarRESER);
             this.groupBox1.Controls.Add(this.btnConfirmarRESER);
             this.groupBox1.Controls.Add(this.btnBuscarClienteRESER);
             this.groupBox1.Controls.Add(this.btnAnularReservaRESER);
             this.groupBox1.Controls.Add(this.btnAgregarRESER);
-            this.groupBox1.Controls.Add(this.dateTimePicker3);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.dtpSalidaRes);
+            this.groupBox1.Controls.Add(this.dtpEntradaRes);
+            this.groupBox1.Controls.Add(this.dtpRegistroRes);
+            this.groupBox1.Controls.Add(this.cmbCanPersRes);
+            this.groupBox1.Controls.Add(this.cmbHabitacionRes);
+            this.groupBox1.Controls.Add(this.txtDNIClienteRes);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtPrecioReserva);
-            this.groupBox1.Controls.Add(this.txtFormasdePago);
             this.groupBox1.Controls.Add(this.txtIDReserva);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -158,12 +142,20 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(14, 20);
+            this.groupBox1.Location = new System.Drawing.Point(14, 25);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(773, 279);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Orden de Reserva";
+            // 
+            // cmbMPRes
+            // 
+            this.cmbMPRes.FormattingEnabled = true;
+            this.cmbMPRes.Location = new System.Drawing.Point(514, 78);
+            this.cmbMPRes.Name = "cmbMPRes";
+            this.cmbMPRes.Size = new System.Drawing.Size(100, 25);
+            this.cmbMPRes.TabIndex = 28;
             // 
             // btnMostrarRESER
             // 
@@ -171,9 +163,9 @@
             this.btnMostrarRESER.FlatAppearance.BorderSize = 0;
             this.btnMostrarRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrarRESER.Location = new System.Drawing.Point(639, 238);
+            this.btnMostrarRESER.Location = new System.Drawing.Point(633, 219);
             this.btnMostrarRESER.Name = "btnMostrarRESER";
-            this.btnMostrarRESER.Size = new System.Drawing.Size(123, 37);
+            this.btnMostrarRESER.Size = new System.Drawing.Size(123, 44);
             this.btnMostrarRESER.TabIndex = 27;
             this.btnMostrarRESER.Text = "Mostrar Costo";
             this.btnMostrarRESER.UseVisualStyleBackColor = false;
@@ -184,9 +176,9 @@
             this.btnConfirmarRESER.FlatAppearance.BorderSize = 0;
             this.btnConfirmarRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmarRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmarRESER.Location = new System.Drawing.Point(639, 64);
+            this.btnConfirmarRESER.Location = new System.Drawing.Point(633, 75);
             this.btnConfirmarRESER.Name = "btnConfirmarRESER";
-            this.btnConfirmarRESER.Size = new System.Drawing.Size(123, 51);
+            this.btnConfirmarRESER.Size = new System.Drawing.Size(123, 42);
             this.btnConfirmarRESER.TabIndex = 15;
             this.btnConfirmarRESER.Text = "Confirmar Reserva";
             this.btnConfirmarRESER.UseVisualStyleBackColor = false;
@@ -197,9 +189,9 @@
             this.btnBuscarClienteRESER.FlatAppearance.BorderSize = 0;
             this.btnBuscarClienteRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarClienteRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarClienteRESER.Location = new System.Drawing.Point(639, 181);
+            this.btnBuscarClienteRESER.Location = new System.Drawing.Point(633, 171);
             this.btnBuscarClienteRESER.Name = "btnBuscarClienteRESER";
-            this.btnBuscarClienteRESER.Size = new System.Drawing.Size(123, 51);
+            this.btnBuscarClienteRESER.Size = new System.Drawing.Size(123, 42);
             this.btnBuscarClienteRESER.TabIndex = 26;
             this.btnBuscarClienteRESER.Text = "Buscar Cliente";
             this.btnBuscarClienteRESER.UseVisualStyleBackColor = false;
@@ -210,9 +202,9 @@
             this.btnAnularReservaRESER.FlatAppearance.BorderSize = 0;
             this.btnAnularReservaRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnularReservaRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnularReservaRESER.Location = new System.Drawing.Point(639, 21);
+            this.btnAnularReservaRESER.Location = new System.Drawing.Point(633, 27);
             this.btnAnularReservaRESER.Name = "btnAnularReservaRESER";
-            this.btnAnularReservaRESER.Size = new System.Drawing.Size(123, 37);
+            this.btnAnularReservaRESER.Size = new System.Drawing.Size(123, 42);
             this.btnAnularReservaRESER.TabIndex = 14;
             this.btnAnularReservaRESER.Text = "Anular Reserva";
             this.btnAnularReservaRESER.UseVisualStyleBackColor = false;
@@ -223,84 +215,61 @@
             this.btnAgregarRESER.FlatAppearance.BorderSize = 0;
             this.btnAgregarRESER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarRESER.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarRESER.Location = new System.Drawing.Point(639, 121);
+            this.btnAgregarRESER.Location = new System.Drawing.Point(633, 123);
             this.btnAgregarRESER.Name = "btnAgregarRESER";
-            this.btnAgregarRESER.Size = new System.Drawing.Size(123, 51);
+            this.btnAgregarRESER.Size = new System.Drawing.Size(123, 42);
             this.btnAgregarRESER.TabIndex = 16;
             this.btnAgregarRESER.Text = "Agregar Reserva";
             this.btnAgregarRESER.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker3
+            // dtpSalidaRes
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(129, 162);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(242, 23);
-            this.dateTimePicker3.TabIndex = 25;
+            this.dtpSalidaRes.Location = new System.Drawing.Point(129, 162);
+            this.dtpSalidaRes.Name = "dtpSalidaRes";
+            this.dtpSalidaRes.Size = new System.Drawing.Size(234, 23);
+            this.dtpSalidaRes.TabIndex = 25;
             // 
-            // dateTimePicker2
+            // dtpEntradaRes
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(129, 122);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(242, 23);
-            this.dateTimePicker2.TabIndex = 24;
+            this.dtpEntradaRes.Location = new System.Drawing.Point(129, 122);
+            this.dtpEntradaRes.Name = "dtpEntradaRes";
+            this.dtpEntradaRes.Size = new System.Drawing.Size(234, 23);
+            this.dtpEntradaRes.TabIndex = 24;
             // 
-            // dateTimePicker1
+            // dtpRegistroRes
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(130, 80);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(241, 23);
-            this.dateTimePicker1.TabIndex = 23;
+            this.dtpRegistroRes.Location = new System.Drawing.Point(130, 80);
+            this.dtpRegistroRes.Name = "dtpRegistroRes";
+            this.dtpRegistroRes.Size = new System.Drawing.Size(233, 23);
+            this.dtpRegistroRes.TabIndex = 23;
             // 
-            // comboBox2
+            // cmbCanPersRes
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(514, 203);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 25);
-            this.comboBox2.TabIndex = 22;
+            this.cmbCanPersRes.FormattingEnabled = true;
+            this.cmbCanPersRes.Location = new System.Drawing.Point(514, 159);
+            this.cmbCanPersRes.Name = "cmbCanPersRes";
+            this.cmbCanPersRes.Size = new System.Drawing.Size(100, 25);
+            this.cmbCanPersRes.TabIndex = 22;
             // 
-            // comboBox1
+            // cmbHabitacionRes
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(514, 41);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 25);
-            this.comboBox1.TabIndex = 21;
+            this.cmbHabitacionRes.FormattingEnabled = true;
+            this.cmbHabitacionRes.Location = new System.Drawing.Point(514, 41);
+            this.cmbHabitacionRes.Name = "cmbHabitacionRes";
+            this.cmbHabitacionRes.Size = new System.Drawing.Size(100, 25);
+            this.cmbHabitacionRes.TabIndex = 21;
             // 
-            // textBox3
+            // txtDNIClienteRes
             // 
-            this.textBox3.Location = new System.Drawing.Point(514, 162);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 20;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(231, 208);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(140, 23);
-            this.textBox2.TabIndex = 19;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(129, 209);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 23);
-            this.textBox1.TabIndex = 18;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(377, 167);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(127, 17);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "Confirmar Reserva";
+            this.txtDNIClienteRes.Location = new System.Drawing.Point(129, 205);
+            this.txtDNIClienteRes.Name = "txtDNIClienteRes";
+            this.txtDNIClienteRes.Size = new System.Drawing.Size(124, 23);
+            this.txtDNIClienteRes.TabIndex = 18;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(379, 209);
+            this.label9.Location = new System.Drawing.Point(379, 165);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(105, 17);
             this.label9.TabIndex = 15;
@@ -309,7 +278,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 208);
+            this.label8.Location = new System.Drawing.Point(31, 208);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 17);
             this.label8.TabIndex = 14;
@@ -321,13 +290,6 @@
             this.txtPrecioReserva.Name = "txtPrecioReserva";
             this.txtPrecioReserva.Size = new System.Drawing.Size(100, 23);
             this.txtPrecioReserva.TabIndex = 13;
-            // 
-            // txtFormasdePago
-            // 
-            this.txtFormasdePago.Location = new System.Drawing.Point(514, 80);
-            this.txtFormasdePago.Name = "txtFormasdePago";
-            this.txtFormasdePago.Size = new System.Drawing.Size(100, 23);
-            this.txtFormasdePago.TabIndex = 12;
             // 
             // txtIDReserva
             // 
@@ -393,19 +355,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 48);
+            this.label1.Location = new System.Drawing.Point(42, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Reserva";
             // 
-            // dtgvConserjeria
+            // dtgvReserva
             // 
-            this.dtgvConserjeria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvConserjeria.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dtgvConserjeria.BackgroundColor = System.Drawing.Color.NavajoWhite;
-            this.dtgvConserjeria.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvConserjeria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgvReserva.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvReserva.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtgvReserva.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dtgvReserva.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvReserva.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -413,25 +375,14 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvConserjeria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvConserjeria.ColumnHeadersHeight = 55;
-            this.dtgvConserjeria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgvConserjeria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IR,
-            this.FR,
-            this.FE,
-            this.FS,
-            this.DC,
-            this.Habitación,
-            this.MP,
-            this.PrecioR,
-            this.CR,
-            this.CPER});
-            this.dtgvConserjeria.EnableHeadersVisualStyles = false;
-            this.dtgvConserjeria.GridColor = System.Drawing.Color.DarkOrange;
-            this.dtgvConserjeria.Location = new System.Drawing.Point(14, 305);
-            this.dtgvConserjeria.Name = "dtgvConserjeria";
-            this.dtgvConserjeria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dtgvReserva.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvReserva.ColumnHeadersHeight = 55;
+            this.dtgvReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvReserva.EnableHeadersVisualStyles = false;
+            this.dtgvReserva.GridColor = System.Drawing.Color.DarkOrange;
+            this.dtgvReserva.Location = new System.Drawing.Point(14, 310);
+            this.dtgvReserva.Name = "dtgvReserva";
+            this.dtgvReserva.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -439,65 +390,15 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvConserjeria.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvReserva.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.NavajoWhite;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            this.dtgvConserjeria.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvConserjeria.Size = new System.Drawing.Size(765, 210);
-            this.dtgvConserjeria.TabIndex = 38;
-            // 
-            // IR
-            // 
-            this.IR.HeaderText = "ID Reserva";
-            this.IR.Name = "IR";
-            // 
-            // FR
-            // 
-            this.FR.HeaderText = "Fecha de Registro";
-            this.FR.Name = "FR";
-            // 
-            // FE
-            // 
-            this.FE.HeaderText = "Fecha de entrada";
-            this.FE.Name = "FE";
-            // 
-            // FS
-            // 
-            this.FS.HeaderText = "Fecha de Salida";
-            this.FS.Name = "FS";
-            // 
-            // DC
-            // 
-            this.DC.HeaderText = "Datos Cliente";
-            this.DC.Name = "DC";
-            // 
-            // Habitación
-            // 
-            this.Habitación.HeaderText = "Habitación";
-            this.Habitación.Name = "Habitación";
-            // 
-            // MP
-            // 
-            this.MP.HeaderText = "Método de Pago";
-            this.MP.Name = "MP";
-            // 
-            // PrecioR
-            // 
-            this.PrecioR.HeaderText = "Precio Reserva";
-            this.PrecioR.Name = "PrecioR";
-            // 
-            // CR
-            // 
-            this.CR.HeaderText = "Confirmar Reserva";
-            this.CR.Name = "CR";
-            // 
-            // CPER
-            // 
-            this.CPER.HeaderText = "Cantidad de personas";
-            this.CPER.Name = "CPER";
+            this.dtgvReserva.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgvReserva.Size = new System.Drawing.Size(765, 210);
+            this.dtgvReserva.TabIndex = 38;
             // 
             // OrdenReserva
             // 
@@ -505,7 +406,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(804, 647);
-            this.Controls.Add(this.dtgvConserjeria);
+            this.Controls.Add(this.dtgvReserva);
             this.Controls.Add(this.btnConfimarRESER);
             this.Controls.Add(this.btnAnularRESER);
             this.Controls.Add(this.btnCancelarRESER);
@@ -516,7 +417,7 @@
             this.Text = "OrdenReserva";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvReserva)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -533,19 +434,15 @@
         private System.Windows.Forms.Button btnBuscarClienteRESER;
         private System.Windows.Forms.Button btnAnularReservaRESER;
         private System.Windows.Forms.Button btnAgregarRESER;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker dtpSalidaRes;
+        private System.Windows.Forms.DateTimePicker dtpEntradaRes;
+        private System.Windows.Forms.DateTimePicker dtpRegistroRes;
+        private System.Windows.Forms.ComboBox cmbCanPersRes;
+        private System.Windows.Forms.ComboBox cmbHabitacionRes;
+        private System.Windows.Forms.TextBox txtDNIClienteRes;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtPrecioReserva;
-        private System.Windows.Forms.TextBox txtFormasdePago;
         private System.Windows.Forms.TextBox txtIDReserva;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -554,16 +451,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dtgvConserjeria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IR;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FR;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FS;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Habitación;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioR;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CR;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CPER;
+        private System.Windows.Forms.DataGridView dtgvReserva;
+        private System.Windows.Forms.ComboBox cmbMPRes;
     }
 }

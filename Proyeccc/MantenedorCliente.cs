@@ -67,7 +67,6 @@ namespace Proyeccc
         private void btnCancelarCL_Click(object sender, EventArgs e)
         {
             gbDatos.Enabled = false;
-            txtDNICliente.Enabled = false;
             btnCancelarCL.Enabled = false;
         }
 

@@ -54,13 +54,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
-            this.IDORDEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fech = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumHab = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
@@ -310,14 +303,6 @@
             this.dtgvConserjeria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvConserjeria.ColumnHeadersHeight = 40;
             this.dtgvConserjeria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgvConserjeria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDORDEN,
-            this.Fech,
-            this.dni,
-            this.NumHab,
-            this.TO,
-            this.EA,
-            this.EO});
             this.dtgvConserjeria.EnableHeadersVisualStyles = false;
             this.dtgvConserjeria.GridColor = System.Drawing.Color.DarkOrange;
             this.dtgvConserjeria.Location = new System.Drawing.Point(36, 330);
@@ -339,41 +324,6 @@
             this.dtgvConserjeria.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvConserjeria.Size = new System.Drawing.Size(728, 227);
             this.dtgvConserjeria.TabIndex = 24;
-            // 
-            // IDORDEN
-            // 
-            this.IDORDEN.HeaderText = "ID Orden";
-            this.IDORDEN.Name = "IDORDEN";
-            // 
-            // Fech
-            // 
-            this.Fech.HeaderText = "Fecha de Orden";
-            this.Fech.Name = "Fech";
-            // 
-            // dni
-            // 
-            this.dni.HeaderText = "Datos del Cliente";
-            this.dni.Name = "dni";
-            // 
-            // NumHab
-            // 
-            this.NumHab.HeaderText = "Número de Habitación";
-            this.NumHab.Name = "NumHab";
-            // 
-            // TO
-            // 
-            this.TO.HeaderText = "Tipo de Orden";
-            this.TO.Name = "TO";
-            // 
-            // EA
-            // 
-            this.EA.HeaderText = "Equipo Asignado";
-            this.EA.Name = "EA";
-            // 
-            // EO
-            // 
-            this.EO.HeaderText = "Estado de Orden";
-            this.EO.Name = "EO";
             // 
             // OrdenConserjeria
             // 
@@ -426,12 +376,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dtgvConserjeria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDORDEN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fech;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dni;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumHab;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EO;
     }
 }
