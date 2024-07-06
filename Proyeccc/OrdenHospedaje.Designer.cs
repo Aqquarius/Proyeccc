@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtgvHospedaje = new System.Windows.Forms.DataGridView();
-            this.btnConfimarHOS = new System.Windows.Forms.Button();
             this.btnAnularHOS = new System.Windows.Forms.Button();
             this.btnCancelarHOS = new System.Windows.Forms.Button();
             this.btnNuevoHOS = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtMotivoHos = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.cmbMPHos = new System.Windows.Forms.ComboBox();
             this.btnMostrarHOS = new System.Windows.Forms.Button();
             this.btnConfirmarHOS = new System.Windows.Forms.Button();
@@ -46,10 +47,8 @@
             this.dtpSalidaHos = new System.Windows.Forms.DateTimePicker();
             this.dtpEntradaHos = new System.Windows.Forms.DateTimePicker();
             this.dtpRegistroHos = new System.Windows.Forms.DateTimePicker();
-            this.cmbCanPersHos = new System.Windows.Forms.ComboBox();
             this.cmbHabitacionHos = new System.Windows.Forms.ComboBox();
-            this.txtDNIClienteHos = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txtClienteHos = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtIDHospedaje = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -69,50 +68,37 @@
             this.dtgvHospedaje.BackgroundColor = System.Drawing.Color.NavajoWhite;
             this.dtgvHospedaje.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvHospedaje.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvHospedaje.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvHospedaje.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgvHospedaje.ColumnHeadersHeight = 55;
             this.dtgvHospedaje.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgvHospedaje.EnableHeadersVisualStyles = false;
             this.dtgvHospedaje.GridColor = System.Drawing.Color.DarkOrange;
-            this.dtgvHospedaje.Location = new System.Drawing.Point(14, 310);
+            this.dtgvHospedaje.Location = new System.Drawing.Point(12, 310);
             this.dtgvHospedaje.Name = "dtgvHospedaje";
             this.dtgvHospedaje.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvHospedaje.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.NavajoWhite;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            this.dtgvHospedaje.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvHospedaje.Size = new System.Drawing.Size(765, 210);
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvHospedaje.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.NavajoWhite;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgvHospedaje.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dtgvHospedaje.Size = new System.Drawing.Size(765, 269);
             this.dtgvHospedaje.TabIndex = 44;
-            // 
-            // btnConfimarHOS
-            // 
-            this.btnConfimarHOS.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnConfimarHOS.FlatAppearance.BorderSize = 0;
-            this.btnConfimarHOS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfimarHOS.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfimarHOS.Location = new System.Drawing.Point(578, 585);
-            this.btnConfimarHOS.Name = "btnConfimarHOS";
-            this.btnConfimarHOS.Size = new System.Drawing.Size(164, 37);
-            this.btnConfimarHOS.TabIndex = 43;
-            this.btnConfimarHOS.Text = "CONFIRMAR";
-            this.btnConfimarHOS.UseVisualStyleBackColor = false;
             // 
             // btnAnularHOS
             // 
@@ -120,7 +106,7 @@
             this.btnAnularHOS.FlatAppearance.BorderSize = 0;
             this.btnAnularHOS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnularHOS.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnularHOS.Location = new System.Drawing.Point(402, 585);
+            this.btnAnularHOS.Location = new System.Drawing.Point(486, 598);
             this.btnAnularHOS.Name = "btnAnularHOS";
             this.btnAnularHOS.Size = new System.Drawing.Size(164, 37);
             this.btnAnularHOS.TabIndex = 42;
@@ -133,7 +119,7 @@
             this.btnCancelarHOS.FlatAppearance.BorderSize = 0;
             this.btnCancelarHOS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarHOS.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarHOS.Location = new System.Drawing.Point(226, 585);
+            this.btnCancelarHOS.Location = new System.Drawing.Point(310, 598);
             this.btnCancelarHOS.Name = "btnCancelarHOS";
             this.btnCancelarHOS.Size = new System.Drawing.Size(164, 37);
             this.btnCancelarHOS.TabIndex = 41;
@@ -146,7 +132,7 @@
             this.btnNuevoHOS.FlatAppearance.BorderSize = 0;
             this.btnNuevoHOS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoHOS.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoHOS.Location = new System.Drawing.Point(50, 585);
+            this.btnNuevoHOS.Location = new System.Drawing.Point(134, 598);
             this.btnNuevoHOS.Name = "btnNuevoHOS";
             this.btnNuevoHOS.Size = new System.Drawing.Size(164, 37);
             this.btnNuevoHOS.TabIndex = 40;
@@ -155,6 +141,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtMotivoHos);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.cmbMPHos);
             this.groupBox1.Controls.Add(this.btnMostrarHOS);
             this.groupBox1.Controls.Add(this.btnConfirmarHOS);
@@ -164,10 +152,8 @@
             this.groupBox1.Controls.Add(this.dtpSalidaHos);
             this.groupBox1.Controls.Add(this.dtpEntradaHos);
             this.groupBox1.Controls.Add(this.dtpRegistroHos);
-            this.groupBox1.Controls.Add(this.cmbCanPersHos);
             this.groupBox1.Controls.Add(this.cmbHabitacionHos);
-            this.groupBox1.Controls.Add(this.txtDNIClienteHos);
-            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.txtClienteHos);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtIDHospedaje);
             this.groupBox1.Controls.Add(this.label6);
@@ -184,10 +170,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Orden de Hospedaje";
             // 
+            // txtMotivoHos
+            // 
+            this.txtMotivoHos.Location = new System.Drawing.Point(130, 198);
+            this.txtMotivoHos.Name = "txtMotivoHos";
+            this.txtMotivoHos.Size = new System.Drawing.Size(124, 23);
+            this.txtMotivoHos.TabIndex = 30;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(14, 201);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(110, 17);
+            this.label7.TabIndex = 29;
+            this.label7.Text = "Motivo de Viaje";
+            // 
             // cmbMPHos
             // 
             this.cmbMPHos.FormattingEnabled = true;
-            this.cmbMPHos.Location = new System.Drawing.Point(514, 78);
+            this.cmbMPHos.Location = new System.Drawing.Point(514, 81);
             this.cmbMPHos.Name = "cmbMPHos";
             this.cmbMPHos.Size = new System.Drawing.Size(100, 25);
             this.cmbMPHos.TabIndex = 28;
@@ -259,32 +261,24 @@
             // 
             // dtpSalidaHos
             // 
-            this.dtpSalidaHos.Location = new System.Drawing.Point(129, 162);
+            this.dtpSalidaHos.Location = new System.Drawing.Point(130, 136);
             this.dtpSalidaHos.Name = "dtpSalidaHos";
             this.dtpSalidaHos.Size = new System.Drawing.Size(234, 23);
             this.dtpSalidaHos.TabIndex = 25;
             // 
             // dtpEntradaHos
             // 
-            this.dtpEntradaHos.Location = new System.Drawing.Point(129, 122);
+            this.dtpEntradaHos.Location = new System.Drawing.Point(130, 106);
             this.dtpEntradaHos.Name = "dtpEntradaHos";
             this.dtpEntradaHos.Size = new System.Drawing.Size(234, 23);
             this.dtpEntradaHos.TabIndex = 24;
             // 
             // dtpRegistroHos
             // 
-            this.dtpRegistroHos.Location = new System.Drawing.Point(130, 80);
+            this.dtpRegistroHos.Location = new System.Drawing.Point(130, 76);
             this.dtpRegistroHos.Name = "dtpRegistroHos";
             this.dtpRegistroHos.Size = new System.Drawing.Size(233, 23);
             this.dtpRegistroHos.TabIndex = 23;
-            // 
-            // cmbCanPersHos
-            // 
-            this.cmbCanPersHos.FormattingEnabled = true;
-            this.cmbCanPersHos.Location = new System.Drawing.Point(514, 120);
-            this.cmbCanPersHos.Name = "cmbCanPersHos";
-            this.cmbCanPersHos.Size = new System.Drawing.Size(100, 25);
-            this.cmbCanPersHos.TabIndex = 22;
             // 
             // cmbHabitacionHos
             // 
@@ -294,30 +288,21 @@
             this.cmbHabitacionHos.Size = new System.Drawing.Size(100, 25);
             this.cmbHabitacionHos.TabIndex = 21;
             // 
-            // txtDNIClienteHos
+            // txtClienteHos
             // 
-            this.txtDNIClienteHos.Location = new System.Drawing.Point(129, 205);
-            this.txtDNIClienteHos.Name = "txtDNIClienteHos";
-            this.txtDNIClienteHos.Size = new System.Drawing.Size(124, 23);
-            this.txtDNIClienteHos.TabIndex = 18;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(377, 123);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 17);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Cant. Personas";
+            this.txtClienteHos.Location = new System.Drawing.Point(129, 167);
+            this.txtClienteHos.Name = "txtClienteHos";
+            this.txtClienteHos.Size = new System.Drawing.Size(124, 23);
+            this.txtClienteHos.TabIndex = 18;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(31, 208);
+            this.label8.Location = new System.Drawing.Point(69, 170);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 17);
+            this.label8.Size = new System.Drawing.Size(54, 17);
             this.label8.TabIndex = 14;
-            this.label8.Text = "Documento";
+            this.label8.Text = "Cliente";
             // 
             // txtIDHospedaje
             // 
@@ -329,7 +314,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(377, 83);
+            this.label6.Location = new System.Drawing.Point(389, 85);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(119, 17);
             this.label6.TabIndex = 5;
@@ -338,7 +323,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(377, 48);
+            this.label5.Location = new System.Drawing.Point(428, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 17);
             this.label5.TabIndex = 4;
@@ -347,7 +332,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 167);
+            this.label4.Location = new System.Drawing.Point(13, 141);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 17);
             this.label4.TabIndex = 3;
@@ -356,7 +341,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 122);
+            this.label3.Location = new System.Drawing.Point(1, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 17);
             this.label3.TabIndex = 2;
@@ -365,7 +350,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 83);
+            this.label2.Location = new System.Drawing.Point(1, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 17);
             this.label2.TabIndex = 1;
@@ -374,7 +359,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 49);
+            this.label1.Location = new System.Drawing.Point(30, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 17);
             this.label1.TabIndex = 0;
@@ -387,7 +372,6 @@
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(800, 647);
             this.Controls.Add(this.dtgvHospedaje);
-            this.Controls.Add(this.btnConfimarHOS);
             this.Controls.Add(this.btnAnularHOS);
             this.Controls.Add(this.btnCancelarHOS);
             this.Controls.Add(this.btnNuevoHOS);
@@ -405,7 +389,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dtgvHospedaje;
-        private System.Windows.Forms.Button btnConfimarHOS;
         private System.Windows.Forms.Button btnAnularHOS;
         private System.Windows.Forms.Button btnCancelarHOS;
         private System.Windows.Forms.Button btnNuevoHOS;
@@ -419,10 +402,8 @@
         private System.Windows.Forms.DateTimePicker dtpSalidaHos;
         private System.Windows.Forms.DateTimePicker dtpEntradaHos;
         private System.Windows.Forms.DateTimePicker dtpRegistroHos;
-        private System.Windows.Forms.ComboBox cmbCanPersHos;
         private System.Windows.Forms.ComboBox cmbHabitacionHos;
-        private System.Windows.Forms.TextBox txtDNIClienteHos;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtClienteHos;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtIDHospedaje;
         private System.Windows.Forms.Label label6;
@@ -431,5 +412,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtMotivoHos;
+        private System.Windows.Forms.Label label7;
     }
 }

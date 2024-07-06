@@ -28,10 +28,10 @@ namespace Proyeccc
         }
         private void limpiarVariables()
         {
-            txtNombre.Text = "";
-            txtApellido.Text = " ";
-            txtCorreoElectronico.Text = " ";
-            txtTelefono.Text = " ";
+            txtNombreCliente.Text = "";
+            txtApellidoCliente.Text = " ";
+            txtCorreoCliente.Text = " ";
+            txtTelefonoCliente.Text = " ";
         }
 
         private void btnNuevoCL_Click(object sender, EventArgs e)
@@ -47,11 +47,11 @@ namespace Proyeccc
             {
                 entUsuario c = new entUsuario();
                 c.dni = txtDNICliente.Text;
-                c.nombre = txtNombre.Text;
-                c.apellido = txtApellido.Text;
-                c.correo = txtCorreoElectronico.Text;
-                c.telefono = txtTelefono.Text;
-                c.fecha_registro = Convert.ToDateTime(dateTimePicker1.Text);
+                c.nombre = txtNombreCliente.Text;
+                c.apellido = txtApellidoCliente.Text;
+                c.correo = txtCorreoCliente.Text;
+                c.telefono = txtTelefonoCliente.Text;
+                c.fecha_registro = Convert.ToDateTime(dtpCliente.Text);
 
                 logUsuario.Instancia.insertaCliente(c);
             }
@@ -90,8 +90,8 @@ namespace Proyeccc
                 entUsuario c = new entUsuario();
 
                 c.ClienteID = int.Parse(txtClienteID.Text.Trim());
-                cbEstado.Checked = false;
-                c.estado = cbEstado.Checked;
+                cbEstadoCliente.Checked = false;
+                c.estado = cbEstadoCliente.Checked;
                 logUsuario.Instancia.deshabilitarCliente(c);
             }
             catch (Exception ex)
