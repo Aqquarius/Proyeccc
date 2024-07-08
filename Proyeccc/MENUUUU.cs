@@ -59,23 +59,25 @@ namespace Proyeccc
             lblhora.Text = DateTime.Now.ToString("HH:mm:ss");
             lblfecha.Text = DateTime.Now.ToLongDateString();
         }
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+
+        public void MostrarFormularioMantenedorEmpleado()
         {
-            Form formulario;
-            formulario = panelContenedor.Controls.OfType<MiForm>().FirstOrDefault();
+            AbrirFormulario<MantenedorEmpleado>();
+        }
+        public void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        {
+            Form formulario = panelContenedor.Controls.OfType<MiForm>().FirstOrDefault();
 
             if (formulario == null)
             {
                 formulario = new MiForm();
                 formulario.TopLevel = false;
-                formulario.FormBorderStyle = FormBorderStyle.None;
                 formulario.Dock = DockStyle.Fill;
                 panelContenedor.Controls.Add(formulario);
                 panelContenedor.Tag = formulario;
                 formulario.Show();
                 formulario.BringToFront();
             }
-
             else
             {
                 formulario.BringToFront();
@@ -84,7 +86,7 @@ namespace Proyeccc
 
         private void btnRegistroEmpleados_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<MantenedorEmpleado>();
+            AbrirFormulario<Login>();
         }
 
         private void btnRegistroPagos_Click(object sender, EventArgs e)
@@ -115,6 +117,16 @@ namespace Proyeccc
         private void btnEquipo_Click(object sender, EventArgs e)
         {
             AbrirFormulario<MantenedorEquipoTrabajo>();
+        }
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

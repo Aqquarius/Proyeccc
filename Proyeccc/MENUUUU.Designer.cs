@@ -37,8 +37,10 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnOrdenConserjeria = new System.Windows.Forms.Button();
+            this.btnEquipo = new System.Windows.Forms.Button();
             this.btnOrdenHospedaje = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -57,8 +59,6 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.lblfecha = new System.Windows.Forms.Label();
             this.lblhora = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.btnEquipo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -171,6 +171,14 @@
             this.MenuVertical.Size = new System.Drawing.Size(208, 636);
             this.MenuVertical.TabIndex = 6;
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel10.Location = new System.Drawing.Point(0, 530);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(7, 52);
+            this.panel10.TabIndex = 16;
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.DarkOrange;
@@ -198,6 +206,24 @@
             this.btnOrdenConserjeria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOrdenConserjeria.UseVisualStyleBackColor = false;
             this.btnOrdenConserjeria.Click += new System.EventHandler(this.btnOrdenConserjeria_Click);
+            // 
+            // btnEquipo
+            // 
+            this.btnEquipo.BackColor = System.Drawing.Color.White;
+            this.btnEquipo.FlatAppearance.BorderSize = 0;
+            this.btnEquipo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SandyBrown;
+            this.btnEquipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEquipo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEquipo.ForeColor = System.Drawing.Color.Black;
+            this.btnEquipo.Image = ((System.Drawing.Image)(resources.GetObject("btnEquipo.Image")));
+            this.btnEquipo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEquipo.Location = new System.Drawing.Point(4, 526);
+            this.btnEquipo.Name = "btnEquipo";
+            this.btnEquipo.Size = new System.Drawing.Size(201, 52);
+            this.btnEquipo.TabIndex = 15;
+            this.btnEquipo.Text = "Equipo";
+            this.btnEquipo.UseVisualStyleBackColor = false;
+            this.btnEquipo.Click += new System.EventHandler(this.btnEquipo_Click);
             // 
             // btnOrdenHospedaje
             // 
@@ -317,6 +343,7 @@
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSalir.TabIndex = 0;
             this.btnSalir.TabStop = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // panel2
             // 
@@ -397,6 +424,7 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(801, 636);
             this.panelContenedor.TabIndex = 8;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // lblfecha
             // 
@@ -419,32 +447,6 @@
             this.lblhora.Size = new System.Drawing.Size(280, 96);
             this.lblhora.TabIndex = 0;
             this.lblhora.Text = "label1";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel10.Location = new System.Drawing.Point(0, 530);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(7, 52);
-            this.panel10.TabIndex = 16;
-            // 
-            // btnEquipo
-            // 
-            this.btnEquipo.BackColor = System.Drawing.Color.White;
-            this.btnEquipo.FlatAppearance.BorderSize = 0;
-            this.btnEquipo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SandyBrown;
-            this.btnEquipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEquipo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEquipo.ForeColor = System.Drawing.Color.Black;
-            this.btnEquipo.Image = ((System.Drawing.Image)(resources.GetObject("btnEquipo.Image")));
-            this.btnEquipo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEquipo.Location = new System.Drawing.Point(4, 526);
-            this.btnEquipo.Name = "btnEquipo";
-            this.btnEquipo.Size = new System.Drawing.Size(201, 52);
-            this.btnEquipo.TabIndex = 15;
-            this.btnEquipo.Text = "Equipo";
-            this.btnEquipo.UseVisualStyleBackColor = false;
-            this.btnEquipo.Click += new System.EventHandler(this.btnEquipo_Click);
             // 
             // MENUUUU
             // 

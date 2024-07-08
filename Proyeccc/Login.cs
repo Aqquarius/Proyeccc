@@ -18,6 +18,7 @@ namespace Proyeccc
             InitializeComponent();
         }
         string password;
+
         private void btInicarSesion_Click(object sender, EventArgs e)
         {
             if (btInicarSesion.Text == "Iniciar Sesión")
@@ -25,79 +26,34 @@ namespace Proyeccc
                 string usuario = txUsuario.Text;
                 string contra = txContraseña.Text;
                 string url = usuario + ".txt";
+
                 if (File.Exists(url))
                 {
-                    password = File.ReadAllText(url);
+                    string password = File.ReadAllText(url);
+
                     if (contra.Equals(password))
                     {
-                        MENUUUU mostrarI = new MENUUUU();
-                        mostrarI.Show();
+                        MENUUUU menu = Application.OpenForms["MENUUUU"] as MENUUUU;
+                        if (menu != null)
+                        {
+                            menu.AbrirFormulario<MantenedorEmpleado>();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error: No se pudo encontrar el formulario MENUUUU");
+                        }
                     }
                     else
                     {
-                        MessageBox.Show(txContraseña, "Contraseña Incorrecta");
+                        MessageBox.Show("Contraseña Incorrecta");
                     }
                 }
                 else
                 {
-                    MessageBox.Show(txUsuario, "Usuario Incorrecto");
-                }
-            }
-            else if (btInicarSesion.Text == "Registrarse")
-            {
-                string Usuario;
-                string Contraseña;
-
-                if (txUsuario.Text == "Usuario")
-                {
-                    MessageBox.Show("Escribe un nombre");
-                    return;
-                }
-                else
-                {
-                    Usuario = Convert.ToString(txUsuario.Text);
-                }
-                if (txContraseña.Text == "Contraseña")
-                {
-                    MessageBox.Show("Escribe una contraseña");
-                    return;
-                }
-                else
-                {
-                    Contraseña = Convert.ToString(txContraseña.Text);
-                }
-
-                string usuario = txUsuario.Text;
-                string contra = txContraseña.Text;
-                string url = usuario + ".txt";
-                if (File.Exists(url))
-                {
-                    MessageBox.Show("Usuario existente");
-                }
-                else
-                {
-                    File.WriteAllText(url, contra);
-                    MessageBox.Show("Usuario registrado");
-                    txUsuario.Text = "Usuario";
-                    txContraseña.Text = "Contraseña";
+                    MessageBox.Show("Usuario Incorrecto");
                 }
             }
         }
-
-        private void btRegistrar_Click(object sender, EventArgs e)
-        {
-            if (btInicarSesion.Text == "Iniciar Sesión")
-            {
-                btInicarSesion.Text = "Registrarse";
-                btRegistrar.Text = "Iniciar Sesión";
-            }
-            else if (btInicarSesion.Text == "Registrarse")
-            {
-                btInicarSesion.Text = "Iniciar Sesión";
-                btRegistrar.Text = "Registrarse";
-            }
-        }
-
         private void txUsuario_Enter(object sender, EventArgs e)
         {
             if (txUsuario.Text == "Usuario")
