@@ -27,16 +27,30 @@ namespace CapaLogica
         {
             return datUsuario.Instancia.listarUsuario();
         }
+        public List<string> obtenerGenero()
+        {
+            return datUsuario.Instancia.ObtenerGenero();
+        }
+        public List<string> obtenerEstadoCivil()
+        {
+            return datUsuario.Instancia.ObtenerEstCiv();
+        }
         public void insertaCliente(entUsuario Cli)
         {
             datUsuario.Instancia.insertaCliente(Cli);
         }
         public void deshabilitarCliente(entUsuario Cli)
         {
-            datUsuario.Instancia.deshabilitarCliente(Cli);
+            datUsuario.Instancia.DeshabilitarCliente(Cli);
+        }
+        public void EditaCliente(entUsuario Cli)
+        {
+            datUsuario.Instancia.EditarCliente(Cli);
+        }
+        public entUsuario BuscarClientePorID(int ClienteID)
+        {
+            return datUsuario.Instancia.BuscarClientePorID(ClienteID);
         }
         #endregion metodos
-
-
     }
 }

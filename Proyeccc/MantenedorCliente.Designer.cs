@@ -36,9 +36,11 @@
             this.btnNuevoCL = new System.Windows.Forms.Button();
             this.btnModificarCL = new System.Windows.Forms.Button();
             this.gbDatos = new System.Windows.Forms.GroupBox();
-            this.cbGeneroCliente = new System.Windows.Forms.ComboBox();
+            this.txtPaisCliente = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cmbGeneroCliente = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.cbEstCivCliente = new System.Windows.Forms.ComboBox();
+            this.cmbEstCivCliente = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtDescripcionCliente = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -48,7 +50,6 @@
             this.btnBuscarCL = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTelefonoCliente = new System.Windows.Forms.TextBox();
-            this.gbOpciones = new System.Windows.Forms.GroupBox();
             this.btnAgregarCL = new System.Windows.Forms.Button();
             this.dtpCliente = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -61,11 +62,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelarCL = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtPaisCliente = new System.Windows.Forms.TextBox();
+            this.btEditarCL = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.gbDatos.SuspendLayout();
-            this.gbOpciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvCliente
@@ -84,10 +83,9 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCliente.ColumnHeadersHeight = 40;
-            this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvCliente.EnableHeadersVisualStyles = false;
             this.dgvCliente.GridColor = System.Drawing.Color.DarkOrange;
-            this.dgvCliente.Location = new System.Drawing.Point(36, 363);
+            this.dgvCliente.Location = new System.Drawing.Point(21, 325);
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -104,7 +102,7 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvCliente.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvCliente.Size = new System.Drawing.Size(603, 260);
+            this.dgvCliente.Size = new System.Drawing.Size(760, 263);
             this.dgvCliente.TabIndex = 52;
             // 
             // btnDeshabilitarCL
@@ -113,7 +111,7 @@
             this.btnDeshabilitarCL.FlatAppearance.BorderSize = 0;
             this.btnDeshabilitarCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeshabilitarCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeshabilitarCL.Location = new System.Drawing.Point(11, 127);
+            this.btnDeshabilitarCL.Location = new System.Drawing.Point(611, 165);
             this.btnDeshabilitarCL.Name = "btnDeshabilitarCL";
             this.btnDeshabilitarCL.Size = new System.Drawing.Size(113, 33);
             this.btnDeshabilitarCL.TabIndex = 51;
@@ -127,7 +125,7 @@
             this.btnNuevoCL.FlatAppearance.BorderSize = 0;
             this.btnNuevoCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoCL.Location = new System.Drawing.Point(652, 376);
+            this.btnNuevoCL.Location = new System.Drawing.Point(190, 594);
             this.btnNuevoCL.Name = "btnNuevoCL";
             this.btnNuevoCL.Size = new System.Drawing.Size(118, 41);
             this.btnNuevoCL.TabIndex = 50;
@@ -137,13 +135,13 @@
             // 
             // btnModificarCL
             // 
-            this.btnModificarCL.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnModificarCL.BackColor = System.Drawing.Color.SandyBrown;
             this.btnModificarCL.FlatAppearance.BorderSize = 0;
             this.btnModificarCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarCL.Location = new System.Drawing.Point(652, 423);
+            this.btnModificarCL.Location = new System.Drawing.Point(611, 204);
             this.btnModificarCL.Name = "btnModificarCL";
-            this.btnModificarCL.Size = new System.Drawing.Size(118, 41);
+            this.btnModificarCL.Size = new System.Drawing.Size(113, 33);
             this.btnModificarCL.TabIndex = 49;
             this.btnModificarCL.Text = "MODIFICAR";
             this.btnModificarCL.UseVisualStyleBackColor = false;
@@ -151,21 +149,23 @@
             // 
             // gbDatos
             // 
+            this.gbDatos.Controls.Add(this.btnDeshabilitarCL);
             this.gbDatos.Controls.Add(this.txtPaisCliente);
+            this.gbDatos.Controls.Add(this.btnAgregarCL);
             this.gbDatos.Controls.Add(this.label11);
-            this.gbDatos.Controls.Add(this.cbGeneroCliente);
+            this.gbDatos.Controls.Add(this.btnModificarCL);
+            this.gbDatos.Controls.Add(this.btnBuscarCL);
+            this.gbDatos.Controls.Add(this.cmbGeneroCliente);
             this.gbDatos.Controls.Add(this.label10);
-            this.gbDatos.Controls.Add(this.cbEstCivCliente);
+            this.gbDatos.Controls.Add(this.cmbEstCivCliente);
             this.gbDatos.Controls.Add(this.label9);
             this.gbDatos.Controls.Add(this.txtDescripcionCliente);
             this.gbDatos.Controls.Add(this.label8);
             this.gbDatos.Controls.Add(this.txtClienteID);
             this.gbDatos.Controls.Add(this.label7);
             this.gbDatos.Controls.Add(this.cbEstadoCliente);
-            this.gbDatos.Controls.Add(this.btnBuscarCL);
             this.gbDatos.Controls.Add(this.label6);
             this.gbDatos.Controls.Add(this.txtTelefonoCliente);
-            this.gbDatos.Controls.Add(this.gbOpciones);
             this.gbDatos.Controls.Add(this.dtpCliente);
             this.gbDatos.Controls.Add(this.label5);
             this.gbDatos.Controls.Add(this.label4);
@@ -177,20 +177,36 @@
             this.gbDatos.Controls.Add(this.label2);
             this.gbDatos.Controls.Add(this.label1);
             this.gbDatos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbDatos.Location = new System.Drawing.Point(36, 50);
+            this.gbDatos.Location = new System.Drawing.Point(21, 22);
             this.gbDatos.Name = "gbDatos";
-            this.gbDatos.Size = new System.Drawing.Size(734, 297);
+            this.gbDatos.Size = new System.Drawing.Size(760, 297);
             this.gbDatos.TabIndex = 48;
             this.gbDatos.TabStop = false;
             this.gbDatos.Text = "Datos del cliente";
             // 
-            // cbGeneroCliente
+            // txtPaisCliente
             // 
-            this.cbGeneroCliente.FormattingEnabled = true;
-            this.cbGeneroCliente.Location = new System.Drawing.Point(448, 204);
-            this.cbGeneroCliente.Name = "cbGeneroCliente";
-            this.cbGeneroCliente.Size = new System.Drawing.Size(112, 25);
-            this.cbGeneroCliente.TabIndex = 63;
+            this.txtPaisCliente.Location = new System.Drawing.Point(323, 258);
+            this.txtPaisCliente.Name = "txtPaisCliente";
+            this.txtPaisCliente.Size = new System.Drawing.Size(237, 22);
+            this.txtPaisCliente.TabIndex = 65;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(320, 235);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(131, 17);
+            this.label11.TabIndex = 64;
+            this.label11.Text = "Lugar de nacimiento";
+            // 
+            // cmbGeneroCliente
+            // 
+            this.cmbGeneroCliente.FormattingEnabled = true;
+            this.cmbGeneroCliente.Location = new System.Drawing.Point(448, 204);
+            this.cmbGeneroCliente.Name = "cmbGeneroCliente";
+            this.cmbGeneroCliente.Size = new System.Drawing.Size(112, 25);
+            this.cmbGeneroCliente.TabIndex = 63;
             // 
             // label10
             // 
@@ -201,13 +217,13 @@
             this.label10.TabIndex = 62;
             this.label10.Text = "Genero";
             // 
-            // cbEstCivCliente
+            // cmbEstCivCliente
             // 
-            this.cbEstCivCliente.FormattingEnabled = true;
-            this.cbEstCivCliente.Location = new System.Drawing.Point(323, 204);
-            this.cbEstCivCliente.Name = "cbEstCivCliente";
-            this.cbEstCivCliente.Size = new System.Drawing.Size(117, 25);
-            this.cbEstCivCliente.TabIndex = 61;
+            this.cmbEstCivCliente.FormattingEnabled = true;
+            this.cmbEstCivCliente.Location = new System.Drawing.Point(323, 204);
+            this.cmbEstCivCliente.Name = "cmbEstCivCliente";
+            this.cmbEstCivCliente.Size = new System.Drawing.Size(117, 25);
+            this.cmbEstCivCliente.TabIndex = 61;
             // 
             // label9
             // 
@@ -267,7 +283,7 @@
             this.btnBuscarCL.FlatAppearance.BorderSize = 0;
             this.btnBuscarCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarCL.Location = new System.Drawing.Point(586, 57);
+            this.btnBuscarCL.Location = new System.Drawing.Point(611, 126);
             this.btnBuscarCL.Name = "btnBuscarCL";
             this.btnBuscarCL.Size = new System.Drawing.Size(113, 33);
             this.btnBuscarCL.TabIndex = 44;
@@ -291,23 +307,13 @@
             this.txtTelefonoCliente.Size = new System.Drawing.Size(237, 22);
             this.txtTelefonoCliente.TabIndex = 10;
             // 
-            // gbOpciones
-            // 
-            this.gbOpciones.Controls.Add(this.btnDeshabilitarCL);
-            this.gbOpciones.Controls.Add(this.btnAgregarCL);
-            this.gbOpciones.Location = new System.Drawing.Point(575, 33);
-            this.gbOpciones.Name = "gbOpciones";
-            this.gbOpciones.Size = new System.Drawing.Size(134, 179);
-            this.gbOpciones.TabIndex = 53;
-            this.gbOpciones.TabStop = false;
-            // 
             // btnAgregarCL
             // 
             this.btnAgregarCL.BackColor = System.Drawing.Color.SandyBrown;
             this.btnAgregarCL.FlatAppearance.BorderSize = 0;
             this.btnAgregarCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarCL.Location = new System.Drawing.Point(11, 75);
+            this.btnAgregarCL.Location = new System.Drawing.Point(611, 87);
             this.btnAgregarCL.Name = "btnAgregarCL";
             this.btnAgregarCL.Size = new System.Drawing.Size(113, 33);
             this.btnAgregarCL.TabIndex = 43;
@@ -401,7 +407,7 @@
             this.btnCancelarCL.FlatAppearance.BorderSize = 0;
             this.btnCancelarCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarCL.Location = new System.Drawing.Point(652, 470);
+            this.btnCancelarCL.Location = new System.Drawing.Point(469, 594);
             this.btnCancelarCL.Name = "btnCancelarCL";
             this.btnCancelarCL.Size = new System.Drawing.Size(118, 41);
             this.btnCancelarCL.TabIndex = 45;
@@ -409,21 +415,19 @@
             this.btnCancelarCL.UseVisualStyleBackColor = false;
             this.btnCancelarCL.Click += new System.EventHandler(this.btnCancelarCL_Click);
             // 
-            // label11
+            // btEditarCL
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(320, 235);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(131, 17);
-            this.label11.TabIndex = 64;
-            this.label11.Text = "Lugar de nacimiento";
-            // 
-            // txtPaisCliente
-            // 
-            this.txtPaisCliente.Location = new System.Drawing.Point(323, 258);
-            this.txtPaisCliente.Name = "txtPaisCliente";
-            this.txtPaisCliente.Size = new System.Drawing.Size(237, 22);
-            this.txtPaisCliente.TabIndex = 65;
+            this.btEditarCL.BackColor = System.Drawing.Color.LightSalmon;
+            this.btEditarCL.FlatAppearance.BorderSize = 0;
+            this.btEditarCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btEditarCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEditarCL.Location = new System.Drawing.Point(330, 594);
+            this.btEditarCL.Name = "btEditarCL";
+            this.btEditarCL.Size = new System.Drawing.Size(118, 41);
+            this.btEditarCL.TabIndex = 53;
+            this.btEditarCL.Text = "EDITAR";
+            this.btEditarCL.UseVisualStyleBackColor = false;
+            this.btEditarCL.Click += new System.EventHandler(this.btEditarCL_Click);
             // 
             // MantenedorCliente
             // 
@@ -431,10 +435,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(804, 647);
+            this.Controls.Add(this.btEditarCL);
             this.Controls.Add(this.btnCancelarCL);
             this.Controls.Add(this.dgvCliente);
             this.Controls.Add(this.btnNuevoCL);
-            this.Controls.Add(this.btnModificarCL);
             this.Controls.Add(this.gbDatos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MantenedorCliente";
@@ -442,7 +446,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             this.gbDatos.ResumeLayout(false);
             this.gbDatos.PerformLayout();
-            this.gbOpciones.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -469,17 +472,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox gbOpciones;
         private System.Windows.Forms.CheckBox cbEstadoCliente;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtClienteID;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtDescripcionCliente;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cbEstCivCliente;
-        private System.Windows.Forms.ComboBox cbGeneroCliente;
+        private System.Windows.Forms.ComboBox cmbEstCivCliente;
+        private System.Windows.Forms.ComboBox cmbGeneroCliente;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtPaisCliente;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btEditarCL;
     }
 }

@@ -32,18 +32,19 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEstadoHab = new System.Windows.Forms.CheckBox();
             this.btnCancelarHAB = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregarHAB = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtIDHab = new System.Windows.Forms.TextBox();
+            this.cbPisoHab = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNumHab = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.txtPrecioHab = new System.Windows.Forms.TextBox();
+            this.cbTipoHab = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
             this.IDORDEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,7 +58,6 @@
             this.btnGuardModHAB = new System.Windows.Forms.Button();
             this.btnCambiarModHAB = new System.Windows.Forms.Button();
             this.btnDeshabilitarHAB = new System.Windows.Forms.Button();
-            this.btnEstado = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
             this.SuspendLayout();
@@ -65,25 +65,35 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.NavajoWhite;
-            this.panel1.Controls.Add(this.btnEstado);
+            this.panel1.Controls.Add(this.btnEstadoHab);
             this.panel1.Controls.Add(this.btnCancelarHAB);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnAgregarHAB);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.txtIDHab);
+            this.panel1.Controls.Add(this.cbPisoHab);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txtNumHab);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.txtPrecioHab);
+            this.panel1.Controls.Add(this.cbTipoHab);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(32, 71);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(148, 405);
             this.panel1.TabIndex = 34;
+            // 
+            // btnEstadoHab
+            // 
+            this.btnEstadoHab.AutoSize = true;
+            this.btnEstadoHab.Location = new System.Drawing.Point(34, 283);
+            this.btnEstadoHab.Name = "btnEstadoHab";
+            this.btnEstadoHab.Size = new System.Drawing.Size(67, 21);
+            this.btnEstadoHab.TabIndex = 45;
+            this.btnEstadoHab.Text = "Estado";
+            this.btnEstadoHab.UseVisualStyleBackColor = true;
             // 
             // btnCancelarHAB
             // 
@@ -129,20 +139,20 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "ID Habitacion";
             // 
-            // textBox2
+            // txtIDHab
             // 
-            this.textBox2.Location = new System.Drawing.Point(13, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 22);
-            this.textBox2.TabIndex = 6;
+            this.txtIDHab.Location = new System.Drawing.Point(13, 56);
+            this.txtIDHab.Name = "txtIDHab";
+            this.txtIDHab.Size = new System.Drawing.Size(121, 22);
+            this.txtIDHab.TabIndex = 6;
             // 
-            // comboBox1
+            // cbPisoHab
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(13, 190);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 25);
-            this.comboBox1.TabIndex = 7;
+            this.cbPisoHab.FormattingEnabled = true;
+            this.cbPisoHab.Location = new System.Drawing.Point(13, 190);
+            this.cbPisoHab.Name = "cbPisoHab";
+            this.cbPisoHab.Size = new System.Drawing.Size(121, 25);
+            this.cbPisoHab.TabIndex = 7;
             // 
             // label4
             // 
@@ -162,12 +172,12 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "# Habitacion";
             // 
-            // textBox3
+            // txtNumHab
             // 
-            this.textBox3.Location = new System.Drawing.Point(13, 98);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 22);
-            this.textBox3.TabIndex = 10;
+            this.txtNumHab.Location = new System.Drawing.Point(13, 98);
+            this.txtNumHab.Name = "txtNumHab";
+            this.txtNumHab.Size = new System.Drawing.Size(121, 22);
+            this.txtNumHab.TabIndex = 10;
             // 
             // label6
             // 
@@ -178,20 +188,20 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Tipo Habitacion";
             // 
-            // textBox4
+            // txtPrecioHab
             // 
-            this.textBox4.Location = new System.Drawing.Point(13, 241);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 22);
-            this.textBox4.TabIndex = 14;
+            this.txtPrecioHab.Location = new System.Drawing.Point(13, 241);
+            this.txtPrecioHab.Name = "txtPrecioHab";
+            this.txtPrecioHab.Size = new System.Drawing.Size(121, 22);
+            this.txtPrecioHab.TabIndex = 14;
             // 
-            // comboBox2
+            // cbTipoHab
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(13, 145);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 25);
-            this.comboBox2.TabIndex = 12;
+            this.cbTipoHab.FormattingEnabled = true;
+            this.cbTipoHab.Location = new System.Drawing.Point(13, 145);
+            this.cbTipoHab.Name = "cbTipoHab";
+            this.cbTipoHab.Size = new System.Drawing.Size(121, 25);
+            this.cbTipoHab.TabIndex = 12;
             // 
             // label7
             // 
@@ -343,16 +353,6 @@
             this.btnDeshabilitarHAB.Text = "DESHABILITAR";
             this.btnDeshabilitarHAB.UseVisualStyleBackColor = false;
             // 
-            // btnEstado
-            // 
-            this.btnEstado.AutoSize = true;
-            this.btnEstado.Location = new System.Drawing.Point(34, 283);
-            this.btnEstado.Name = "btnEstado";
-            this.btnEstado.Size = new System.Drawing.Size(67, 21);
-            this.btnEstado.TabIndex = 45;
-            this.btnEstado.Text = "Estado";
-            this.btnEstado.UseVisualStyleBackColor = true;
-            // 
             // MantenedorHabitaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,14 +380,14 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtIDHab;
+        private System.Windows.Forms.ComboBox cbPisoHab;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNumHab;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox txtPrecioHab;
+        private System.Windows.Forms.ComboBox cbTipoHab;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dtgvConserjeria;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDORDEN;
@@ -403,6 +403,6 @@
         private System.Windows.Forms.Button btnGuardModHAB;
         private System.Windows.Forms.Button btnCambiarModHAB;
         private System.Windows.Forms.Button btnDeshabilitarHAB;
-        private System.Windows.Forms.CheckBox btnEstado;
+        private System.Windows.Forms.CheckBox btnEstadoHab;
     }
 }

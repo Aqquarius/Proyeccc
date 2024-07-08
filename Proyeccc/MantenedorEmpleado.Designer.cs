@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtTelefonoEMP = new System.Windows.Forms.TextBox();
+            this.txtTelefonoEmpleado = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
             this.btnModificarEMP = new System.Windows.Forms.Button();
             this.btnCancelarEMP = new System.Windows.Forms.Button();
             this.btnAgregarEMP = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbEstadoEmpleado = new System.Windows.Forms.CheckBox();
+            this.txtCorreoEmpleado = new System.Windows.Forms.TextBox();
+            this.txtApellidosEmpleado = new System.Windows.Forms.TextBox();
+            this.txtNombreEmpleado = new System.Windows.Forms.TextBox();
+            this.txtIDEmpleado = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,23 +50,27 @@
             this.btnNuevoEMP = new System.Windows.Forms.Button();
             this.btnInhabilitarEMP = new System.Windows.Forms.Button();
             this.btnEditarEMP = new System.Windows.Forms.Button();
+            this.cbTipoEmpleado = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtTelefonoEMP);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.cbTipoEmpleado);
+            this.groupBox1.Controls.Add(this.txtTelefonoEmpleado);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.dtgvConserjeria);
             this.groupBox1.Controls.Add(this.btnModificarEMP);
             this.groupBox1.Controls.Add(this.btnCancelarEMP);
             this.groupBox1.Controls.Add(this.btnAgregarEMP);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.cbEstadoEmpleado);
+            this.groupBox1.Controls.Add(this.txtCorreoEmpleado);
+            this.groupBox1.Controls.Add(this.txtApellidosEmpleado);
+            this.groupBox1.Controls.Add(this.txtNombreEmpleado);
+            this.groupBox1.Controls.Add(this.txtIDEmpleado);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -80,12 +84,12 @@
             this.groupBox1.Text = "Datos del Empleado";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // txtTelefonoEMP
+            // txtTelefonoEmpleado
             // 
-            this.txtTelefonoEMP.Location = new System.Drawing.Point(153, 152);
-            this.txtTelefonoEMP.Name = "txtTelefonoEMP";
-            this.txtTelefonoEMP.Size = new System.Drawing.Size(121, 22);
-            this.txtTelefonoEMP.TabIndex = 54;
+            this.txtTelefonoEmpleado.Location = new System.Drawing.Point(153, 152);
+            this.txtTelefonoEmpleado.Name = "txtTelefonoEmpleado";
+            this.txtTelefonoEmpleado.Size = new System.Drawing.Size(121, 22);
+            this.txtTelefonoEmpleado.TabIndex = 54;
             // 
             // label6
             // 
@@ -103,14 +107,14 @@
             this.dtgvConserjeria.BackgroundColor = System.Drawing.Color.NavajoWhite;
             this.dtgvConserjeria.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvConserjeria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvConserjeria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvConserjeria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvConserjeria.ColumnHeadersHeight = 40;
             this.dtgvConserjeria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgvConserjeria.EnableHeadersVisualStyles = false;
@@ -118,20 +122,20 @@
             this.dtgvConserjeria.Location = new System.Drawing.Point(0, 253);
             this.dtgvConserjeria.Name = "dtgvConserjeria";
             this.dtgvConserjeria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvConserjeria.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.NavajoWhite;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.dtgvConserjeria.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvConserjeria.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.NavajoWhite;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgvConserjeria.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvConserjeria.Size = new System.Drawing.Size(612, 314);
             this.dtgvConserjeria.TabIndex = 50;
             // 
@@ -174,43 +178,43 @@
             this.btnAgregarEMP.Text = "AGREGAR";
             this.btnAgregarEMP.UseVisualStyleBackColor = false;
             // 
-            // checkBox1
+            // cbEstadoEmpleado
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(358, 180);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(152, 21);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "Estado del Empleado";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbEstadoEmpleado.AutoSize = true;
+            this.cbEstadoEmpleado.Location = new System.Drawing.Point(358, 180);
+            this.cbEstadoEmpleado.Name = "cbEstadoEmpleado";
+            this.cbEstadoEmpleado.Size = new System.Drawing.Size(152, 21);
+            this.cbEstadoEmpleado.TabIndex = 8;
+            this.cbEstadoEmpleado.Text = "Estado del Empleado";
+            this.cbEstadoEmpleado.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtCorreoEmpleado
             // 
-            this.textBox4.Location = new System.Drawing.Point(153, 124);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 22);
-            this.textBox4.TabIndex = 7;
+            this.txtCorreoEmpleado.Location = new System.Drawing.Point(153, 124);
+            this.txtCorreoEmpleado.Name = "txtCorreoEmpleado";
+            this.txtCorreoEmpleado.Size = new System.Drawing.Size(121, 22);
+            this.txtCorreoEmpleado.TabIndex = 7;
             // 
-            // textBox3
+            // txtApellidosEmpleado
             // 
-            this.textBox3.Location = new System.Drawing.Point(153, 94);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 22);
-            this.textBox3.TabIndex = 6;
+            this.txtApellidosEmpleado.Location = new System.Drawing.Point(153, 94);
+            this.txtApellidosEmpleado.Name = "txtApellidosEmpleado";
+            this.txtApellidosEmpleado.Size = new System.Drawing.Size(121, 22);
+            this.txtApellidosEmpleado.TabIndex = 6;
             // 
-            // textBox2
+            // txtNombreEmpleado
             // 
-            this.textBox2.Location = new System.Drawing.Point(153, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 22);
-            this.textBox2.TabIndex = 5;
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(153, 66);
+            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(121, 22);
+            this.txtNombreEmpleado.TabIndex = 5;
             // 
-            // textBox1
+            // txtIDEmpleado
             // 
-            this.textBox1.Location = new System.Drawing.Point(153, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 22);
-            this.textBox1.TabIndex = 4;
+            this.txtIDEmpleado.Location = new System.Drawing.Point(153, 38);
+            this.txtIDEmpleado.Name = "txtIDEmpleado";
+            this.txtIDEmpleado.Size = new System.Drawing.Size(121, 22);
+            this.txtIDEmpleado.TabIndex = 4;
             // 
             // label4
             // 
@@ -287,6 +291,23 @@
             this.btnEditarEMP.Text = "EDITAR";
             this.btnEditarEMP.UseVisualStyleBackColor = false;
             // 
+            // cbTipoEmpleado
+            // 
+            this.cbTipoEmpleado.FormattingEnabled = true;
+            this.cbTipoEmpleado.Location = new System.Drawing.Point(153, 180);
+            this.cbTipoEmpleado.Name = "cbTipoEmpleado";
+            this.cbTipoEmpleado.Size = new System.Drawing.Size(121, 25);
+            this.cbTipoEmpleado.TabIndex = 55;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(103, 184);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 17);
+            this.label5.TabIndex = 56;
+            this.label5.Text = "Tipo";
+            // 
             // MantenedorEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,11 +330,11 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox cbEstadoEmpleado;
+        private System.Windows.Forms.TextBox txtCorreoEmpleado;
+        private System.Windows.Forms.TextBox txtApellidosEmpleado;
+        private System.Windows.Forms.TextBox txtNombreEmpleado;
+        private System.Windows.Forms.TextBox txtIDEmpleado;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -325,7 +346,9 @@
         private System.Windows.Forms.Button btnInhabilitarEMP;
         private System.Windows.Forms.Button btnEditarEMP;
         private System.Windows.Forms.DataGridView dtgvConserjeria;
-        private System.Windows.Forms.TextBox txtTelefonoEMP;
+        private System.Windows.Forms.TextBox txtTelefonoEmpleado;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbTipoEmpleado;
     }
 }

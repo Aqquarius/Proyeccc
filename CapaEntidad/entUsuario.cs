@@ -9,12 +9,16 @@ namespace CapaEntidad
     public class entUsuario
     {
         public int ClienteID { get; set; }
-        public string dni { get; set; }
-        public string nombre { get; set; }
-        public string apellido { get; set; }
-        public DateTime fecha_registro { get; set; }
-        public string correo { get; set; }
-        public string telefono { get; set; }
-        public Boolean estado { get; set; }
+        public string DNI { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string Descripcion { get; set; }
+        public Boolean Estado { get; set; }
+        public DateTime Fecha_Registro { get; set; }
+        public string Correo { get; set; }
+        public string Telefono { get; set; }
+        public string Pais { get; set; }
+        public string EstadoCivil { get; set; }
+        public string Genero { get; set; }
     }
 }

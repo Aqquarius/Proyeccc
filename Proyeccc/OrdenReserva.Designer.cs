@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAnularRESER = new System.Windows.Forms.Button();
             this.btnCancelarRESER = new System.Windows.Forms.Button();
             this.btnNuevoRESER = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtClienteHos = new System.Windows.Forms.TextBox();
+            this.txtClienteRes = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.cmbMPRes = new System.Windows.Forms.ComboBox();
             this.btnMostrarRESER = new System.Windows.Forms.Button();
@@ -57,6 +57,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dtgvReserva = new System.Windows.Forms.DataGridView();
+            this.txtMotivoRes = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvReserva)).BeginInit();
             this.SuspendLayout();
@@ -102,7 +104,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtClienteHos);
+            this.groupBox1.Controls.Add(this.txtMotivoRes);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.txtClienteRes);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.cmbMPRes);
             this.groupBox1.Controls.Add(this.btnMostrarRESER);
@@ -131,17 +135,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Orden de Reserva";
             // 
-            // txtClienteHos
+            // txtClienteRes
             // 
-            this.txtClienteHos.Location = new System.Drawing.Point(129, 204);
-            this.txtClienteHos.Name = "txtClienteHos";
-            this.txtClienteHos.Size = new System.Drawing.Size(124, 23);
-            this.txtClienteHos.TabIndex = 40;
+            this.txtClienteRes.Location = new System.Drawing.Point(130, 162);
+            this.txtClienteRes.Name = "txtClienteRes";
+            this.txtClienteRes.Size = new System.Drawing.Size(124, 23);
+            this.txtClienteRes.TabIndex = 40;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(69, 207);
+            this.label9.Location = new System.Drawing.Point(70, 165);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 17);
             this.label9.TabIndex = 39;
@@ -222,21 +226,21 @@
             // 
             // dtpSalidaRes
             // 
-            this.dtpSalidaRes.Location = new System.Drawing.Point(129, 162);
+            this.dtpSalidaRes.Location = new System.Drawing.Point(130, 133);
             this.dtpSalidaRes.Name = "dtpSalidaRes";
             this.dtpSalidaRes.Size = new System.Drawing.Size(234, 23);
             this.dtpSalidaRes.TabIndex = 25;
             // 
             // dtpEntradaRes
             // 
-            this.dtpEntradaRes.Location = new System.Drawing.Point(129, 122);
+            this.dtpEntradaRes.Location = new System.Drawing.Point(130, 104);
             this.dtpEntradaRes.Name = "dtpEntradaRes";
             this.dtpEntradaRes.Size = new System.Drawing.Size(234, 23);
             this.dtpEntradaRes.TabIndex = 24;
             // 
             // dtpRegistroRes
             // 
-            this.dtpRegistroRes.Location = new System.Drawing.Point(130, 80);
+            this.dtpRegistroRes.Location = new System.Drawing.Point(130, 75);
             this.dtpRegistroRes.Name = "dtpRegistroRes";
             this.dtpRegistroRes.Size = new System.Drawing.Size(233, 23);
             this.dtpRegistroRes.TabIndex = 23;
@@ -266,11 +270,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(406, 127);
+            this.label7.Location = new System.Drawing.Point(460, 128);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 17);
+            this.label7.Size = new System.Drawing.Size(48, 17);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Precio Reserva";
+            this.label7.Text = "Precio";
             // 
             // label6
             // 
@@ -293,7 +297,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 165);
+            this.label4.Location = new System.Drawing.Point(13, 136);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 17);
             this.label4.TabIndex = 3;
@@ -302,7 +306,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(0, 127);
+            this.label3.Location = new System.Drawing.Point(1, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 17);
             this.label3.TabIndex = 2;
@@ -311,7 +315,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(0, 85);
+            this.label2.Location = new System.Drawing.Point(0, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 17);
             this.label2.TabIndex = 1;
@@ -333,14 +337,14 @@
             this.dtgvReserva.BackgroundColor = System.Drawing.Color.NavajoWhite;
             this.dtgvReserva.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvReserva.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvReserva.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvReserva.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvReserva.ColumnHeadersHeight = 55;
             this.dtgvReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgvReserva.EnableHeadersVisualStyles = false;
@@ -348,22 +352,38 @@
             this.dtgvReserva.Location = new System.Drawing.Point(14, 310);
             this.dtgvReserva.Name = "dtgvReserva";
             this.dtgvReserva.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvReserva.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.NavajoWhite;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.dtgvReserva.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvReserva.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.NavajoWhite;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgvReserva.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvReserva.Size = new System.Drawing.Size(765, 210);
             this.dtgvReserva.TabIndex = 38;
+            // 
+            // txtMotivoRes
+            // 
+            this.txtMotivoRes.Location = new System.Drawing.Point(130, 191);
+            this.txtMotivoRes.Name = "txtMotivoRes";
+            this.txtMotivoRes.Size = new System.Drawing.Size(124, 23);
+            this.txtMotivoRes.TabIndex = 40;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(15, 194);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(109, 17);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "Motivo de viaje";
             // 
             // OrdenReserva
             // 
@@ -411,7 +431,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dtgvReserva;
         private System.Windows.Forms.ComboBox cmbMPRes;
-        private System.Windows.Forms.TextBox txtClienteHos;
+        private System.Windows.Forms.TextBox txtClienteRes;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtMotivoRes;
+        private System.Windows.Forms.Label label8;
     }
 }

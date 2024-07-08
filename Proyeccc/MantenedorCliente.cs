@@ -18,9 +18,26 @@ namespace Proyeccc
         {
             InitializeComponent();
             listarUsuario();
+            inicioComboBox();
             gbDatos.Enabled = false;
-            gbOpciones.Enabled = false;
             btnCancelarCL.Enabled = false;
+        }
+        private void inicioComboBox()
+        {
+            // cmbGenero
+            cmbGeneroCliente.Items.Clear();
+            List<string> generos = logUsuario.Instancia.obtenerGenero();
+            foreach (string genero in generos)
+            {
+                cmbGeneroCliente.Items.Add(genero);
+            }
+            // cmbEstCivCliente
+            cmbEstCivCliente.Items.Clear();
+            List<string> estciviles = logUsuario.Instancia.obtenerEstadoCivil();
+            foreach (string estadocivil in estciviles)
+            {
+                cmbEstCivCliente.Items.Add(estadocivil);
+            }
         }
         public void listarUsuario()
         {
@@ -37,7 +54,10 @@ namespace Proyeccc
         private void btnNuevoCL_Click(object sender, EventArgs e)
         {
             gbDatos.Enabled = true;
-            gbOpciones.Enabled = true;
+            btnAgregarCL.Enabled = true;
+            btnBuscarCL.Enabled = true;
+            btnDeshabilitarCL.Enabled = false;
+            btnModificarCL.Enabled = false;
             btnCancelarCL.Enabled = true;
         }
 
@@ -46,12 +66,17 @@ namespace Proyeccc
             try
             {
                 entUsuario c = new entUsuario();
-                c.dni = txtDNICliente.Text;
-                c.nombre = txtNombreCliente.Text;
-                c.apellido = txtApellidoCliente.Text;
-                c.correo = txtCorreoCliente.Text;
-                c.telefono = txtTelefonoCliente.Text;
-                c.fecha_registro = Convert.ToDateTime(dtpCliente.Text);
+                c.DNI = txtDNICliente.Text;
+                c.Nombre = txtNombreCliente.Text;
+                c.Apellido = txtApellidoCliente.Text;
+                c.Correo = txtCorreoCliente.Text;
+                c.Telefono = txtTelefonoCliente.Text;
+                c.Fecha_Registro = Convert.ToDateTime(dtpCliente.Text);
+                c.Descripcion = txtDescripcionCliente.Text;
+                c.Estado = cbEstadoCliente.Checked;
+                c.Pais = txtPaisCliente.Text;
+                c.EstadoCivil = cmbEstCivCliente.Text;
+                c.Genero = cmbGeneroCliente.Text;
 
                 logUsuario.Instancia.insertaCliente(c);
             }
@@ -67,20 +92,78 @@ namespace Proyeccc
         private void btnCancelarCL_Click(object sender, EventArgs e)
         {
             gbDatos.Enabled = false;
+            btnAgregarCL.Enabled = false;
+            btnBuscarCL.Enabled = false;
+            btnDeshabilitarCL.Enabled = false;
+            btnModificarCL.Enabled = false;
             btnCancelarCL.Enabled = false;
         }
 
         private void btnBuscarCL_Click(object sender, EventArgs e)
         {
+            try
+            {
+                int clienteID = Convert.ToInt32(txtClienteID.Text.Trim());
+                entUsuario cliente = logUsuario.Instancia.BuscarClientePorID(clienteID);
+                if (cliente != null)
+                {
+                    txtDNICliente.Text = cliente.DNI;
+                    txtNombreCliente.Text = cliente.Nombre;
+                    txtApellidoCliente.Text = cliente.Apellido;
+                    txtCorreoCliente.Text = cliente.Correo;
+                    txtTelefonoCliente.Text = cliente.Telefono;
+                    dtpCliente.Value = cliente.Fecha_Registro;
+                    txtDescripcionCliente.Text = cliente.Descripcion;
+                    cbEstadoCliente.Checked = cliente.Estado;
+                    txtPaisCliente.Text = cliente.Pais;
+                    cmbEstCivCliente.Text = cliente.EstadoCivil;
+                    cmbGeneroCliente.Text = cliente.Genero;
 
+                    btnModificarCL.Enabled = true;
+                    btnDeshabilitarCL.Enabled = true;
+                    gbDatos.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("Cliente no encontrado.");
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Ingrese un ID de cliente válido.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void btnModificarCL_Click(object sender, EventArgs e)
         {
-            gbDatos.Enabled = true;
-            dgvCliente.Enabled = true;
-            btnBuscarCL.Enabled = true;
-            btnCancelarCL.Enabled = true;
+            try
+            {
+                entUsuario c = new entUsuario();
+                c.ClienteID = int.Parse(txtClienteID.Text.Trim());
+                c.DNI = txtDNICliente.Text.Trim();
+                c.Nombre = txtNombreCliente.Text.Trim();
+                c.Apellido = txtApellidoCliente.Text.Trim();
+                c.Correo = txtCorreoCliente.Text.Trim();
+                c.Telefono = txtTelefonoCliente.Text.Trim();
+                c.Fecha_Registro = dtpCliente.Value;
+                c.Descripcion = txtDescripcionCliente.Text.Trim();
+                c.Estado = cbEstadoCliente.Checked;
+                c.Pais = txtPaisCliente.Text.Trim();
+                c.EstadoCivil = cmbEstCivCliente.Text.Trim();
+                c.Genero = cmbGeneroCliente.Text.Trim();
+                logUsuario.Instancia.EditaCliente(c);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            limpiarVariables();
+            gbDatos.Enabled = false;
+            listarUsuario();
         }
 
         private void btnDeshabilitarCL_Click(object sender, EventArgs e)
@@ -91,7 +174,7 @@ namespace Proyeccc
 
                 c.ClienteID = int.Parse(txtClienteID.Text.Trim());
                 cbEstadoCliente.Checked = false;
-                c.estado = cbEstadoCliente.Checked;
+                c.Estado = cbEstadoCliente.Checked;
                 logUsuario.Instancia.deshabilitarCliente(c);
             }
             catch (Exception ex)
@@ -101,6 +184,16 @@ namespace Proyeccc
             limpiarVariables();
             gbDatos.Enabled = false;
             listarUsuario();
+
+        }
+        private void btEditarCL_Click(object sender, EventArgs e)
+        {
+            gbDatos.Enabled = true;
+            btnCancelarCL.Enabled = true;
+            btnAgregarCL.Enabled = false;
+            btnBuscarCL.Enabled = true;
+            btnDeshabilitarCL.Enabled = true;
+            btnModificarCL.Enabled = true;
         }
     }
 }
