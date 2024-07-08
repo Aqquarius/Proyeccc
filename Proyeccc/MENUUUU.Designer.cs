@@ -57,6 +57,8 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.lblfecha = new System.Windows.Forms.Label();
             this.lblhora = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.btnEquipo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -145,8 +147,10 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.White;
+            this.MenuVertical.Controls.Add(this.panel10);
             this.MenuVertical.Controls.Add(this.panel8);
             this.MenuVertical.Controls.Add(this.btnOrdenConserjeria);
+            this.MenuVertical.Controls.Add(this.btnEquipo);
             this.MenuVertical.Controls.Add(this.btnOrdenHospedaje);
             this.MenuVertical.Controls.Add(this.panel5);
             this.MenuVertical.Controls.Add(this.panel6);
@@ -170,7 +174,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel8.Location = new System.Drawing.Point(0, 498);
+            this.panel8.Location = new System.Drawing.Point(0, 472);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(7, 52);
             this.panel8.TabIndex = 14;
@@ -186,7 +190,7 @@
             this.btnOrdenConserjeria.ForeColor = System.Drawing.Color.Black;
             this.btnOrdenConserjeria.Image = ((System.Drawing.Image)(resources.GetObject("btnOrdenConserjeria.Image")));
             this.btnOrdenConserjeria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrdenConserjeria.Location = new System.Drawing.Point(6, 377);
+            this.btnOrdenConserjeria.Location = new System.Drawing.Point(6, 358);
             this.btnOrdenConserjeria.Name = "btnOrdenConserjeria";
             this.btnOrdenConserjeria.Size = new System.Drawing.Size(198, 52);
             this.btnOrdenConserjeria.TabIndex = 14;
@@ -205,7 +209,7 @@
             this.btnOrdenHospedaje.ForeColor = System.Drawing.Color.Black;
             this.btnOrdenHospedaje.Image = ((System.Drawing.Image)(resources.GetObject("btnOrdenHospedaje.Image")));
             this.btnOrdenHospedaje.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrdenHospedaje.Location = new System.Drawing.Point(4, 494);
+            this.btnOrdenHospedaje.Location = new System.Drawing.Point(4, 468);
             this.btnOrdenHospedaje.Name = "btnOrdenHospedaje";
             this.btnOrdenHospedaje.Size = new System.Drawing.Size(201, 52);
             this.btnOrdenHospedaje.TabIndex = 13;
@@ -217,7 +221,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel5.Location = new System.Drawing.Point(0, 377);
+            this.panel5.Location = new System.Drawing.Point(0, 358);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(7, 52);
             this.panel5.TabIndex = 13;
@@ -225,7 +229,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel6.Location = new System.Drawing.Point(0, 319);
+            this.panel6.Location = new System.Drawing.Point(0, 304);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(7, 52);
             this.panel6.TabIndex = 11;
@@ -233,7 +237,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel7.Location = new System.Drawing.Point(-1, 438);
+            this.panel7.Location = new System.Drawing.Point(0, 413);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(7, 52);
             this.panel7.TabIndex = 12;
@@ -248,7 +252,7 @@
             this.btnOrdenReserva.ForeColor = System.Drawing.Color.Black;
             this.btnOrdenReserva.Image = ((System.Drawing.Image)(resources.GetObject("btnOrdenReserva.Image")));
             this.btnOrdenReserva.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrdenReserva.Location = new System.Drawing.Point(3, 433);
+            this.btnOrdenReserva.Location = new System.Drawing.Point(4, 411);
             this.btnOrdenReserva.Name = "btnOrdenReserva";
             this.btnOrdenReserva.Size = new System.Drawing.Size(201, 52);
             this.btnOrdenReserva.TabIndex = 9;
@@ -267,7 +271,7 @@
             this.btnTipodeHabitaciones.ForeColor = System.Drawing.Color.Black;
             this.btnTipodeHabitaciones.Image = ((System.Drawing.Image)(resources.GetObject("btnTipodeHabitaciones.Image")));
             this.btnTipodeHabitaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTipodeHabitaciones.Location = new System.Drawing.Point(2, 319);
+            this.btnTipodeHabitaciones.Location = new System.Drawing.Point(2, 304);
             this.btnTipodeHabitaciones.Name = "btnTipodeHabitaciones";
             this.btnTipodeHabitaciones.Size = new System.Drawing.Size(203, 52);
             this.btnTipodeHabitaciones.TabIndex = 10;
@@ -287,7 +291,7 @@
             this.btnRegistroEmpleados.ForeColor = System.Drawing.Color.Black;
             this.btnRegistroEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroEmpleados.Image")));
             this.btnRegistroEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistroEmpleados.Location = new System.Drawing.Point(8, 199);
+            this.btnRegistroEmpleados.Location = new System.Drawing.Point(7, 194);
             this.btnRegistroEmpleados.Name = "btnRegistroEmpleados";
             this.btnRegistroEmpleados.Size = new System.Drawing.Size(197, 52);
             this.btnRegistroEmpleados.TabIndex = 8;
@@ -299,7 +303,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel3.Location = new System.Drawing.Point(1, 199);
+            this.panel3.Location = new System.Drawing.Point(0, 194);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(7, 52);
             this.panel3.TabIndex = 6;
@@ -307,7 +311,7 @@
             // btnSalir
             // 
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.Location = new System.Drawing.Point(6, 583);
+            this.btnSalir.Location = new System.Drawing.Point(-1, 586);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(36, 28);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -317,7 +321,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel2.Location = new System.Drawing.Point(1, 141);
+            this.panel2.Location = new System.Drawing.Point(0, 141);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(7, 52);
             this.panel2.TabIndex = 5;
@@ -335,7 +339,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel4.Location = new System.Drawing.Point(0, 262);
+            this.panel4.Location = new System.Drawing.Point(0, 249);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(7, 52);
             this.panel4.TabIndex = 5;
@@ -350,7 +354,7 @@
             this.btnRegistroPagos.ForeColor = System.Drawing.Color.Black;
             this.btnRegistroPagos.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroPagos.Image")));
             this.btnRegistroPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistroPagos.Location = new System.Drawing.Point(4, 262);
+            this.btnRegistroPagos.Location = new System.Drawing.Point(4, 249);
             this.btnRegistroPagos.Name = "btnRegistroPagos";
             this.btnRegistroPagos.Size = new System.Drawing.Size(201, 51);
             this.btnRegistroPagos.TabIndex = 4;
@@ -416,6 +420,32 @@
             this.lblhora.TabIndex = 0;
             this.lblhora.Text = "label1";
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel10.Location = new System.Drawing.Point(0, 530);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(7, 52);
+            this.panel10.TabIndex = 16;
+            // 
+            // btnEquipo
+            // 
+            this.btnEquipo.BackColor = System.Drawing.Color.White;
+            this.btnEquipo.FlatAppearance.BorderSize = 0;
+            this.btnEquipo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SandyBrown;
+            this.btnEquipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEquipo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEquipo.ForeColor = System.Drawing.Color.Black;
+            this.btnEquipo.Image = ((System.Drawing.Image)(resources.GetObject("btnEquipo.Image")));
+            this.btnEquipo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEquipo.Location = new System.Drawing.Point(4, 526);
+            this.btnEquipo.Name = "btnEquipo";
+            this.btnEquipo.Size = new System.Drawing.Size(201, 52);
+            this.btnEquipo.TabIndex = 15;
+            this.btnEquipo.Text = "Equipo";
+            this.btnEquipo.UseVisualStyleBackColor = false;
+            this.btnEquipo.Click += new System.EventHandler(this.btnEquipo_Click);
+            // 
             // MENUUUU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,5 +500,7 @@
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Label lblfecha;
         private System.Windows.Forms.Label lblhora;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Button btnEquipo;
     }
 }

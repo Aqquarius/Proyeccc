@@ -28,56 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnCancelarETT = new System.Windows.Forms.Button();
-            this.btnInhabilitarET = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.btnCancelarET = new System.Windows.Forms.Button();
+            this.btnEditarET = new System.Windows.Forms.Button();
             this.btnNuevoET = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbDatos = new System.Windows.Forms.GroupBox();
+            this.cbEmpleadoET = new System.Windows.Forms.ComboBox();
             this.txtNombreET = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
             this.cbEstadoET = new System.Windows.Forms.CheckBox();
             this.txtIDET = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnEditarET = new System.Windows.Forms.Button();
-            this.btnCancelarET = new System.Windows.Forms.Button();
+            this.btnModET = new System.Windows.Forms.Button();
+            this.btnBuscarET = new System.Windows.Forms.Button();
             this.btnAgregarET = new System.Windows.Forms.Button();
-            this.btnModificarET = new System.Windows.Forms.Button();
-            this.cbEmpleadoET = new System.Windows.Forms.ComboBox();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.btnDeshabilitarET = new System.Windows.Forms.Button();
+            this.dgvEquipo = new System.Windows.Forms.DataGridView();
+            this.gbDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEquipo)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnCancelarETT
+            // btnCancelarET
             // 
-            this.btnCancelarETT.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnCancelarETT.FlatAppearance.BorderSize = 0;
-            this.btnCancelarETT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarETT.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarETT.Location = new System.Drawing.Point(664, 471);
-            this.btnCancelarETT.Name = "btnCancelarETT";
-            this.btnCancelarETT.Size = new System.Drawing.Size(99, 44);
-            this.btnCancelarETT.TabIndex = 53;
-            this.btnCancelarETT.Text = "CANCELAR";
-            this.btnCancelarETT.UseVisualStyleBackColor = false;
+            this.btnCancelarET.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnCancelarET.FlatAppearance.BorderSize = 0;
+            this.btnCancelarET.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarET.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarET.Location = new System.Drawing.Point(639, 376);
+            this.btnCancelarET.Name = "btnCancelarET";
+            this.btnCancelarET.Size = new System.Drawing.Size(99, 44);
+            this.btnCancelarET.TabIndex = 53;
+            this.btnCancelarET.Text = "CANCELAR";
+            this.btnCancelarET.UseVisualStyleBackColor = false;
+            this.btnCancelarET.Click += new System.EventHandler(this.btnCancelarET_Click);
             // 
-            // btnInhabilitarET
+            // btnEditarET
             // 
-            this.btnInhabilitarET.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnInhabilitarET.FlatAppearance.BorderSize = 0;
-            this.btnInhabilitarET.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInhabilitarET.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhabilitarET.Location = new System.Drawing.Point(664, 411);
-            this.btnInhabilitarET.Name = "btnInhabilitarET";
-            this.btnInhabilitarET.Size = new System.Drawing.Size(99, 44);
-            this.btnInhabilitarET.TabIndex = 52;
-            this.btnInhabilitarET.Text = "MODIFICAR";
-            this.btnInhabilitarET.UseVisualStyleBackColor = false;
+            this.btnEditarET.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnEditarET.FlatAppearance.BorderSize = 0;
+            this.btnEditarET.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarET.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarET.Location = new System.Drawing.Point(664, 411);
+            this.btnEditarET.Name = "btnEditarET";
+            this.btnEditarET.Size = new System.Drawing.Size(99, 44);
+            this.btnEditarET.TabIndex = 52;
+            this.btnEditarET.Text = "MODIFICAR";
+            this.btnEditarET.UseVisualStyleBackColor = false;
+            this.btnEditarET.Click += new System.EventHandler(this.btnEditarET_Click);
             // 
             // btnNuevoET
             // 
@@ -91,25 +91,38 @@
             this.btnNuevoET.TabIndex = 51;
             this.btnNuevoET.Text = "NUEVO";
             this.btnNuevoET.UseVisualStyleBackColor = false;
+            this.btnNuevoET.Click += new System.EventHandler(this.btnNuevoET_Click);
             // 
-            // groupBox1
+            // gbDatos
             // 
-            this.groupBox1.Controls.Add(this.cbEmpleadoET);
-            this.groupBox1.Controls.Add(this.txtNombreET);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.dtgvConserjeria);
-            this.groupBox1.Controls.Add(this.cbEstadoET);
-            this.groupBox1.Controls.Add(this.txtIDET);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(25, 95);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(756, 540);
-            this.groupBox1.TabIndex = 50;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos del Equipo";
+            this.gbDatos.Controls.Add(this.btnCancelarET);
+            this.gbDatos.Controls.Add(this.btnModET);
+            this.gbDatos.Controls.Add(this.cbEmpleadoET);
+            this.gbDatos.Controls.Add(this.btnBuscarET);
+            this.gbDatos.Controls.Add(this.txtNombreET);
+            this.gbDatos.Controls.Add(this.btnAgregarET);
+            this.gbDatos.Controls.Add(this.btnDeshabilitarET);
+            this.gbDatos.Controls.Add(this.label4);
+            this.gbDatos.Controls.Add(this.dgvEquipo);
+            this.gbDatos.Controls.Add(this.cbEstadoET);
+            this.gbDatos.Controls.Add(this.txtIDET);
+            this.gbDatos.Controls.Add(this.label3);
+            this.gbDatos.Controls.Add(this.label1);
+            this.gbDatos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbDatos.Location = new System.Drawing.Point(25, 95);
+            this.gbDatos.Name = "gbDatos";
+            this.gbDatos.Size = new System.Drawing.Size(756, 540);
+            this.gbDatos.TabIndex = 50;
+            this.gbDatos.TabStop = false;
+            this.gbDatos.Text = "Datos del Equipo";
+            // 
+            // cbEmpleadoET
+            // 
+            this.cbEmpleadoET.FormattingEnabled = true;
+            this.cbEmpleadoET.Location = new System.Drawing.Point(177, 130);
+            this.cbEmpleadoET.Name = "cbEmpleadoET";
+            this.cbEmpleadoET.Size = new System.Drawing.Size(265, 25);
+            this.cbEmpleadoET.TabIndex = 58;
             // 
             // txtNombreET
             // 
@@ -127,49 +140,10 @@
             this.label4.TabIndex = 56;
             this.label4.Text = "Nombre del equipo";
             // 
-            // dtgvConserjeria
-            // 
-            this.dtgvConserjeria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvConserjeria.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dtgvConserjeria.BackgroundColor = System.Drawing.Color.NavajoWhite;
-            this.dtgvConserjeria.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvConserjeria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvConserjeria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvConserjeria.ColumnHeadersHeight = 40;
-            this.dtgvConserjeria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgvConserjeria.EnableHeadersVisualStyles = false;
-            this.dtgvConserjeria.GridColor = System.Drawing.Color.DarkOrange;
-            this.dtgvConserjeria.Location = new System.Drawing.Point(6, 217);
-            this.dtgvConserjeria.Name = "dtgvConserjeria";
-            this.dtgvConserjeria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvConserjeria.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.NavajoWhite;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            this.dtgvConserjeria.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvConserjeria.Size = new System.Drawing.Size(606, 284);
-            this.dtgvConserjeria.TabIndex = 50;
-            // 
             // cbEstadoET
             // 
             this.cbEstadoET.AutoSize = true;
-            this.cbEstadoET.Location = new System.Drawing.Point(153, 170);
+            this.cbEstadoET.Location = new System.Drawing.Point(157, 171);
             this.cbEstadoET.Name = "cbEstadoET";
             this.cbEstadoET.Size = new System.Drawing.Size(129, 21);
             this.cbEstadoET.TabIndex = 8;
@@ -201,43 +175,33 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
-            // groupBox2
+            // btnModET
             // 
-            this.groupBox2.Controls.Add(this.btnEditarET);
-            this.groupBox2.Controls.Add(this.btnCancelarET);
-            this.groupBox2.Controls.Add(this.btnAgregarET);
-            this.groupBox2.Controls.Add(this.btnModificarET);
-            this.groupBox2.Location = new System.Drawing.Point(474, 53);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(264, 116);
-            this.groupBox2.TabIndex = 55;
-            this.groupBox2.TabStop = false;
+            this.btnModET.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnModET.FlatAppearance.BorderSize = 0;
+            this.btnModET.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModET.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModET.Location = new System.Drawing.Point(596, 120);
+            this.btnModET.Name = "btnModET";
+            this.btnModET.Size = new System.Drawing.Size(117, 39);
+            this.btnModET.TabIndex = 58;
+            this.btnModET.Text = "MODIFICAR";
+            this.btnModET.UseVisualStyleBackColor = false;
+            this.btnModET.Click += new System.EventHandler(this.btnModET_Click);
             // 
-            // btnEditarET
+            // btnBuscarET
             // 
-            this.btnEditarET.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnEditarET.FlatAppearance.BorderSize = 0;
-            this.btnEditarET.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarET.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarET.Location = new System.Drawing.Point(141, 62);
-            this.btnEditarET.Name = "btnEditarET";
-            this.btnEditarET.Size = new System.Drawing.Size(117, 37);
-            this.btnEditarET.TabIndex = 58;
-            this.btnEditarET.Text = "EDITAR";
-            this.btnEditarET.UseVisualStyleBackColor = false;
-            // 
-            // btnCancelarET
-            // 
-            this.btnCancelarET.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnCancelarET.FlatAppearance.BorderSize = 0;
-            this.btnCancelarET.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarET.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarET.Location = new System.Drawing.Point(141, 19);
-            this.btnCancelarET.Name = "btnCancelarET";
-            this.btnCancelarET.Size = new System.Drawing.Size(117, 37);
-            this.btnCancelarET.TabIndex = 46;
-            this.btnCancelarET.Text = "CANCELAR";
-            this.btnCancelarET.UseVisualStyleBackColor = false;
+            this.btnBuscarET.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnBuscarET.FlatAppearance.BorderSize = 0;
+            this.btnBuscarET.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarET.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarET.Location = new System.Drawing.Point(596, 81);
+            this.btnBuscarET.Name = "btnBuscarET";
+            this.btnBuscarET.Size = new System.Drawing.Size(117, 37);
+            this.btnBuscarET.TabIndex = 46;
+            this.btnBuscarET.Text = "BUSCAR";
+            this.btnBuscarET.UseVisualStyleBackColor = false;
+            this.btnBuscarET.Click += new System.EventHandler(this.btnBuscarET_Click);
             // 
             // btnAgregarET
             // 
@@ -245,33 +209,66 @@
             this.btnAgregarET.FlatAppearance.BorderSize = 0;
             this.btnAgregarET.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarET.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarET.Location = new System.Drawing.Point(11, 22);
+            this.btnAgregarET.Location = new System.Drawing.Point(473, 81);
             this.btnAgregarET.Name = "btnAgregarET";
             this.btnAgregarET.Size = new System.Drawing.Size(117, 37);
             this.btnAgregarET.TabIndex = 45;
             this.btnAgregarET.Text = "AGREGAR";
             this.btnAgregarET.UseVisualStyleBackColor = false;
+            this.btnAgregarET.Click += new System.EventHandler(this.btnAgregarET_Click);
             // 
-            // btnModificarET
+            // btnDeshabilitarET
             // 
-            this.btnModificarET.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnModificarET.FlatAppearance.BorderSize = 0;
-            this.btnModificarET.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarET.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarET.Location = new System.Drawing.Point(11, 62);
-            this.btnModificarET.Name = "btnModificarET";
-            this.btnModificarET.Size = new System.Drawing.Size(117, 37);
-            this.btnModificarET.TabIndex = 47;
-            this.btnModificarET.Text = "DESHABILITAR";
-            this.btnModificarET.UseVisualStyleBackColor = false;
+            this.btnDeshabilitarET.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnDeshabilitarET.FlatAppearance.BorderSize = 0;
+            this.btnDeshabilitarET.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeshabilitarET.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeshabilitarET.Location = new System.Drawing.Point(473, 121);
+            this.btnDeshabilitarET.Name = "btnDeshabilitarET";
+            this.btnDeshabilitarET.Size = new System.Drawing.Size(117, 37);
+            this.btnDeshabilitarET.TabIndex = 47;
+            this.btnDeshabilitarET.Text = "DESHABILITAR";
+            this.btnDeshabilitarET.UseVisualStyleBackColor = false;
+            this.btnDeshabilitarET.Click += new System.EventHandler(this.btnDeshabilitarET_Click);
             // 
-            // cbEmpleadoET
+            // dgvEquipo
             // 
-            this.cbEmpleadoET.FormattingEnabled = true;
-            this.cbEmpleadoET.Location = new System.Drawing.Point(177, 130);
-            this.cbEmpleadoET.Name = "cbEmpleadoET";
-            this.cbEmpleadoET.Size = new System.Drawing.Size(125, 25);
-            this.cbEmpleadoET.TabIndex = 58;
+            this.dgvEquipo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEquipo.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvEquipo.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dgvEquipo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvEquipo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEquipo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvEquipo.ColumnHeadersHeight = 40;
+            this.dgvEquipo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvEquipo.EnableHeadersVisualStyles = false;
+            this.dgvEquipo.GridColor = System.Drawing.Color.DarkOrange;
+            this.dgvEquipo.Location = new System.Drawing.Point(6, 217);
+            this.dgvEquipo.Name = "dgvEquipo";
+            this.dgvEquipo.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEquipo.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.NavajoWhite;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEquipo.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvEquipo.Size = new System.Drawing.Size(606, 284);
+            this.dgvEquipo.TabIndex = 50;
             // 
             // MantenedorEquipoTrabajo
             // 
@@ -279,39 +276,36 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(804, 647);
-            this.Controls.Add(this.btnCancelarETT);
-            this.Controls.Add(this.btnInhabilitarET);
+            this.Controls.Add(this.btnEditarET);
             this.Controls.Add(this.btnNuevoET);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbDatos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MantenedorEquipoTrabajo";
             this.Text = " ";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).EndInit();
-            this.groupBox2.ResumeLayout(false);
+            this.gbDatos.ResumeLayout(false);
+            this.gbDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEquipo)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnCancelarETT;
-        private System.Windows.Forms.Button btnInhabilitarET;
-        private System.Windows.Forms.Button btnNuevoET;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dtgvConserjeria;
-        private System.Windows.Forms.Button btnModificarET;
         private System.Windows.Forms.Button btnCancelarET;
+        private System.Windows.Forms.Button btnEditarET;
+        private System.Windows.Forms.Button btnNuevoET;
+        private System.Windows.Forms.GroupBox gbDatos;
+        private System.Windows.Forms.Button btnDeshabilitarET;
+        private System.Windows.Forms.Button btnBuscarET;
         private System.Windows.Forms.Button btnAgregarET;
         private System.Windows.Forms.CheckBox cbEstadoET;
         private System.Windows.Forms.TextBox txtIDET;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtNombreET;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnEditarET;
+        private System.Windows.Forms.Button btnModET;
         private System.Windows.Forms.ComboBox cbEmpleadoET;
+        private System.Windows.Forms.DataGridView dgvEquipo;
     }
 }

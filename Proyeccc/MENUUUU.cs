@@ -111,5 +111,10 @@ namespace Proyeccc
         {
             AbrirFormulario<OrdenHospedaje>();
         }
+
+        private void btnEquipo_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<MantenedorEquipoTrabajo>();
+        }
     }
 }
