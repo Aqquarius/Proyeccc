@@ -213,7 +213,7 @@ namespace CapaDatos
             return edita;
 
         }
-        public entUsuario BuscarClientePorID(int clienteID)
+        public entUsuario BuscarCliente(int clienteID)
         {
             SqlCommand cmd = null;
             entUsuario cliente = null;

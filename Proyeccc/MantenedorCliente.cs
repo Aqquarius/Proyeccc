@@ -49,6 +49,10 @@ namespace Proyeccc
             txtApellidoCliente.Text = " ";
             txtCorreoCliente.Text = " ";
             txtTelefonoCliente.Text = " ";
+            txtPaisCliente.Text = " ";
+            txtDescripcionCliente.Text = " ";
+            txtDNICliente.Text = " ";
+            txtClienteID.Text = " ";
         }
 
         private void btnNuevoCL_Click(object sender, EventArgs e)
@@ -104,7 +108,7 @@ namespace Proyeccc
             try
             {
                 int clienteID = Convert.ToInt32(txtClienteID.Text.Trim());
-                entUsuario cliente = logUsuario.Instancia.BuscarClientePorID(clienteID);
+                entUsuario cliente = logUsuario.Instancia.BuscarCliente(clienteID);
                 if (cliente != null)
                 {
                     txtDNICliente.Text = cliente.DNI;

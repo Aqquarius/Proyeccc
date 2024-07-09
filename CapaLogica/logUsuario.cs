@@ -47,9 +47,9 @@ namespace CapaLogica
         {
             datUsuario.Instancia.EditarCliente(Cli);
         }
-        public entUsuario BuscarClientePorID(int ClienteID)
+        public entUsuario BuscarCliente(int ClienteID)
         {
-            return datUsuario.Instancia.BuscarClientePorID(ClienteID);
+            return datUsuario.Instancia.BuscarCliente(ClienteID);
         }
         #endregion metodos
     }

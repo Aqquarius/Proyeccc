@@ -21,5 +21,10 @@ namespace Proyeccc
         {
 
         }
+
+        private void btnAgregarEMP_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

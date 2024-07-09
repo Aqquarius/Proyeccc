@@ -32,6 +32,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbTipoEmpleado = new System.Windows.Forms.ComboBox();
             this.txtTelefonoEmpleado = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dtgvConserjeria = new System.Windows.Forms.DataGridView();
@@ -50,8 +52,6 @@
             this.btnNuevoEMP = new System.Windows.Forms.Button();
             this.btnInhabilitarEMP = new System.Windows.Forms.Button();
             this.btnEditarEMP = new System.Windows.Forms.Button();
-            this.cbTipoEmpleado = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvConserjeria)).BeginInit();
             this.SuspendLayout();
@@ -83,6 +83,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Empleado";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(103, 184);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 17);
+            this.label5.TabIndex = 56;
+            this.label5.Text = "Tipo";
+            // 
+            // cbTipoEmpleado
+            // 
+            this.cbTipoEmpleado.FormattingEnabled = true;
+            this.cbTipoEmpleado.Location = new System.Drawing.Point(153, 180);
+            this.cbTipoEmpleado.Name = "cbTipoEmpleado";
+            this.cbTipoEmpleado.Size = new System.Drawing.Size(121, 25);
+            this.cbTipoEmpleado.TabIndex = 55;
             // 
             // txtTelefonoEmpleado
             // 
@@ -177,6 +194,7 @@
             this.btnAgregarEMP.TabIndex = 45;
             this.btnAgregarEMP.Text = "AGREGAR";
             this.btnAgregarEMP.UseVisualStyleBackColor = false;
+            this.btnAgregarEMP.Click += new System.EventHandler(this.btnAgregarEMP_Click);
             // 
             // cbEstadoEmpleado
             // 
@@ -290,23 +308,6 @@
             this.btnEditarEMP.TabIndex = 49;
             this.btnEditarEMP.Text = "EDITAR";
             this.btnEditarEMP.UseVisualStyleBackColor = false;
-            // 
-            // cbTipoEmpleado
-            // 
-            this.cbTipoEmpleado.FormattingEnabled = true;
-            this.cbTipoEmpleado.Location = new System.Drawing.Point(153, 180);
-            this.cbTipoEmpleado.Name = "cbTipoEmpleado";
-            this.cbTipoEmpleado.Size = new System.Drawing.Size(121, 25);
-            this.cbTipoEmpleado.TabIndex = 55;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(103, 184);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 17);
-            this.label5.TabIndex = 56;
-            this.label5.Text = "Tipo";
             // 
             // MantenedorEmpleado
             // 
