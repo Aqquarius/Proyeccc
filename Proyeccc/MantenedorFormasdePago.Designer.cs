@@ -28,10 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbDatos = new System.Windows.Forms.GroupBox();
+            this.txtNombreMP = new System.Windows.Forms.TextBox();
+            this.btnBuscarMPAGO = new System.Windows.Forms.Button();
+            this.btnModificarMPAGO = new System.Windows.Forms.Button();
+            this.txtIDMP = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.cbEstadoPago = new System.Windows.Forms.CheckBox();
             this.btnDeshabilitarMPAGO = new System.Windows.Forms.Button();
             this.txtDescripcionPago = new System.Windows.Forms.TextBox();
@@ -42,11 +47,6 @@
             this.btnCancelarMPAGO = new System.Windows.Forms.Button();
             this.btnEditarMPAGO = new System.Windows.Forms.Button();
             this.btnNuevoMPAGO = new System.Windows.Forms.Button();
-            this.txtIDMP = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnModificarMPAGO = new System.Windows.Forms.Button();
-            this.btnBuscarMPAGO = new System.Windows.Forms.Button();
-            this.txtNombreMP = new System.Windows.Forms.TextBox();
             this.gbDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMetodoPago)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +71,57 @@
             this.gbDatos.TabIndex = 9;
             this.gbDatos.TabStop = false;
             this.gbDatos.Text = "METODO PAGO";
+            // 
+            // txtNombreMP
+            // 
+            this.txtNombreMP.Location = new System.Drawing.Point(220, 108);
+            this.txtNombreMP.Name = "txtNombreMP";
+            this.txtNombreMP.Size = new System.Drawing.Size(121, 22);
+            this.txtNombreMP.TabIndex = 53;
+            // 
+            // btnBuscarMPAGO
+            // 
+            this.btnBuscarMPAGO.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnBuscarMPAGO.FlatAppearance.BorderSize = 0;
+            this.btnBuscarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarMPAGO.Location = new System.Drawing.Point(256, 170);
+            this.btnBuscarMPAGO.Name = "btnBuscarMPAGO";
+            this.btnBuscarMPAGO.Size = new System.Drawing.Size(109, 34);
+            this.btnBuscarMPAGO.TabIndex = 52;
+            this.btnBuscarMPAGO.Text = "BUSCAR";
+            this.btnBuscarMPAGO.UseVisualStyleBackColor = false;
+            this.btnBuscarMPAGO.Click += new System.EventHandler(this.btnBuscarMPAGO_Click);
+            // 
+            // btnModificarMPAGO
+            // 
+            this.btnModificarMPAGO.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnModificarMPAGO.FlatAppearance.BorderSize = 0;
+            this.btnModificarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarMPAGO.Location = new System.Drawing.Point(486, 170);
+            this.btnModificarMPAGO.Name = "btnModificarMPAGO";
+            this.btnModificarMPAGO.Size = new System.Drawing.Size(109, 34);
+            this.btnModificarMPAGO.TabIndex = 51;
+            this.btnModificarMPAGO.Text = "MODIFICAR";
+            this.btnModificarMPAGO.UseVisualStyleBackColor = false;
+            this.btnModificarMPAGO.Click += new System.EventHandler(this.btnModificarMPAGO_Click);
+            // 
+            // txtIDMP
+            // 
+            this.txtIDMP.Location = new System.Drawing.Point(220, 50);
+            this.txtIDMP.Name = "txtIDMP";
+            this.txtIDMP.Size = new System.Drawing.Size(121, 22);
+            this.txtIDMP.TabIndex = 50;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(65, 53);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 17);
+            this.label4.TabIndex = 48;
+            this.label4.Text = "ID Metodo Pago";
             // 
             // cbEstadoPago
             // 
@@ -138,40 +189,41 @@
             // 
             // dgvMetodoPago
             // 
-            this.dgvMetodoPago.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMetodoPago.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvMetodoPago.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvMetodoPago.BackgroundColor = System.Drawing.Color.NavajoWhite;
             this.dgvMetodoPago.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMetodoPago.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMetodoPago.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMetodoPago.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMetodoPago.ColumnHeadersHeight = 40;
             this.dgvMetodoPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvMetodoPago.EnableHeadersVisualStyles = false;
             this.dgvMetodoPago.GridColor = System.Drawing.Color.DarkOrange;
             this.dgvMetodoPago.Location = new System.Drawing.Point(28, 271);
             this.dgvMetodoPago.Name = "dgvMetodoPago";
+            this.dgvMetodoPago.ReadOnly = true;
             this.dgvMetodoPago.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMetodoPago.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.NavajoWhite;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvMetodoPago.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMetodoPago.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.NavajoWhite;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvMetodoPago.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMetodoPago.Size = new System.Drawing.Size(582, 347);
             this.dgvMetodoPago.TabIndex = 49;
             // 
@@ -216,57 +268,6 @@
             this.btnNuevoMPAGO.Text = "NUEVO";
             this.btnNuevoMPAGO.UseVisualStyleBackColor = false;
             this.btnNuevoMPAGO.Click += new System.EventHandler(this.btnNuevoMPAGO_Click);
-            // 
-            // txtIDMP
-            // 
-            this.txtIDMP.Location = new System.Drawing.Point(220, 50);
-            this.txtIDMP.Name = "txtIDMP";
-            this.txtIDMP.Size = new System.Drawing.Size(121, 22);
-            this.txtIDMP.TabIndex = 50;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(65, 53);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 17);
-            this.label4.TabIndex = 48;
-            this.label4.Text = "ID Metodo Pago";
-            // 
-            // btnModificarMPAGO
-            // 
-            this.btnModificarMPAGO.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnModificarMPAGO.FlatAppearance.BorderSize = 0;
-            this.btnModificarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarMPAGO.Location = new System.Drawing.Point(486, 170);
-            this.btnModificarMPAGO.Name = "btnModificarMPAGO";
-            this.btnModificarMPAGO.Size = new System.Drawing.Size(109, 34);
-            this.btnModificarMPAGO.TabIndex = 51;
-            this.btnModificarMPAGO.Text = "MODIFICAR";
-            this.btnModificarMPAGO.UseVisualStyleBackColor = false;
-            this.btnModificarMPAGO.Click += new System.EventHandler(this.btnModificarMPAGO_Click);
-            // 
-            // btnBuscarMPAGO
-            // 
-            this.btnBuscarMPAGO.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnBuscarMPAGO.FlatAppearance.BorderSize = 0;
-            this.btnBuscarMPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarMPAGO.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarMPAGO.Location = new System.Drawing.Point(256, 170);
-            this.btnBuscarMPAGO.Name = "btnBuscarMPAGO";
-            this.btnBuscarMPAGO.Size = new System.Drawing.Size(109, 34);
-            this.btnBuscarMPAGO.TabIndex = 52;
-            this.btnBuscarMPAGO.Text = "BUSCAR";
-            this.btnBuscarMPAGO.UseVisualStyleBackColor = false;
-            this.btnBuscarMPAGO.Click += new System.EventHandler(this.btnBuscarMPAGO_Click);
-            // 
-            // txtNombreMP
-            // 
-            this.txtNombreMP.Location = new System.Drawing.Point(220, 108);
-            this.txtNombreMP.Name = "txtNombreMP";
-            this.txtNombreMP.Size = new System.Drawing.Size(121, 22);
-            this.txtNombreMP.TabIndex = 53;
             // 
             // MantenedorFormasdePago
             // 

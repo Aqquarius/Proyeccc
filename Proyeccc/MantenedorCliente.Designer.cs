@@ -37,7 +37,9 @@
             this.btnModificarCL = new System.Windows.Forms.Button();
             this.gbDatos = new System.Windows.Forms.GroupBox();
             this.txtPaisCliente = new System.Windows.Forms.TextBox();
+            this.btnAgregarCL = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.btnBuscarCL = new System.Windows.Forms.Button();
             this.cmbGeneroCliente = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.cmbEstCivCliente = new System.Windows.Forms.ComboBox();
@@ -47,10 +49,8 @@
             this.txtClienteID = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbEstadoCliente = new System.Windows.Forms.CheckBox();
-            this.btnBuscarCL = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTelefonoCliente = new System.Windows.Forms.TextBox();
-            this.btnAgregarCL = new System.Windows.Forms.Button();
             this.dtpCliente = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -69,7 +69,7 @@
             // 
             // dgvCliente
             // 
-            this.dgvCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvCliente.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvCliente.BackgroundColor = System.Drawing.Color.NavajoWhite;
             this.dgvCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -87,6 +87,7 @@
             this.dgvCliente.GridColor = System.Drawing.Color.DarkOrange;
             this.dgvCliente.Location = new System.Drawing.Point(21, 325);
             this.dgvCliente.Name = "dgvCliente";
+            this.dgvCliente.ReadOnly = true;
             this.dgvCliente.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
@@ -191,6 +192,20 @@
             this.txtPaisCliente.Size = new System.Drawing.Size(237, 22);
             this.txtPaisCliente.TabIndex = 65;
             // 
+            // btnAgregarCL
+            // 
+            this.btnAgregarCL.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnAgregarCL.FlatAppearance.BorderSize = 0;
+            this.btnAgregarCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarCL.Location = new System.Drawing.Point(611, 87);
+            this.btnAgregarCL.Name = "btnAgregarCL";
+            this.btnAgregarCL.Size = new System.Drawing.Size(113, 33);
+            this.btnAgregarCL.TabIndex = 43;
+            this.btnAgregarCL.Text = "AGREGAR";
+            this.btnAgregarCL.UseVisualStyleBackColor = false;
+            this.btnAgregarCL.Click += new System.EventHandler(this.btnAgregarCL_Click);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -199,6 +214,20 @@
             this.label11.Size = new System.Drawing.Size(131, 17);
             this.label11.TabIndex = 64;
             this.label11.Text = "Lugar de nacimiento";
+            // 
+            // btnBuscarCL
+            // 
+            this.btnBuscarCL.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnBuscarCL.FlatAppearance.BorderSize = 0;
+            this.btnBuscarCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarCL.Location = new System.Drawing.Point(611, 126);
+            this.btnBuscarCL.Name = "btnBuscarCL";
+            this.btnBuscarCL.Size = new System.Drawing.Size(113, 33);
+            this.btnBuscarCL.TabIndex = 44;
+            this.btnBuscarCL.Text = "BUSCAR";
+            this.btnBuscarCL.UseVisualStyleBackColor = false;
+            this.btnBuscarCL.Click += new System.EventHandler(this.btnBuscarCL_Click);
             // 
             // cmbGeneroCliente
             // 
@@ -277,20 +306,6 @@
             this.cbEstadoCliente.Text = "Estado";
             this.cbEstadoCliente.UseVisualStyleBackColor = true;
             // 
-            // btnBuscarCL
-            // 
-            this.btnBuscarCL.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnBuscarCL.FlatAppearance.BorderSize = 0;
-            this.btnBuscarCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarCL.Location = new System.Drawing.Point(611, 126);
-            this.btnBuscarCL.Name = "btnBuscarCL";
-            this.btnBuscarCL.Size = new System.Drawing.Size(113, 33);
-            this.btnBuscarCL.TabIndex = 44;
-            this.btnBuscarCL.Text = "BUSCAR";
-            this.btnBuscarCL.UseVisualStyleBackColor = false;
-            this.btnBuscarCL.Click += new System.EventHandler(this.btnBuscarCL_Click);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -306,20 +321,6 @@
             this.txtTelefonoCliente.Name = "txtTelefonoCliente";
             this.txtTelefonoCliente.Size = new System.Drawing.Size(237, 22);
             this.txtTelefonoCliente.TabIndex = 10;
-            // 
-            // btnAgregarCL
-            // 
-            this.btnAgregarCL.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnAgregarCL.FlatAppearance.BorderSize = 0;
-            this.btnAgregarCL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarCL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarCL.Location = new System.Drawing.Point(611, 87);
-            this.btnAgregarCL.Name = "btnAgregarCL";
-            this.btnAgregarCL.Size = new System.Drawing.Size(113, 33);
-            this.btnAgregarCL.TabIndex = 43;
-            this.btnAgregarCL.Text = "AGREGAR";
-            this.btnAgregarCL.UseVisualStyleBackColor = false;
-            this.btnAgregarCL.Click += new System.EventHandler(this.btnAgregarCL_Click);
             // 
             // dtpCliente
             // 

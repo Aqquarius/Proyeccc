@@ -36,6 +36,10 @@
             this.btnCancelarHOS = new System.Windows.Forms.Button();
             this.btnNuevoHOS = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtVeriResHospedaje = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtPrecioHos = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtMotivoHos = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbMPHos = new System.Windows.Forms.ComboBox();
@@ -48,6 +52,7 @@
             this.dtpEntradaHos = new System.Windows.Forms.DateTimePicker();
             this.dtpRegistroHos = new System.Windows.Forms.DateTimePicker();
             this.cmbHabitacionHos = new System.Windows.Forms.ComboBox();
+            this.txtClienteHos = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtIDHospedaje = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -56,18 +61,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtClienteHos = new System.Windows.Forms.TextBox();
-            this.txtPrecioHos = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtVeriResHospedaje = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHospedaje)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtgvHospedaje
             // 
-            this.dtgvHospedaje.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvHospedaje.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dtgvHospedaje.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgvHospedaje.BackgroundColor = System.Drawing.Color.NavajoWhite;
             this.dtgvHospedaje.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -86,6 +86,7 @@
             this.dtgvHospedaje.GridColor = System.Drawing.Color.DarkOrange;
             this.dtgvHospedaje.Location = new System.Drawing.Point(12, 310);
             this.dtgvHospedaje.Name = "dtgvHospedaje";
+            this.dtgvHospedaje.ReadOnly = true;
             this.dtgvHospedaje.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
@@ -177,6 +178,38 @@
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Orden de Hospedaje";
+            // 
+            // txtVeriResHospedaje
+            // 
+            this.txtVeriResHospedaje.Location = new System.Drawing.Point(130, 41);
+            this.txtVeriResHospedaje.Name = "txtVeriResHospedaje";
+            this.txtVeriResHospedaje.Size = new System.Drawing.Size(123, 23);
+            this.txtVeriResHospedaje.TabIndex = 34;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(21, 44);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(103, 17);
+            this.label10.TabIndex = 33;
+            this.label10.Text = "Buscar Reserva";
+            // 
+            // txtPrecioHos
+            // 
+            this.txtPrecioHos.Location = new System.Drawing.Point(514, 145);
+            this.txtPrecioHos.Name = "txtPrecioHos";
+            this.txtPrecioHos.Size = new System.Drawing.Size(100, 23);
+            this.txtPrecioHos.TabIndex = 32;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(460, 148);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 17);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "Precio";
             // 
             // txtMotivoHos
             // 
@@ -296,6 +329,13 @@
             this.cmbHabitacionHos.Size = new System.Drawing.Size(100, 25);
             this.cmbHabitacionHos.TabIndex = 21;
             // 
+            // txtClienteHos
+            // 
+            this.txtClienteHos.Location = new System.Drawing.Point(129, 189);
+            this.txtClienteHos.Name = "txtClienteHos";
+            this.txtClienteHos.Size = new System.Drawing.Size(124, 23);
+            this.txtClienteHos.TabIndex = 18;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -365,45 +405,6 @@
             this.label1.Size = new System.Drawing.Size(94, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Hospedaje";
-            // 
-            // txtClienteHos
-            // 
-            this.txtClienteHos.Location = new System.Drawing.Point(129, 189);
-            this.txtClienteHos.Name = "txtClienteHos";
-            this.txtClienteHos.Size = new System.Drawing.Size(124, 23);
-            this.txtClienteHos.TabIndex = 18;
-            // 
-            // txtPrecioHos
-            // 
-            this.txtPrecioHos.Location = new System.Drawing.Point(514, 145);
-            this.txtPrecioHos.Name = "txtPrecioHos";
-            this.txtPrecioHos.Size = new System.Drawing.Size(100, 23);
-            this.txtPrecioHos.TabIndex = 32;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(460, 148);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 17);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "Precio";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(21, 44);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 17);
-            this.label10.TabIndex = 33;
-            this.label10.Text = "Buscar Reserva";
-            // 
-            // txtVeriResHospedaje
-            // 
-            this.txtVeriResHospedaje.Location = new System.Drawing.Point(130, 41);
-            this.txtVeriResHospedaje.Name = "txtVeriResHospedaje";
-            this.txtVeriResHospedaje.Size = new System.Drawing.Size(123, 23);
-            this.txtVeriResHospedaje.TabIndex = 34;
             // 
             // OrdenHospedaje
             // 
