@@ -11,8 +11,6 @@ namespace CapaDatos
 {
     public class datUsuario
     {
-        public string connectionString = "Server=Danysex\\SQLEXPRESS;Database=Farmacia;Integrated Security=True;";
-
         #region Singleton   
         // Patrón de Diseño Singleton
         private static readonly datUsuario _instancia = new datUsuario();
